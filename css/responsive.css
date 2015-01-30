@@ -1,0 +1,31 @@
+@media screen and (max-width: 1300px) {
+
+#mainHeader hgroup {
+  width: 100%;
+  padding: 1em 0;
+  border: none;
+}
+#mainHeader h1 > div {
+  padding: 0 1em;
+}
+
+#mainHeader nav {
+  height: auto;
+  border-top: solid 1px white;
+  border-bottom: solid 1px black;
+}
+#mainHeader nav > ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+nav > ul > li, nav .social {
+  display: block;
+  width: 100%;
+}
+nav ul li:hover ul {
+  left: -9999em;
+}
+
+} /* @media */

@@ -1,0 +1,20 @@
+div, p, h1, h2, h3, h4, h5, h6, ul, ol, header, footer, hgroup, nav, article, section, address {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 0.75em;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+footer {
+  margin: 1em 0 0;
+}
