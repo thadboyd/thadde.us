@@ -1,39 +1,54 @@
 <?php
-  $pages = array(
-    'Home' => 'index.php',
-    'Websites' => array(
-      'websites.php',
-      'MD Motivational Drink' => 'mdmotivationaldrink',
-      'MySwimIt' => 'myswimit'
-    ),
-    'Audiobooks' => array(
-      'audiobooks.php',
-      'Dinner on a Flying Saucer' => 'dinner',
-      'Dinosaurs in the Home Depot' => 'dinosaurs',
-      'Your Average Ordinary Alien' => 'alien'
-    ),
-    'Contact' => 'contact.php',
-    '<span class="fa fa-linkedin"></span>' => 'https://www.linkedin.com/in/thadboyd/'
-  );
+$pages = array(
+  array(
+    'title' => 'Home',
+    'link' => 'index.php'
+  ),
+  array(
+    'title' => 'Websites',
+    'link' => 'websites.php',
+    'subnav' => array(
+      array(
+	'title' => 'MD Motivational Drink',
+	'link' => 'websites.php#mdmotivationaldrink'
+      ),
+      array(
+	'title' => 'MySwimIt',
+	'link' => 'websites.php#myswimit'
+      )
+    )
+  ),
+  array(
+    'title' => 'Audiobooks',
+    'link' => 'audiobooks.php',
+    'subnav' => array(
+      array(
+	'title' => 'Dinner on a Flying Saucer',
+	'link' => 'audiobooks.php#dinner'
+      ),
+      array(
+	'title' => 'Dinosaurs in the Home Depot',
+	'link' => 'audiobooks.php#dinosaurs'
+      ),
+      array(
+	'title' => 'Your Average Ordinary Alien',
+	'link' => 'audiobooks.php#alien'
+      )
+  ),
+  array(
+    'title' => 'Contact',
+    'link' => 'contact.php'
+  ),
+  array(
+    'title' => '<span class="fa fa-linkedin"></span>',
+    'link' => 'https://www.linkedin.com/in/thadboyd/'
+  )
+);
 ?>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="websites.html">Websites</a>
-	<ul>
-	  <li><a href="websites.html#mdmotivationaldrink">MD Motivational Drink</a></li>
-	  <li><a href="websites.html#myswimit">MySwimIt</a></li>
-	</ul>
-      </li>
-      <li><a href="audiobooks.html">Audiobooks</a>
-	<ul>
-	  <li><a href="audiobooks.html#dinner">Dinner on a Flying Saucer</a></li>
-	  <li><a href="audiobooks.html#dinosaurs">Dinosaurs in the Home Depot</a></li>
-	  <li><a href="audiobooks.html#alien">Your Average Ordinary Alien</a></li>
-	</ul>
-      </li>
-      <li><a href="contact.html">Contact</a></li>
-      <li class="social"><a href="https://www.linkedin.com/in/thadboyd/" target="_blank"><span class="fa fa-linkedin"></span></a></li>
-    </ul>
-  </nav>
+<nav>
+
+<?php
+?>
+
+</nav>
