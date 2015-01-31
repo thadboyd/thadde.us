@@ -18,6 +18,9 @@ $pages = array(
       )
     )
   ),
+  
+  /*
+   //error is in this section somewhere
   'audiobooks' => array(
     'title' => 'Audiobooks',
     'link' => 'audiobooks.php',
@@ -35,6 +38,7 @@ $pages = array(
 	'link' => 'audiobooks.php#alien'
       )
   ),
+  */
   'contact' => array(
     'title' => 'Contact',
     'link' => 'contact.php'
@@ -45,7 +49,7 @@ $pages = array(
     'link' => 'https://www.linkedin.com/in/thadboyd/'
   )
 );
-
+/*
 function populateUL($navArr) {
   echo('<ul>');
   foreach($navArr as $key => $value) {
@@ -65,13 +69,13 @@ function populateUL($navArr) {
   }
   echo('</ul>');
 }
-
+*/
 ?>
 
 <nav>
 
 <?php
-  populateUL($pages);
+  //populateUL($pages);
 ?>
 
 </nav>

@@ -19,7 +19,7 @@
     </h1>
   </hgroup>
 
-  <!-- ?php require('includes/topnav.php'); ? -->
+  <?php require('includes/topnav.php'); ?>
 </header>
 
 <section id="mainContent">
