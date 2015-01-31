@@ -1,10 +1,10 @@
 <?php
 $pages = array(
-  array(
+  'index' => array(
     'title' => 'Home',
     'link' => 'index.php'
   ),
-  array(
+  'websites' => array(
     'title' => 'Websites',
     'link' => 'websites.php',
     'subnav' => array(
@@ -18,7 +18,7 @@ $pages = array(
       )
     )
   ),
-  array(
+  'audiobooks' => array(
     'title' => 'Audiobooks',
     'link' => 'audiobooks.php',
     'subnav' => array(
@@ -35,20 +35,42 @@ $pages = array(
 	'link' => 'audiobooks.php#alien'
       )
   ),
-  array(
+  'contact' => array(
     'title' => 'Contact',
     'link' => 'contact.php'
   ),
-  array(
-    'title' => '<span class="fa fa-linkedin"></span>',
+  'social' => array(
+    'class' => 'social',
+    'title' => '<span class="fa fa-linkedin"><!-- LinkedIn --></span>',
     'link' => 'https://www.linkedin.com/in/thadboyd/'
   )
 );
+
+function populateUL($navArr) {
+  ?><ul><?php
+  foreach($navArr as $key => $value) {
+    echo('<li');
+    if($key == $shortName) {
+      echo(' class="current"');
+    }
+    echo('><a ');
+    if(isset($value['class']) {
+      echo('class="' + $value['class'] + '" ');
+    }
+    echo('href="' + $value['link'] + '">' + $value['title'] + '</a>');
+    if(isset($value['subnav']) {
+      populateUL($value['subnav']);
+    }
+    echo('</li>');
+  }
+}
+
 ?>
 
 <nav>
 
 <?php
+  populateUL($pages);
 ?>
 
 </nav>
