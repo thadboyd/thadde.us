@@ -47,7 +47,7 @@ $pages = array(
 );
 
 function populateUL($navArr) {
-  ?><ul><?php
+  echo('<ul>');
   foreach($navArr as $key => $value) {
     echo('<li');
     if($key == $shortName) {
@@ -63,6 +63,7 @@ function populateUL($navArr) {
     }
     echo('</li>');
   }
+  echo('</ul>');
 }
 
 ?>
