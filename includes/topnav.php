@@ -8,11 +8,11 @@ $pages = array(
     'title' => 'Websites',
     'link' => 'websites.php',
     'subnav' => array(
-      array(
+      'md' => array(
 	'title' => 'MD Motivational Drink',
 	'link' => 'websites.php#mdmotivationaldrink'
       ),
-      array(
+      'swimit' => array(
 	'title' => 'MySwimIt',
 	'link' => 'websites.php#myswimit'
       )
@@ -22,15 +22,15 @@ $pages = array(
     'title' => 'Audiobooks',
     'link' => 'audiobooks.php',
     'subnav' => array(
-      array(
+      'dinner' => array(
 	'title' => 'Dinner on a Flying Saucer',
 	'link' => 'audiobooks.php#dinner'
       ),
-      array(
+      'dinosaurs' => array(
 	'title' => 'Dinosaurs in the Home Depot',
 	'link' => 'audiobooks.php#dinosaurs'
       ),
-      array(
+      'alien' => array(
 	'title' => 'Your Average Ordinary Alien',
 	'link' => 'audiobooks.php#alien'
       )
@@ -55,7 +55,7 @@ function populateUL($navArr) {
       echo(' class="' . $value['class'] . '"');
     }
     echo('><a ');
-    if($key == $GLOBALS['shortName']) {
+    if($key === $GLOBALS['shortName']) {
       echo('class="current"');
     }
     echo('href="' . $value['link'] . '">' . $value['title'] . '</a>');
