@@ -6,6 +6,7 @@ body {
   background-color: #666;
   color: white;
   font-family: 'Open Sans', 'Arial', 'Helvetica', 'FreeSans', sans-serif;
+  font-size: 16px;
   margin: 0;
   padding: 0;
 }
@@ -18,21 +19,17 @@ a {
   background-color: #222;
 }
 
-#mainHeader hgroup, #mainContent {
+#mainHeader h1, #mainContent {
   width: 1280px;
   margin: 0 auto;
   border-style: solid;
 }
-#mainHeader hgroup {
+#mainHeader h1 {
   border-color: white;
   border-width: 0 1px;
   background-color: #2574b7;
   color: white;
-  padding: 1em 1em 1.5em;
-}
-
-#mainHeader h1 {
-  margin: 0;
+  padding: 0 18px 0.5em;
   font-size: 1.8em;
 }
 #siteTitle {
@@ -118,4 +115,8 @@ nav ul li:hover ul {
   border-width: 0 1px 1px;
   border-radius: 0 0 1em 1em;
   padding: 2em 1em 1em;
+}
+
+footer {
+  padding-left: 1em;
 }
