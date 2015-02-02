@@ -18,9 +18,6 @@ $pages = array(
       )
     )
   ),
-  
-  /*
-   //error is in this section somewhere
   'audiobooks' => array(
     'title' => 'Audiobooks',
     'link' => 'audiobooks.php',
@@ -37,8 +34,8 @@ $pages = array(
 	'title' => 'Your Average Ordinary Alien',
 	'link' => 'audiobooks.php#alien'
       )
+    )
   ),
-  */
   'contact' => array(
     'title' => 'Contact',
     'link' => 'contact.php'
@@ -49,33 +46,33 @@ $pages = array(
     'link' => 'https://www.linkedin.com/in/thadboyd/'
   )
 );
-/*
+
 function populateUL($navArr) {
   echo('<ul>');
   foreach($navArr as $key => $value) {
     echo('<li');
-    if($key == $shortName) {
-      echo(' class="current"');
+    if(isset($value['class'])) {
+      echo(' class="' . $value['class'] . '"');
     }
     echo('><a ');
-    if(isset($value['class']) {
-      echo('class="' + $value['class'] + '" ');
+    if($key == $GLOBALS['shortName']) {
+      echo('class="current"');
     }
-    echo('href="' + $value['link'] + '">' + $value['title'] + '</a>');
-    if(isset($value['subnav']) {
+    echo('href="' . $value['link'] . '">' . $value['title'] . '</a>');
+    if(isset($value['subnav'])) {
       populateUL($value['subnav']);
     }
     echo('</li>');
   }
   echo('</ul>');
 }
-*/
+
 ?>
 
 <nav>
 
 <?php
-  //populateUL($pages);
+  populateUL($pages);
 ?>
 
 </nav>

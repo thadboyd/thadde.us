@@ -108,7 +108,7 @@ nav ul ul {
 nav ul li:hover ul {
   left: 0;
   background-color: #333;
-  transition: background-color 0.4s linear;
+  transition: background-color 0.35s linear;
 }
 
 #mainContent {
