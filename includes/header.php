@@ -16,7 +16,7 @@
   <hgroup>
     <h1>
       <div id="siteTitle">thadde.us</div>
-      <div id="pageTitle">Thad Boyd's project page</div>
+      <div id="pageTitle"><?php echo($title); ?></div>
     </h1>
   </hgroup>
 
