@@ -24,7 +24,7 @@ a {
   background-color: #222;
 }
 
-#mainHeader h1, #mainContent {
+#mainHeader h1, .mainContent {
   width: 1280px;
   margin: 0 auto;
   border-style: solid;
@@ -90,13 +90,15 @@ a {
 nav > ul > li {
   display: inline-block;
   vertical-align: middle;
-  width: 23%;
   margin: 0;
   padding: 0;
   text-align: center;
   position: relative;
 }
-nav .social {
+#mainHeader nav > ul > li {
+  width: 23%;
+}
+nav .social, #mainHeader nav .social {
   width: 2em;
 }
 
@@ -116,7 +118,7 @@ nav ul li:hover ul {
   transition: background-color 0.35s linear;
 }
 
-#mainContent {
+.mainContent {
   background-color: white;
   color: black;
   border-color: black;
@@ -134,13 +136,8 @@ footer {
   border: none;
 }
 
-#tabs a {
-  display: block;
-  width: 100%;
-}
-
-.tab-content {
-  border-radius: 0 1em 1em 1em;
+.ui-widget-header {
+  background: none;
   border: none;
 }
 
@@ -148,9 +145,31 @@ footer {
   padding: 0;
 }
 
-.ui-widget-header {
-  background: none;
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  padding: 0.5em 0;
+}
+
+.ui-tabs-nav a {
+  display: block;
+  width: 100%;
+}
+
+.ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
+  color: #999;
+}
+
+.ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
+  color: #555;
+}
+
+.ui-tabs-nav .fa {
+  font-size: 2em;
+}
+
+.ui-tabs .ui-tabs-nav li,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
   border: none;
+  border-radius: 1em 1em 0 0;
 }
 
 .ui-tabs .ui-tabs-panel.tab-websites,
@@ -159,8 +178,23 @@ footer {
   background-color: #FFF0DB;
 }
 
+.ui-tabs-panel {
+  border-radius: 0 0 1em 1em;
+  border: none;
+}
+
 .ui-tabs .ui-tabs-panel.tab-audiobooks,
 .ui-tabs .ui-tabs-nav li.tab-audiobooks,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-audiobooks {
   background-color: #DBEFFC;
+}
+
+#index .ui-tabs .ui-tabs-nav li,
+#index .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  width: 49%;
+}
+
+#index .ui-tabs .ui-tabs-nav li:last-child {
+  float: right;
+  margin-right: 0;
 }

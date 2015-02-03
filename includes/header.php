@@ -15,7 +15,7 @@ if(isset($desc)) { ?>
   <script src="js/jquery-ui.min.js"></script>
 </head>
 
-<body>
+<body id="<?php echo($shortName); ?>">
 
 <header id="mainHeader">
   <h1>
@@ -26,4 +26,4 @@ if(isset($desc)) { ?>
   <?php require('includes/topnav.php'); ?>
 </header>
 
-<section id="mainContent">
+<div class="mainContent">
