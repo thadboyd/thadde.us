@@ -49,7 +49,7 @@ a {
   margin: 0;
   padding: 0;
   height: 1.8em;
-  background-color: #1a698e;
+  background-color: maroon;
   border-top: solid #ccc 1px;
   border-bottom: solid #333 1px;
 }
@@ -67,7 +67,7 @@ a {
   padding: 0;
   border-top: solid white 1px;
   border-bottom: solid black 1px;
-  background-color: #2a799e;
+  background-color: #A52727;
   position: relative;
   z-index: 9999;
 }
