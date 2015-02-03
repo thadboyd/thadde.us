@@ -1,4 +1,4 @@
-</section><!-- mainContent -->
+</div><!-- mainContent -->
 
 <footer>
 Original Content Copyright &copy; 2008-2015 Thaddeus Boyd<br/>
