@@ -54,3 +54,9 @@ $pages = array(
   populateUL($pages, 1);
 ?>
 </nav>
+
+<script>
+$("#mainHeader .toggleNav").click(function() {
+  $("#mainHeader nav > ul").toggle("slow");
+});
+</script>
