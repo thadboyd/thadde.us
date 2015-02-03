@@ -128,3 +128,39 @@ nav ul li:hover ul {
 footer {
   padding-left: 1em;
 }
+
+#tabs {
+  background-color: transparent;
+  border: none;
+}
+
+#tabs a {
+  display: block;
+  width: 100%;
+}
+
+.tab-content {
+  border-radius: 0 1em 1em 1em;
+  border: none;
+}
+
+.ui-tabs .ui-tabs-nav {
+  padding: 0;
+}
+
+.ui-widget-header {
+  background: none;
+  border: none;
+}
+
+.ui-tabs .ui-tabs-panel.tab-websites,
+.ui-tabs .ui-tabs-nav li.tab-websites,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-websites {
+  background-color: #FFF0DB;
+}
+
+.ui-tabs .ui-tabs-panel.tab-audiobooks,
+.ui-tabs .ui-tabs-nav li.tab-audiobooks,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-audiobooks {
+  background-color: #DBEFFC;
+}
