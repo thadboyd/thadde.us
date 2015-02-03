@@ -49,6 +49,7 @@ $pages = array(
 ?>
 
 <nav>
+<div class="toggleNav mobileOnly fa fa-bars"></div>
 <?php
   populateUL($pages, 1);
 ?>
