@@ -12,14 +12,15 @@ if(isset($desc)) { ?>
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <link rel="stylesheet" type="text/css" href="css/responsive.css" />
   <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
 </head>
 
 <body>
 
 <header id="mainHeader">
   <h1>
-    <div id="siteTitle">thadde.us</div>
-    <div id="pageTitle"><?php echo($title); ?></div>
+    <span id="siteTitle">thadde.us</span>
+    <span id="pageTitle"><?php echo($title); ?></span>
   </h1>
 
   <?php require('includes/topnav.php'); ?>
