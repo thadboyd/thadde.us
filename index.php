@@ -1,6 +1,7 @@
 <?php
 $shortName = 'index';
-$title = 'Thad Boyd\'s project page';
+$title = "Thad Boyd's project page";
+$desc = "Projects by Thad Boyd, web developer, computer scientist, IT specialist, and audiobook producer";
 require('includes/header.php');
 ?>
 

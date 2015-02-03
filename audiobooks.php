@@ -1,6 +1,7 @@
 <?php
 $shortName = 'audiobooks';
 $title = 'Audiobooks by Thaddeus R R Boyd';
+$desc = "Audiobooks narrated by Thaddeus R R Boyd. Available on Amazon, Audible, and iTunes.";
 require('includes/header.php');
 ?>
 
