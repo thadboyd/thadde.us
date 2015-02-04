@@ -6,7 +6,7 @@ require('includes/header.php');
 ?>
 
 <div id="accordion">
-  <h3><img src="img/cover-dinner.jpg" alt="Dinner on a Flying Saucer" /></h3>
+  <h2><img src="img/cover-dinner.jpg" alt="Dinner on a Flying Saucer" /></h2>
   <section id="dinner">
     <iframe width="420" height="315" src="http://www.youtube.com/embed/IZ_tSXRJb_g" frameborder="0"></iframe>
 
@@ -22,7 +22,7 @@ require('includes/header.php');
     <footer>Copyright &copy; 2012, 2013 Dean Wesley Smith</footer>
   </section><!-- dinner -->
   
-  <h3><img src="img/cover-dinosaurs.jpg" alt="Dinosaurs at the Home Depot" /></h3>
+  <h2><img src="img/cover-dinosaurs.jpg" alt="Dinosaurs at the Home Depot" /></h2>
   <section id="dinosaurs">
     <iframe width="420" height="315" src="http://www.youtube.com/embed/Ry8Sbq8LJn4" frameborder="0"></iframe>
 
@@ -38,7 +38,7 @@ require('includes/header.php');
     <footer>Copyright &copy; 2012, 2013 Bret Wellman</footer>
   </section><!-- dinosaurs -->
   
-  <h3><img src="img/cover-alien.jpg" alt="Your Average Ordinary Alien" /></h3>
+  <h2><img src="img/cover-alien.jpg" alt="Your Average Ordinary Alien" /></h2>
   <section id="alien">
     <iframe width="420" height="315" src="http://www.youtube.com/embed/y_C2ZIux6lQ" frameborder="0"></iframe>
 
@@ -57,7 +57,11 @@ require('includes/header.php');
 
  <script>
 $(function() {
-  $( "#accordion" ).accordion();
+  $( "#accordion" ).accordion({
+    header: "h2",
+    collapsible: true,
+    active: false
+  });
 });
 </script>
 
