@@ -16,8 +16,12 @@ body {
   padding: 0;
 }
 
-a, .ui-widget-content a {
+a:link, a:visited, .ui-widget-content a:link, .ui-widget-content a:visited {
   color: #2574B7;
+}
+
+a:hover, .ui-widget-content a:hover {
+  color: #55aaff;
 }
 
 #mainHeader {
@@ -163,8 +167,21 @@ footer {
   color: #999;
 }
 
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited {
+  color: #777;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
   color: #555;
+  background-color: transparent;
 }
 
 .ui-tabs-nav .fa {
