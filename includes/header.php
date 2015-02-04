@@ -15,7 +15,7 @@ if(isset($desc)) { ?>
   <script src="js/jquery-ui.min.js"></script>
 </head>
 
-<body id="<?php echo($shortName); ?>">
+<body id="page-<?php echo($shortName); ?>">
 
 <header id="mainHeader">
   <h1>

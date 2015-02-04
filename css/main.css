@@ -16,8 +16,8 @@ body {
   padding: 0;
 }
 
-a {
-  color: #55aaff;
+a, .ui-widget-content a {
+  color: #2574B7;
 }
 
 #mainHeader {
@@ -88,6 +88,9 @@ a {
   color: white;
   transition: background-color 0.3s linear;
 }
+nav > ul {
+  padding-left: 0;
+}
 nav > ul > li, nav > div > ul > li {
   display: inline-block;
   vertical-align: middle;
@@ -130,6 +133,7 @@ nav ul li:hover ul {
 
 footer {
   padding-left: 1em;
+  font-size: 0.8em;
 }
 
 #tabs {
@@ -190,12 +194,16 @@ footer {
   background-color: #DBEFFC;
 }
 
-#index .ui-tabs .ui-tabs-nav li,
-#index .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+#page-index .ui-tabs .ui-tabs-nav li,
+#page-index .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   width: 49%;
 }
 
-#index .ui-tabs .ui-tabs-nav li:last-child {
+#page-index .ui-tabs .ui-tabs-nav li:last-child {
   float: right;
   margin-right: 0;
+}
+
+#audiobooks nav {
+  text-align: center;
 }

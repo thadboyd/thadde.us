@@ -30,6 +30,14 @@ require('includes/header.php');
   <section id="audiobooks" class="tab-audiobooks">
     <h2>Audiobooks</h2>
     
+    <nav><ul>
+      <li><a href="audiobooks.php#dinner"><img src="img/cover-dinner.jpg" alt="Dinner on a Flying Saucer" /></a></li>
+      
+      <li><a href="audiobooks.php#dinosaurs"><img src="img/cover-dinosaurs.jpg" alt="Dinosaurs at the Home Depot" /></a></li>
+      
+      <li><a href="audiobooks.php#alien"><img src="img/cover-alien.jpg" alt="Your Average Ordinary Alien" /></a></li>
+    </ul></nav>
+    
     <p>I've recorded several audiobooks.  You can find them for sale at <a href="www.amazon.com/s?_encoding=UTF8&amp;field-author=Thaddeus%20R.%20R.%20Boyd&amp;search-alias=books">Amazon</a>, <a href="http://www.audible.com/search/ref=pd_narr_1?searchNarrator=Thaddeus+R.+R.+Boyd">Audible</a>, and <a href="https://itunes.apple.com/us/artist/thaddeus-r.-r.-boyd/id597740901">iTunes</a>.</p>
   </section><!-- audiobooks -->
 </div><!-- tabs -->
@@ -37,8 +45,8 @@ require('includes/header.php');
 <script>
 $(function() {
   $("#tabs").tabs({
-    collapsible: true,
-    active: false,
+    // collapsible: true,
+    // active: false,
     hide: {
       effect: "blind",
       duration: 200

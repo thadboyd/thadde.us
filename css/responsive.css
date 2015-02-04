@@ -88,7 +88,12 @@ nav ul li:hover ul {
   padding: 1em 0.5em;
 }
 
+#audiobooks nav li {
+  max-width: 32%;
+}
+
 } /* max-width: 1316px */
+
 
 @media screen and (min-width: 1317px) {
 

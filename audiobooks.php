@@ -5,6 +5,60 @@ $desc = "Audiobooks narrated by Thaddeus R R Boyd. Available on Amazon, Audible,
 require('includes/header.php');
 ?>
 
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+<div id="accordion">
+  <h3><img src="img/cover-dinner.jpg" alt="Dinner on a Flying Saucer" /></h3>
+  <section id="dinner">
+    <iframe width="420" height="315" src="http://www.youtube.com/embed/IZ_tSXRJb_g" frameborder="0"></iframe>
+
+    <blockquote class="bookdesc">Sometimes, when a fella gets to help out with fightin' a war between two alien races, it's just not such a good idea to tell your wife. Sometimes the truth just isn't good enough.</blockquote>
+
+    <p>Available for purchase:
+    <ul>
+      <li><a href="http://www.audible.com/pd/ref=sr_1_3?asin=B00B9HH01A">Audible</a></li>
+      <li><a href="http://www.amazon.com/Dinner-on-a-Flying-Saucer/dp/B00BB1RUYQ/">Amazon</a></li>
+      <li><a href="https://itunes.apple.com/us/audiobook/dinner-on-flying-saucer-unabridged/id599832717">iTunes</a></li>
+    </ul></p>
+
+    <footer>Copyright &copy; 2012, 2013 Dean Wesley Smith</footer>
+  </section><!-- dinner -->
+  
+  <h3><img src="img/cover-dinosaurs.jpg" alt="Dinosaurs at the Home Depot" /></h3>
+  <section id="dinosaurs">
+    <iframe width="420" height="315" src="http://www.youtube.com/embed/Ry8Sbq8LJn4" frameborder="0"></iframe>
+
+    <blockquote class="bookdesc">A man is locked inside the Home Depot as it is over run by dinosaurs. Now he must escape or become dinner.</blockquote>
+
+    <p>Available for purchase:
+    <ul>
+      <li><a href="http://www.audible.com/pd/ref=sr_1_1?asin=B00B5W6R3G">Audible</a></li>
+      <li><a href="http://www.amazon.com/Dinosaurs-in-the-Home-Depot/dp/B00B77HDR8/">Amazon</a></li>
+      <li><a href="https://itunes.apple.com/us/audiobook/dinosaurs-in-home-depot-unabridged/id597740897">iTunes</a></li>
+    </ul></p>
+
+    <footer>Copyright &copy; 2012, 2013 Bret Wellman</footer>
+  </section><!-- dinosaurs -->
+  
+  <h3><img src="img/cover-alien.jpg" alt="Your Average Ordinary Alien" /></h3>
+  <section id="alien">
+    <iframe width="420" height="315" src="http://www.youtube.com/embed/y_C2ZIux6lQ" frameborder="0"></iframe>
+
+    <blockquote class="bookdesc">Kirk Picard Skywalker is an unemployed sci-fi fanatic who dreams of being abducted by aliens from outer space. One day his dreams come through and he's horrified to learn that the aliens are all too ordinary.</blockquote>
+
+    <p>Available for purchase:
+    <ul>
+      <li><a href="http://www.audible.com/pd/ref=sr_1_1?asin=B00B8VULPE">Audible</a></li>
+      <li><a href="http://www.amazon.com/Your-Average-Ordinary-Alien/dp/B00B9DC08W/">Amazon</a></li>
+      <li><a href="https://itunes.apple.com/us/audiobook/your-average-ordinary-alien/id599192781">iTunes</a></li>
+    </ul></p>
+
+    <footer>Copyright &copy; 2007, 2009, 2013 Adam Graham</footer>
+  </section><!-- alien -->
+</div>
+
+ <script>
+$(function() {
+  $( "#accordion" ).accordion();
+});
+</script>
 
 <?php require('includes/footer.php'); ?>
