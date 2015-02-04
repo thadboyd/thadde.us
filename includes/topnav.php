@@ -57,6 +57,6 @@ $pages = array(
 
 <script>
 $("#mainHeader .toggleNav").click(function() {
-  $("#mainHeader nav > ul").toggle("slow");
+  $("#mainHeader nav > ul").toggle("blind", 500);
 });
 </script>

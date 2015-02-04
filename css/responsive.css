@@ -50,7 +50,8 @@ h2 {
   padding: 0.2em;
   cursor: pointer;
 }
-#mainHeader nav > ul {
+#mainHeader nav > ul, #mainHeader nav > div > ul {
+/* nav > div > ul is necessary to maintain style during jQueryUI animation */
   width: 100%;
   margin: 0;
   padding: 0;
@@ -58,7 +59,8 @@ h2 {
   font-size: 1em;
   display: none;
 }
-#mainHeader nav > ul > li, #mainHeader nav .social {
+#mainHeader nav > ul > li, #mainHeader nav .social,
+#mainHeader nav > div > ul > li {
   display: block;
   width: 100%;
   border-bottom: solid 1px maroon;
@@ -86,4 +88,12 @@ nav ul li:hover ul {
   padding: 1em 0.5em;
 }
 
-} /* @media */
+} /* max-width: 1316px */
+
+@media screen and (min-width: 1317px) {
+
+#mainHeader nav > ul {
+  display: block !important;
+  /* Show navigation in full site even if toggled to hidden in mobile version */
+}
+} /* min-width: 1317px */

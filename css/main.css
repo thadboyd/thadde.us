@@ -64,7 +64,8 @@ a {
   color: white;
   text-decoration: none;
 }
-#mainHeader nav > ul {
+#mainHeader nav > ul, #mainHeader nav > div > ul {
+/* nav > div > ul is necessary to maintain style during jQueryUI animation */
   font-size: 1.1em;
   margin: -0.4em 4em 0.4em;
   padding: 0;
@@ -74,7 +75,7 @@ a {
   position: relative;
   z-index: 9999;
 }
-#mainHeader nav > ul > li > a {
+#mainHeader nav > ul > li > a, #mainHeader nav > div > ul > li > a {
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -87,7 +88,7 @@ a {
   color: white;
   transition: background-color 0.3s linear;
 }
-nav > ul > li {
+nav > ul > li, nav > div > ul > li {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
