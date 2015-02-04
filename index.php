@@ -24,25 +24,30 @@ require('includes/header.php');
   <section id="websites" class="tab-websites">
     <h2>Websites</h2>
     
-    <p>I built my first website in 1994, and I haven't stopped.</p>
-    
-    <p>Sometimes I build sites for fun.  Sometimes I build them as a freelancer.  Sometimes I build them for companies like GoDaddy or Titan Media Group.</p>
-    
-    <p>I built the site you're looking at right now, in PHP, HTML5, CSS3, and JavaScript, with the jQuery and jQueryUI libraries.</p>
-    
-    <p>And I've built hundreds of others.  From Wordpress blogs to ecommerce sites to social club calendars, from straightforward just-the-facts info sites to music, videos, slideshows, and animation, I can build a website to meet your needs.</p>
+    <p>I've been building websites for over 20 years.  I've built hundreds: from Wordpress blogs to ecommerce sites to social club calendars, from straightforward just-the-facts info sites to music, videos, slideshows, and animation, I can build a website to meet your needs.</p>
   </section><!-- websites -->
   
   <section id="audiobooks" class="tab-audiobooks">
     <h2>Audiobooks</h2>
     
-    <p>Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+    <p>I've recorded several audiobooks.  You can find them for sale at <a href="www.amazon.com/s?_encoding=UTF8&amp;field-author=Thaddeus%20R.%20R.%20Boyd&amp;search-alias=books">Amazon</a>, <a href="http://www.audible.com/search/ref=pd_narr_1?searchNarrator=Thaddeus+R.+R.+Boyd">Audible</a>, and <a href="https://itunes.apple.com/us/artist/thaddeus-r.-r.-boyd/id597740901">iTunes</a>.</p>
   </section><!-- audiobooks -->
 </div><!-- tabs -->
 
 <script>
 $(function() {
-  $("#tabs").tabs();
+  $("#tabs").tabs({
+    collapsible: true,
+    active: false,
+    hide: {
+      effect: "blind",
+      duration: 200
+    },
+    show: {
+      effect: "blind",
+      duration: 200
+    }
+  });
 });
 </script>
 
