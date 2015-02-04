@@ -15,7 +15,7 @@ require('includes/header.php');
     <p>Available for purchase:
     <ul>
       <li><a href="http://www.audible.com/pd/ref=sr_1_3?asin=B00B9HH01A">Audible</a></li>
-      <li><a href="http://www.amazon.com/Dinner-on-a-Flying-Saucer/dp/B00BB1RUYQ/">Amazon</a></li>
+      <li><a href="http://www.amazon.com/gp/product/B00BB1RUYQ/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00BB1RUYQ&amp;linkCode=as2&amp;tag=corporatesell-20&amp;linkId=2CSUQLQFD3Y3S445">Amazon</a></li>
       <li><a href="https://itunes.apple.com/us/audiobook/dinner-on-flying-saucer-unabridged/id599832717">iTunes</a></li>
     </ul></p>
 
@@ -31,7 +31,7 @@ require('includes/header.php');
     <p>Available for purchase:
     <ul>
       <li><a href="http://www.audible.com/pd/ref=sr_1_1?asin=B00B5W6R3G">Audible</a></li>
-      <li><a href="http://www.amazon.com/Dinosaurs-in-the-Home-Depot/dp/B00B77HDR8/">Amazon</a></li>
+      <li><a href="http://www.amazon.com/gp/product/B00B77HDR8/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00B77HDR8&amp;linkCode=as2&amp;tag=corporatesell-20&amp;linkId=I63RZ6FP77JIBNAS">Amazon</a></li>
       <li><a href="https://itunes.apple.com/us/audiobook/dinosaurs-in-home-depot-unabridged/id597740897">iTunes</a></li>
     </ul></p>
 
@@ -47,7 +47,7 @@ require('includes/header.php');
     <p>Available for purchase:
     <ul>
       <li><a href="http://www.audible.com/pd/ref=sr_1_1?asin=B00B8VULPE">Audible</a></li>
-      <li><a href="http://www.amazon.com/Your-Average-Ordinary-Alien/dp/B00B9DC08W/">Amazon</a></li>
+      <li><a href="http://www.amazon.com/gp/product/B00B9DC08W/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00B9DC08W&amp;linkCode=as2&amp;tag=corporatesell-20&amp;linkId=VSANRRELI2NGTTQE">Amazon</a></li>
       <li><a href="https://itunes.apple.com/us/audiobook/your-average-ordinary-alien/id599192781">iTunes</a></li>
     </ul></p>
 
