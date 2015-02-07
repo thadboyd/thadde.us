@@ -206,7 +206,10 @@ footer {
 
 .ui-tabs .ui-tabs-panel.tab-websites,
 .ui-tabs .ui-tabs-nav li.tab-websites,
-.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-websites {
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-websites,
+.ui-tabs .ui-tabs-panel.tab-dinosaurs,
+.ui-tabs .ui-tabs-nav li.tab-dinosaurs,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-dinosaurs {
   background-color: #FFF0DB;
 }
 
@@ -217,8 +220,17 @@ footer {
 
 .ui-tabs .ui-tabs-panel.tab-audiobooks,
 .ui-tabs .ui-tabs-nav li.tab-audiobooks,
-.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-audiobooks {
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-audiobooks,
+.ui-tabs .ui-tabs-panel.tab-dinner,
+.ui-tabs .ui-tabs-nav li.tab-dinner,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-dinner {
   background-color: #DBEFFC;
+}
+
+.ui-tabs .ui-tabs-panel.tab-alien,
+.ui-tabs .ui-tabs-nav li.tab-alien,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-alien {
+  background-color: #DDD;
 }
 
 #page-index .ui-tabs .ui-tabs-nav li,
@@ -231,9 +243,33 @@ footer {
   margin-right: 0;
 }
 
+#page-audiobooks .ui-tabs .ui-tabs-nav li,
+#page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-right: 36px;
+}
+#page-audiobooks .ui-tabs .ui-tabs-nav li:last-child,
+#page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active:last-child {
+  margin-right: 0;
+}
+#page-audiobooks .ui-tabs .ui-tabs-nav li img,
+#page-audiobooks .ui-tabs .ui-tabs-nav li iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400px;
+  height: 400px;
+}
+#page-audiobooks .ui-tabs .ui-tabs-nav li iframe {
+  z-index: -1;
+}
+#page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active iframe {
+  z-index: 2;
+}
+
 #audiobooks nav {
   text-align: center;
 }
-
-
-/* jQuery UI Accordions */

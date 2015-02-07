@@ -12,11 +12,28 @@ $desc = "Audiobooks narrated by Thaddeus R R Boyd. Available on Amazon, Audible,
 require('includes/header.php');
 ?>
 
-<div id="accordion">
-  <h2><img src="img/cover-dinner.jpg" alt="Dinner on a Flying Saucer" /></h2>
-  <section id="dinner">
-    <iframe width="420" height="315" src="http://www.youtube.com/embed/IZ_tSXRJb_g" frameborder="0"></iframe>
+<div id="tabs">
+  <nav><ul>
+    <li class="tab-dinner">
+      <a href="#dinner"><img src="img/cover-dinner.jpg" alt="Dinner on a Flying Saucer" /></a>
+      <iframe width="400" height="400" src="http://www.youtube.com/embed/IZ_tSXRJb_g" frameborder="0"></iframe>
+    </li>
+    
+    <li class="tab-dinosaurs">
+      <a href="#dinosaurs"><img src="img/cover-dinosaurs.jpg" alt="Dinosaurs at the Home Depot" /></a>
+      <iframe width="400" height="400" src="http://www.youtube.com/embed/Ry8Sbq8LJn4" frameborder="0"></iframe>
+    </li>
+    
+    <li class="tab-alien">
+      <a href="#alien"><img src="img/cover-alien.jpg" alt="Your Average Ordinary Alien" /></a>
+      <iframe width="400" height="400" src="http://www.youtube.com/embed/y_C2ZIux6lQ" frameborder="0"></iframe>
+    </li>
+  </ul></nav>
 
+  <section id="dinner" class="tab-dinner">
+    <h2>Dinner on a Flying Saucer<br/>
+      by Dean Wesley Smith</h2>
+    
     <blockquote class="bookdesc">Sometimes, when a fella gets to help out with fightin' a war between two alien races, it's just not such a good idea to tell your wife. Sometimes the truth just isn't good enough.</blockquote>
 
     <p>Available for purchase:
@@ -29,10 +46,10 @@ require('includes/header.php');
     <footer>Copyright &copy; 2012, 2013 Dean Wesley Smith</footer>
   </section><!-- dinner -->
   
-  <h2><img src="img/cover-dinosaurs.jpg" alt="Dinosaurs at the Home Depot" /></h2>
-  <section id="dinosaurs">
-    <iframe width="420" height="315" src="http://www.youtube.com/embed/Ry8Sbq8LJn4" frameborder="0"></iframe>
-
+  <section id="dinosaurs" class="tab-dinosaurs">
+    <h2>Dinosaurs in the Home Depot<br/>
+      by Bret Wellman</h2>
+      
     <blockquote class="bookdesc">A man is locked inside the Home Depot as it is over run by dinosaurs. Now he must escape or become dinner.</blockquote>
 
     <p>Available for purchase:
@@ -45,10 +62,10 @@ require('includes/header.php');
     <footer>Copyright &copy; 2012, 2013 Bret Wellman</footer>
   </section><!-- dinosaurs -->
   
-  <h2><img src="img/cover-alien.jpg" alt="Your Average Ordinary Alien" /></h2>
-  <section id="alien">
-    <iframe width="420" height="315" src="http://www.youtube.com/embed/y_C2ZIux6lQ" frameborder="0"></iframe>
-
+  <section id="alien" class="tab-alien">
+    <h2>Your Average Ordinary Alien<br/>
+      by Adam Graham</h2>
+      
     <blockquote class="bookdesc">Kirk Picard Skywalker is an unemployed sci-fi fanatic who dreams of being abducted by aliens from outer space. One day his dreams come through and he's horrified to learn that the aliens are all too ordinary.</blockquote>
 
     <p>Available for purchase:
@@ -62,12 +79,19 @@ require('includes/header.php');
   </section><!-- alien -->
 </div>
 
- <script>
+<script>
 $(function() {
-  $( "#accordion" ).accordion({
-    header: "h2",
+  $("#tabs").tabs({
     collapsible: true,
-    active: false
+    active: false,
+    hide: {
+      effect: "blind",
+      duration: 200
+    },
+    show: {
+      effect: "blind",
+      duration: 200
+    }
   });
 });
 </script>
