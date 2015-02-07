@@ -243,12 +243,25 @@ footer {
   margin-right: 0;
 }
 
+/* Audiobooks tab on homepage */
+#audiobooks nav {
+  text-align: center;
+}
+
+/* Audiobooks page --
+ * each tab has book cover image.
+ * Selected tab replaces image with iframe containing sample audio.
+ */
+
+#page-audiobooks .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+  padding: 0;
+}
+
 #page-audiobooks .ui-tabs .ui-tabs-nav li,
 #page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   width: 400px;
-  height: 400px;
   position: relative;
-  overflow: hidden;
+  overflow: hidden;	/* to preserve tab's rounded corners at top of image/iframe */
   margin-right: 36px;
 }
 #page-audiobooks .ui-tabs .ui-tabs-nav li:last-child,
@@ -257,19 +270,22 @@ footer {
 }
 #page-audiobooks .ui-tabs .ui-tabs-nav li img,
 #page-audiobooks .ui-tabs .ui-tabs-nav li iframe {
+  /* img and iframe are same size and occupy same space. */
+  width: 100%;
+}
+#page-audiobooks .ui-tabs .ui-tabs-nav li iframe {
+  /* Occupy same position as img. */
   position: absolute;
   top: 0;
   left: 0;
-  width: 400px;
-  height: 400px;
-}
-#page-audiobooks .ui-tabs .ui-tabs-nav li iframe {
+  
+  /* Fill tab height (which is defined by img height) */
+  height: 100%;
+  
+  /* On deselected tab, hide iframe behind img. */
   z-index: -1;
 }
 #page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active iframe {
+  /* On selected tab, display iframe in front of img (when iframe is loaded). */
   z-index: 2;
-}
-
-#audiobooks nav {
-  text-align: center;
 }

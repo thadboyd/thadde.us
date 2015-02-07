@@ -1,5 +1,4 @@
 <?php
-<?php
 /* websites.php
  * (c) 2015 Thad Boyd
  * for thadde.us

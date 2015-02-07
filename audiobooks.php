@@ -16,17 +16,17 @@ require('includes/header.php');
   <nav><ul>
     <li class="tab-dinner">
       <a href="#dinner"><img src="img/cover-dinner.jpg" alt="Dinner on a Flying Saucer" /></a>
-      <iframe width="400" height="400" src="http://www.youtube.com/embed/IZ_tSXRJb_g" frameborder="0"></iframe>
+      <iframe src="http://www.youtube.com/embed/IZ_tSXRJb_g"></iframe>
     </li>
     
     <li class="tab-dinosaurs">
       <a href="#dinosaurs"><img src="img/cover-dinosaurs.jpg" alt="Dinosaurs at the Home Depot" /></a>
-      <iframe width="400" height="400" src="http://www.youtube.com/embed/Ry8Sbq8LJn4" frameborder="0"></iframe>
+      <iframe src="http://www.youtube.com/embed/Ry8Sbq8LJn4"></iframe>
     </li>
     
     <li class="tab-alien">
       <a href="#alien"><img src="img/cover-alien.jpg" alt="Your Average Ordinary Alien" /></a>
-      <iframe width="400" height="400" src="http://www.youtube.com/embed/y_C2ZIux6lQ" frameborder="0"></iframe>
+      <iframe src="http://www.youtube.com/embed/y_C2ZIux6lQ"></iframe>
     </li>
   </ul></nav>
 

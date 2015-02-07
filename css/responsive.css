@@ -95,8 +95,30 @@ nav ul li:hover ul {
   padding: 1em 0.5em;
 }
 
+/* Audiobooks tab on homepage */
 #audiobooks nav li {
   max-width: 32%;
+}
+
+
+/* Audiobooks page --
+ * each tab has book cover image.
+ * Selected tab replaces image with iframe containing sample audio.
+ */
+#page-audiobooks .ui-tabs .ui-tabs-nav li,
+#page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  width: 32%;
+  margin: 0 1%;
+}
+#page-audiobooks .ui-tabs .ui-tabs-nav li:first-child,
+#page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active:first-child {
+  float: left;
+  margin-left: 0;
+}
+#page-audiobooks .ui-tabs .ui-tabs-nav li:last-child,
+#page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active:last-child {
+  float: right;
+  margin-right: 0;
 }
 
 } /* max-width: 1316px */
