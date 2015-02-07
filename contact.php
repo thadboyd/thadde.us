@@ -1,4 +1,11 @@
 <?php
+/* contact.php
+ * (c) 2015 Thad Boyd
+ * for thadde.us
+ *
+ * Contact page
+ */
+ 
 $shortName = 'contact';
 $title = 'Contact Thad Boyd';
 require('includes/header.php');

@@ -1,3 +1,12 @@
+<?php
+/* footer.php
+ * (c) 2015 Thad Boyd
+ * for thadde.us
+ *
+ * Common footer for all pages
+ */
+?>
+
 </div><!-- mainContent -->
 
 <footer>

@@ -1,4 +1,11 @@
 <?php
+/* audiobooks.php
+ * (c) 2015 Thad Boyd
+ * for thadde.us
+ *
+ * Listing of audiobooks using jQuery UI accordion structure
+ */
+
 $shortName = 'audiobooks';
 $title = 'Audiobooks by Thaddeus R R Boyd';
 $desc = "Audiobooks narrated by Thaddeus R R Boyd. Available on Amazon, Audible, and iTunes.";

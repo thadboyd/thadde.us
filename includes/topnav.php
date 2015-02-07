@@ -1,4 +1,11 @@
 <?php
+/* topnav.php
+ * (c) 2015 Thad Boyd
+ * for thadde.us
+ *
+ * Navigation for top of all pages
+ */
+
 $pages = array(
   'index' => array(
     'title' => 'Home',

@@ -1,4 +1,11 @@
 <?php
+/* index.php
+ * (c) 2015 Thad Boyd
+ * for thadde.us
+ *
+ * Index page directing to websites and audiobooks
+ */
+ 
 $shortName = 'index';
 $title = "Thad Boyd's project page";
 $desc = "Projects by Thad Boyd, web developer, computer scientist, IT specialist, and audiobook producer";

@@ -1,4 +1,14 @@
-<?php require('includes/functions.php'); ?>
+<?php
+/* header.php
+ * (c) 2015 Thad Boyd
+ * for thadde.us
+ *
+ * Common header for all pages
+ */
+ 
+require('includes/functions.php');
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

@@ -1,3 +1,10 @@
+/* main.css
+ * (c) 2015 Thad Boyd
+ * for thadde.us
+ * 
+ * Main site stylesheet
+ */
+
 @import url("reset.css");
 @import url("jquery-ui.min.css");
 @import url("font-awesome.min.css");
@@ -140,6 +147,9 @@ footer {
   font-size: 0.8em;
 }
 
+
+/* jQuery UI Tabs */
+
 #tabs {
   background-color: transparent;
   border: none;
@@ -224,3 +234,6 @@ footer {
 #audiobooks nav {
   text-align: center;
 }
+
+
+/* jQuery UI Accordions */

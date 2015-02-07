@@ -1,4 +1,10 @@
 <?php
+/* functions.php
+ * (c) 2015 Thad Boyd
+ * for thadde.us
+ *
+ * General-use functions
+ */
 
 function indent($level) {
   for($i = 0; $i<$level; $i++) {
