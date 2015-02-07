@@ -83,7 +83,7 @@ require('includes/header.php');
 $(function() {
   $("#tabs").tabs({
     collapsible: true,
-    active: false,
+    //active: false,
     hide: {
       effect: "blind",
       duration: 200
@@ -91,8 +91,9 @@ $(function() {
     show: {
       effect: "blind",
       duration: 200
-    }
-  });
+    },
+    load: location.hash
+  })
 });
 </script>
 
