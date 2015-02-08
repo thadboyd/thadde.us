@@ -189,6 +189,17 @@ footer {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.ui-state-hover a img,
+.ui-state-hover a:hover img,
+.ui-state-hover a:link img,
+.ui-state-hover a:visited img,
+.ui-state-focus a img,
+.ui-state-focus a:hover img,
+.ui-state-focus a:link img,
+.ui-state-focus a:visited img {
+  opacity: 0.8;
+}
+
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
   color: #555;
   background-color: transparent;
@@ -230,7 +241,7 @@ footer {
 .ui-tabs .ui-tabs-panel.tab-alien,
 .ui-tabs .ui-tabs-nav li.tab-alien,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-alien {
-  background-color: #DDD;
+  background-color: #EEE;
 }
 
 #page-index .ui-tabs .ui-tabs-nav li,
@@ -261,8 +272,9 @@ footer {
 #page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   width: 400px;
   position: relative;
-  overflow: hidden;	/* to preserve tab's rounded corners at top of image/iframe */
-  margin-right: 36px;
+  padding: 8px 8px 0;
+  margin-right: 12px;
+  overflow: hidden;
 }
 #page-audiobooks .ui-tabs .ui-tabs-nav li:last-child,
 #page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active:last-child {
@@ -272,9 +284,10 @@ footer {
 #page-audiobooks .ui-tabs .ui-tabs-nav li iframe {
   /* img and iframe are same size and occupy same space. */
   width: 100%;
+  border-radius: 1em 1em 0 0;
 }
 #page-audiobooks .ui-tabs .ui-tabs-nav li iframe {
-  /* Occupy same position as img. */
+  /* Occupy same position as img (but cover padding). */
   position: absolute;
   top: 0;
   left: 0;
