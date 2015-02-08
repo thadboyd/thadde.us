@@ -108,6 +108,7 @@ nav ul li:hover ul {
 #page-audiobooks .ui-tabs .ui-tabs-nav li,
 #page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   width: 32%;
+  padding: 0;
   margin: 0 1%;
 }
 #page-audiobooks .ui-tabs .ui-tabs-nav li:first-child,

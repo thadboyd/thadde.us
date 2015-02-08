@@ -289,8 +289,8 @@ footer {
 #page-audiobooks .ui-tabs .ui-tabs-nav li iframe {
   /* Occupy same position as img (but cover padding). */
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -2px;
+  left: -2px;
   
   /* Fill tab height (which is defined by img height) */
   height: 100%;
