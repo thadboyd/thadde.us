@@ -142,14 +142,14 @@ nav ul li:hover ul {
   padding: 2em 1em 1em;
 }
 
-#mainContent a:link,
-#mainContent a:visited,
+.mainContent a:link,
+.mainContent a:visited,
 .ui-widget-content a:link,
 .ui-widget-content a:visited {
   color: #2574B7;
 }
 
-#mainContent a:hover,
+.mainContent a:hover,
 .ui-widget-content a:hover {
   color: #55aaff;
 }
