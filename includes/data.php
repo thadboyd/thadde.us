@@ -55,4 +55,12 @@ $books = array(
     'copyright' => '2007, 2009, 2013 Adam Graham'
   ) // alien
 ); // books
+
+$trademarks = array(
+  'Amazon, Amazon.com, Audible, and all related names and logos &reg; and &trade; Amazon.com, Inc.',
+  
+  'iTunes and all related names and logos &reg; and &trade; Apple Inc.',
+  
+  'Go Daddy, GoDaddy.com, and all related names and logos &reg; and &trade; Go Daddy.'
+);
 ?>

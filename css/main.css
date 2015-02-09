@@ -24,11 +24,11 @@ body {
 }
 
 a:link, a:visited, .ui-widget-content a:link, .ui-widget-content a:visited {
-  color: #2574B7;
+  color: #77ccff;
 }
 
 a:hover, .ui-widget-content a:hover {
-  color: #55aaff;
+  color: #99eeff;
 }
 
 #mainHeader {
@@ -84,7 +84,7 @@ a:hover, .ui-widget-content a:hover {
   border-bottom: solid black 1px;
   background-color: #9B1A1A;
   position: relative;
-  z-index: 9999;
+  z-index: 100; /* appear above everything except dialogs, which have z-index of 101 */
 }
 #mainHeader nav > ul > li > a, #mainHeader nav > div > ul > li > a {
   font-weight: bold;
@@ -140,6 +140,18 @@ nav ul li:hover ul {
   border-width: 0 1px 1px;
   border-radius: 0 0 1em 1em;
   padding: 2em 1em 1em;
+}
+
+#mainContent a:link,
+#mainContent a:visited,
+.ui-widget-content a:link,
+.ui-widget-content a:visited {
+  color: #2574B7;
+}
+
+#mainContent a:hover,
+.ui-widget-content a:hover {
+  color: #55aaff;
 }
 
 footer {
