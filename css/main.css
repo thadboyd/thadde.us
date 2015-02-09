@@ -23,7 +23,7 @@ body {
   padding: 0;
 }
 
-a:link, a:visited, .ui-widget-content a:link, .ui-widget-content a:visited {
+a:link, a:visited {
   color: #aaeeff;
 }
 

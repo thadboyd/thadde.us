@@ -20,7 +20,7 @@
 <?php
 foreach($books as $key => $value) {
   indent(1);
-  echo('<p>' . $value['title'] . ' &copy ' . $value['copyright'] . PHP_EOL . PHP_EOL);
+  echo('<p>' . $value['title'] . ' &copy; ' . $value['copyright'] . PHP_EOL . PHP_EOL);
 }
 
 foreach($trademarks as $value) {
@@ -39,6 +39,7 @@ $(function() {
   $(".modal").dialog({
     modal: true,
     autoOpen: false,
+    width: 800,
     show: {
       effect: "scale",
       duration: 300
