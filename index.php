@@ -38,11 +38,10 @@ require('includes/header.php');
     <h2>Audiobooks</h2>
     
     <nav><ul>
-      <li><a href="audiobooks.php#dinner"><img src="img/cover-dinner.jpg" alt="Dinner on a Flying Saucer" /></a></li>
-      
-      <li><a href="audiobooks.php#dinosaurs"><img src="img/cover-dinosaurs.jpg" alt="Dinosaurs in the Home Depot" /></a></li>
-      
-      <li><a href="audiobooks.php#alien"><img src="img/cover-alien.jpg" alt="Your Average Ordinary Alien" /></a></li>
+<?php foreach($books as $key => $value) {
+  indent(3);
+  echo('<li><a href="audiobooks.php#' . $key . '"><img src="' . $value['image'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
+} ?>
     </ul></nav>
     
     <p>I've recorded several audiobooks.  You can find them for sale at <a href="http://www.amazon.com/s/?_encoding=UTF8&amp;camp=1789&amp;creative=390957&amp;field-author=Thaddeus%20R.%20R.%20Boyd&amp;linkCode=ur2&amp;search-alias=books&amp;tag=corporatesell-20&amp;linkId=UDYCPMDZVQK4RBIX">Amazon</a>, <a href="http://www.audible.com/search/ref=pd_narr_1?searchNarrator=Thaddeus+R.+R.+Boyd">Audible</a>, and <a href="https://itunes.apple.com/us/artist/thaddeus-r.-r.-boyd/id597740901">iTunes</a>.</p>

@@ -6,6 +6,7 @@
  * Common header for all pages
  */
  
+require('includes/data.php');
 require('includes/functions.php');
 ?>
 
