@@ -24,11 +24,11 @@ body {
 }
 
 a:link, a:visited, .ui-widget-content a:link, .ui-widget-content a:visited {
-  color: #77ccff;
+  color: #aaeeff;
 }
 
 a:hover, .ui-widget-content a:hover {
-  color: #99eeff;
+  color: #cceeff;
 }
 
 #mainHeader {
@@ -159,11 +159,16 @@ footer {
   font-size: 0.8em;
 }
 
+.ui-widget-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
 
 /* jQuery UI Tabs */
 
 #tabs {
-  background-color: transparent;
+  background: transparent;
   border: none;
 }
 
@@ -198,7 +203,7 @@ footer {
 .ui-state-focus a:link,
 .ui-state-focus a:visited {
   color: #777;
-  background-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .ui-state-hover a img,
@@ -214,7 +219,7 @@ footer {
 
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
   color: #555;
-  background-color: transparent;
+  background: transparent;
 }
 
 .ui-tabs-nav .fa {
@@ -233,7 +238,7 @@ footer {
 .ui-tabs .ui-tabs-panel.tab-dinosaurs,
 .ui-tabs .ui-tabs-nav li.tab-dinosaurs,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-dinosaurs {
-  background-color: #FFF0DB;
+  background: #FFF0DB;
 }
 
 .ui-tabs-panel {
@@ -247,13 +252,13 @@ footer {
 .ui-tabs .ui-tabs-panel.tab-dinner,
 .ui-tabs .ui-tabs-nav li.tab-dinner,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-dinner {
-  background-color: #DBEFFC;
+  background: #DBEFFC;
 }
 
 .ui-tabs .ui-tabs-panel.tab-alien,
 .ui-tabs .ui-tabs-nav li.tab-alien,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-alien {
-  background-color: #EEE;
+  background: #EEE;
 }
 
 #page-index .ui-tabs .ui-tabs-nav li,
