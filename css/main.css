@@ -31,7 +31,7 @@ a:hover, .ui-widget-content a:hover {
   color: #cceeff;
 }
 
-#mainHeader {
+#mainHeader, body > footer {
   background-color: #222;
 }
 
@@ -155,8 +155,13 @@ nav ul li:hover ul {
 }
 
 footer {
-  padding-left: 1em;
   font-size: 0.8em;
+}
+
+body > footer {
+  padding: 0.5em 1em;
+  border: solid white;
+  border-width: 1px 0;
 }
 
 .ui-widget-overlay {
