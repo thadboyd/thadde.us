@@ -158,17 +158,6 @@ footer {
   font-size: 0.8em;
 }
 
-body > footer {
-  padding: 0.5em 1em;
-  border: solid white;
-  border-width: 1px 0;
-}
-
-.ui-widget-overlay {
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 1;
-}
-
 
 /* jQuery UI Tabs */
 
@@ -286,6 +275,11 @@ body > footer {
  * Selected tab replaces image with iframe containing sample audio.
  */
 
+h2 .author {
+  font-size: 0.8em;
+  padding-left: 1em;
+}
+
 #page-audiobooks .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
   padding: 0;
 }
@@ -323,4 +317,22 @@ body > footer {
 #page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active iframe {
   /* On selected tab, display iframe in front of img (when iframe is loaded). */
   z-index: 2;
+}
+
+
+
+/* Site footer and modals */
+body > footer {
+  padding: 0.5em 1em;
+  border: solid white;
+  border-width: 1px 0;
+}
+
+.ui-widget-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+}
+
+.ui-dialog-titlebar {
+  background:black;
 }
