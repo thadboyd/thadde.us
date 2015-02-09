@@ -3,7 +3,7 @@
  * (c) 2015 Thad Boyd
  * for thadde.us
  *
- * General-use functions
+ * Shared functions for all pages
  */
 
 function indent($level) {
