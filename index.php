@@ -40,7 +40,7 @@ require('includes/header.php');
     <nav><ul>
       <li><a href="audiobooks.php#dinner"><img src="img/cover-dinner.jpg" alt="Dinner on a Flying Saucer" /></a></li>
       
-      <li><a href="audiobooks.php#dinosaurs"><img src="img/cover-dinosaurs.jpg" alt="Dinosaurs at the Home Depot" /></a></li>
+      <li><a href="audiobooks.php#dinosaurs"><img src="img/cover-dinosaurs.jpg" alt="Dinosaurs in the Home Depot" /></a></li>
       
       <li><a href="audiobooks.php#alien"><img src="img/cover-alien.jpg" alt="Your Average Ordinary Alien" /></a></li>
     </ul></nav>
