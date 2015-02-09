@@ -22,7 +22,7 @@ function populateUL($navArr, $indentLevel = 0) {
       echo(' class="' . $value['class'] . '"');
     }
     echo('><a ');
-    if($key === $GLOBALS['shortName']) {
+    if($key === $GLOBALS['pageShortName']) {
       echo('class="current" ');
     }
     echo('href="' . $value['link'] . '">' . $value['title'] . '</a>');

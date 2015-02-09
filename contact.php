@@ -6,8 +6,8 @@
  * Contact page
  */
  
-$shortName = 'contact';
-$title = 'Contact Thad Boyd';
+$pageShortName = 'contact';
+$pageTitle = 'Contact Thad Boyd';
 require('includes/header.php');
 ?>
 

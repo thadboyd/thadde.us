@@ -6,9 +6,9 @@
  * Index page directing to websites and audiobooks
  */
  
-$shortName = 'index';
-$title = "Thad Boyd's project page";
-$desc = "Projects by Thad Boyd, web developer, computer scientist, IT specialist, and audiobook producer";
+$pageShortName = 'index';
+$pageTitle = "Thad Boyd's project page";
+$pageDesc = "Projects by Thad Boyd, web developer, computer scientist, IT specialist, and audiobook producer";
 require('includes/header.php');
 ?>
 

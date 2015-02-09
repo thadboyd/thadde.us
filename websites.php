@@ -6,9 +6,9 @@
  * Listing of websites using jQuery UI accordion structure
  */
  
-$shortName = 'websites';
-$title = 'Websites by Thad Boyd';
-$desc = "Thad Boyd has been designing and building websites since 1994. Clients include GoDaddy and Snowball Media Group.";
+$pageShortName = 'websites';
+$pageTitle = 'Websites by Thad Boyd';
+$pageDesc = "Thad Boyd has been designing and building websites since 1994. Clients include GoDaddy and Snowball Media Group.";
 require('includes/header.php');
 ?>
 

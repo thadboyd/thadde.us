@@ -6,9 +6,9 @@
  * Listing of audiobooks using jQuery UI accordion structure
  */
 
-$shortName = 'audiobooks';
-$title = 'Audiobooks by Thaddeus R R Boyd';
-$desc = "Audiobooks narrated by Thaddeus R R Boyd. Available on Amazon, Audible, and iTunes.";
+$pageShortName = 'audiobooks';
+$pageTitle = 'Audiobooks by Thaddeus R R Boyd';
+$pageDesc = "Audiobooks narrated by Thaddeus R R Boyd. Available on Amazon, Audible, and iTunes.";
 require('includes/header.php');
 ?>
 
@@ -32,7 +32,7 @@ require('includes/header.php');
 
   <section id="dinner" class="tab-dinner">
     <h2>Dinner on a Flying Saucer<br/>
-      by Dean Wesley Smith</h2>
+      <span class="author">Written by Dean Wesley Smith</span></h2>
     
     <blockquote class="bookdesc">Sometimes, when a fella gets to help out with fightin' a war between two alien races, it's just not such a good idea to tell your wife. Sometimes the truth just isn't good enough.</blockquote>
 
@@ -48,7 +48,7 @@ require('includes/header.php');
   
   <section id="dinosaurs" class="tab-dinosaurs">
     <h2>Dinosaurs in the Home Depot<br/>
-      by Bret Wellman</h2>
+      <span class="author">Written by Bret Wellman</span></h2>
       
     <blockquote class="bookdesc">A man is locked inside the Home Depot as it is over run by dinosaurs. Now he must escape or become dinner.</blockquote>
 
@@ -64,7 +64,7 @@ require('includes/header.php');
   
   <section id="alien" class="tab-alien">
     <h2>Your Average Ordinary Alien<br/>
-      by Adam Graham</h2>
+      <span class="author">Written by Adam Graham</span></h2>
       
     <blockquote class="bookdesc">Kirk Picard Skywalker is an unemployed sci-fi fanatic who dreams of being abducted by aliens from outer space. One day his dreams come through and he's horrified to learn that the aliens are all too ordinary.</blockquote>
 
