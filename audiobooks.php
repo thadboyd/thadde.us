@@ -54,7 +54,9 @@ require('includes/header.php');
   echo('</ul>' . PHP_EOL);
   
   indent(2);
-  echo('<footer>&copy; ' . $value['copyright'] . '</footer>' . PHP_EOL);
+  echo('<footer>');
+  writeCopyright($value['copyright'], 3);
+  echo('</footer>' . PHP_EOL);
   
   indent(1);
   echo('</section><!-- ' . $key . ' -->' . PHP_EOL . PHP_EOL);
