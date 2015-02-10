@@ -37,7 +37,7 @@ function populateUL($navArr, $indentLevel = 0) {
   echo('</ul>' . PHP_EOL);
 } // populateUL
 
-function writeCopyright($name, $copyright, $indentLevel = 0) {
+function writeCopyright($copyright, $indentLevel = 0, $name = '') {
   $openBR = 1;
   indent($indentLevel);
   echo('<p>');

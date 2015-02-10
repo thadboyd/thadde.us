@@ -48,7 +48,9 @@ require('includes/header.php');
   echo('<p>View ' . $value['title'] . ' live at <a href="' . $value['link'] . '">' . $value['domain'] . '</a>.</p>' . PHP_EOL . PHP_EOL);
   
   indent(2);
-  echo('<footer>&copy; ' . $value['copyright'] . '</footer>' . PHP_EOL);
+  echo('<footer>');
+  writeCopyright($value['copyright'], 3);
+  echo('</footer>' . PHP_EOL);
   
   indent(1);
   echo('</section><!-- ' . $key . ' -->' . PHP_EOL . PHP_EOL);

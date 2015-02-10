@@ -19,12 +19,12 @@
 <div class="modal" id="copyrights-trademarks" title="Copyrights and Trademarks">
 <?php
 foreach($websites as $key => $value) {
-  writeCopyright($value['title'], $value['copyright'], 1);
+  writeCopyright($value['copyright'], 1, $value['title']);
 } // websites
 
 foreach($books as $key => $value) {
   indent(1);
-  writeCopyright($value['title'], $value['copyright'], 1);
+  writeCopyright($value['copyright'], 1, $value['title']);
 } // books
 
 foreach($trademarks as $value) {
