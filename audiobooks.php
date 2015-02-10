@@ -59,7 +59,7 @@ require('includes/header.php');
   indent(1);
   echo('</section><!-- ' . $key . ' -->' . PHP_EOL . PHP_EOL);
 } ?>
-</div><!-- tabs -->	
+</div><!-- tabs -->
 
 <script>
 $(function() {
@@ -75,7 +75,6 @@ $(function() {
     },
     load: location.hash
   });  
-
 });
 </script>
 

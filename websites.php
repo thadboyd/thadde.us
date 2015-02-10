@@ -20,4 +20,56 @@ require('includes/header.php');
 
 <p>Below you'll a few more of the sites I've built over the years.  Like what you see?  <a href="contact.php">Contact me</a> for a quote.</p>
 
+<div id="tabs">
+  <nav><ul>
+<?php foreach($websites as $key => $value) {
+  indent(2);
+  echo('<li class="tab-' . $key . '">' . PHP_EOL);
+
+  indent(3);
+  echo('<a href="#' . $key . '"><img src="' . $value['logo'] . '" alt="' . $value['title'] . '" /></a>' . PHP_EOL);
+
+  indent(2);
+  echo('</li>');
+} ?>
+  </ul></nav>
+
+<?php foreach($websites as $key => $value) {
+  indent(1);
+  echo('<section id="' . $key . '" class="tab-' . $key . '">' . PHP_EOL);
+  
+  indent(2);
+  echo('<h2>' . $value['title'] . '</h2>' . PHP_EOL);
+  
+  indent(2);
+  echo($value['desc'] . PHP_EOL . PHP_EOL);
+  
+  indent(2);
+  echo('<p>View ' . $value['title'] . ' live at <a href="' . $value['link'] . '">' . $value['domain'] . '</a>.</p>' . PHP_EOL . PHP_EOL);
+  
+  indent(2);
+  echo('<footer>&copy; ' . $value['copyright'] . '</footer>' . PHP_EOL);
+  
+  indent(1);
+  echo('</section><!-- ' . $key . ' -->' . PHP_EOL . PHP_EOL);
+} ?>
+</div><!-- tabs -->
+
+<script>
+$(function() {
+  $("#tabs").tabs({
+    collapsible: true,
+    hide: {
+      effect: "blind",
+      duration: 200
+    },
+    show: {
+      effect: "blind",
+      duration: 200
+    },
+    load: location.hash
+  });  
+});
+</script>
+
 <?php require('includes/footer.php'); ?>

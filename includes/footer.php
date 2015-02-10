@@ -18,15 +18,25 @@
 
 <div class="modal" id="copyrights-trademarks" title="Copyrights and Trademarks">
 <?php
+foreach($websites as $key => $value) {
+  writeCopyright($value['title'], $value['copyright'], 1);
+} // websites
+
 foreach($books as $key => $value) {
   indent(1);
-  echo('<p>' . $value['title'] . ' &copy; ' . $value['copyright'] . PHP_EOL . PHP_EOL);
-}
+  writeCopyright($value['title'], $value['copyright'], 1);
+} // books
 
 foreach($trademarks as $value) {
   indent(1);
-  echo('<p>' . $value . PHP_EOL . PHP_EOL);
-}
+  echo('<p>' . $value . '</p>' . PHP_EOL . PHP_EOL);
+} // trademarks
+
+foreach($libraries as $value) {
+  indent(1);
+  echo('<p>' . $value . '</p>' . PHP_EOL . PHP_EOL);
+} // libraries
+
 ?>
 </div><!-- copyrights-trademarks -->
 

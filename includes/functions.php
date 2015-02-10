@@ -10,7 +10,7 @@ function indent($level) {
   for($i = 0; $i<$level; $i++) {
     echo('  ');
   }
-}
+} // indent
 
 function populateUL($navArr, $indentLevel = 0) {
   indent($indentLevel);
@@ -35,6 +35,24 @@ function populateUL($navArr, $indentLevel = 0) {
   }
   indent($indentLevel);
   echo('</ul>' . PHP_EOL);
+} // populateUL
+
+function writeCopyright($copyright, $indentLevel = 0) {
+  if(is_array($copyright)) {
+    foreach($copyright as $key => $value) {
+      indent($indentLevel);
+      echo('<br/>' . $key . ' &copy; ' . $value);
+    }
+  } else {
+    echo('&copy; ' . $copyright);
+  }
 }
+
+function writeCopyright($name = '', $copyright, $indentLevel = 0) {
+  indent($indentLevel);
+  echo('<p>' . $name . ' ');
+  writeCopyright($copyright, $indentLevel)
+  echo('</p>' . PHP_EOL . PHP_EOL);
+} // writeCopyright
 
 ?>

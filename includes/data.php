@@ -20,7 +20,40 @@ $websites = array(
       'Content' => '2014 MD Motivational Drink',
       'Code' => '2014 Go Daddy'
     ) // copyright
-  )
+  ), // md
+  'swimit' => array(
+    'title' => "Swim'It",
+    'domain' => "myswimit.com",
+    'link' => 'http://myswimit.com/',
+    'logo' => 'img/swimit-logo.png',
+    'desc' => "<p>Responsive site featuring jQuery and a Nivo slideshow.</p>",
+    'copyright' => array(
+      'Content' => '2014 Lo Drag Inc.',
+      'Code' => '2014 Go Daddy'
+    ) // copyright
+  ), // swimit
+  'garciniaplus' => array(
+    'title' => 'Garcinia Plus',
+    'domain' => 'garcinplus.com',
+    'link' => 'https://garcinplus.com/index.php',
+    'logo' => 'img/garciniaplus-logo.png',
+    'desc' => "<p>PHP-based ecommerce site featuring CSS3 rotations, jQuery, and Bootstrap.</p>",
+    'copyright' => array(
+      'Content' => '2012-2014 Bridge Road Marketing SLM21 LTD',
+      'Code' => '2012-2014 Snowball Media Group'
+    ) // copyright
+  ), // garciniaplus
+  'puregreencoffee' => array(
+    'title' => 'Pure Green Coffee',
+    'domain' => 'new-you-diet.com',
+    'link' => 'https://www.new-you-diet.com/index.php',
+    'logo' => 'img/puregreencoffeeextract-logo.png',
+    'desc' => "<p>PHP-based ecommerce site featuring CSS3 gradients and rotations, jQuery, and Bootstrap.</p>",
+    'copyright' => array(
+      'Content' => '2012-2014 A1-Diet',
+      'Code' => '2012-2014 Snowball Media Group'
+    ) // copyright
+  ) // puregreencoffee
 ); // websites
  
 $books = array(
@@ -80,4 +113,11 @@ $trademarks = array(
   
   'Go Daddy, GoDaddy.com, and all related names and logos &reg; and &trade; Go Daddy.'
 ); // trademarks
+
+$libraries = array(
+  '<a href="http://jquery.com/">jQuery</a> &copy; 2005, 2014 jQuery Foundation<br/>
+  <a href="http://jqueryui.com/">jQuery UI</a> &copy; 2014 jQuery Foundation and other contributors',
+
+  '<a href="http://fontawesome.io">Font Awesome</a> &copy; Dave Gandy.'
+); // libraries
 ?>
