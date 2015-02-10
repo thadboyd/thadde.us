@@ -37,21 +37,28 @@ function populateUL($navArr, $indentLevel = 0) {
   echo('</ul>' . PHP_EOL);
 } // populateUL
 
-function writeCopyright($copyright, $indentLevel = 0) {
+function writeCopyright($name, $copyright, $indentLevel = 0) {
+  $openBR = 1;
+  indent($indentLevel);
+  echo('<p>');
+  if($name == '') {
+    $openBR = 0;
+  } else {
+    echo($name . ' ');
+  }
   if(is_array($copyright)) {
     foreach($copyright as $key => $value) {
+      if($openBR == 0) {
+	$openBR = 1;
+      } else {
+	echo('<br/>');
+      }
       indent($indentLevel);
-      echo('<br/>' . $key . ' &copy; ' . $value);
+      echo($key . ' &copy; ' . $value);
     }
   } else {
     echo('&copy; ' . $copyright);
   }
-}
-
-function writeCopyright($name = '', $copyright, $indentLevel = 0) {
-  indent($indentLevel);
-  echo('<p>' . $name . ' ');
-  writeCopyright($copyright, $indentLevel)
   echo('</p>' . PHP_EOL . PHP_EOL);
 } // writeCopyright
 
