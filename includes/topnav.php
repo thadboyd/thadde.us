@@ -17,11 +17,11 @@ $pages = array(
     'subnav' => array(
       'md' => array(
 	'title' => 'MD Motivational Drink',
-	'link' => 'websites.php#mdmotivationaldrink'
+	'link' => 'websites.php#md'
       ),
       'swimit' => array(
 	'title' => 'MySwimIt',
-	'link' => 'websites.php#myswimit'
+	'link' => 'websites.php#swimit'
       )
     )
   ),

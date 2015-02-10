@@ -5,6 +5,23 @@
  *
  * Shared data for all pages
  */
+
+$websites = array(
+  'md' => array(
+    'title' => 'MD Motivational Drink',
+    'domain' => 'mdmotivationaldrink.com',
+    'link' => 'http://mdmotivationaldrink.com/',
+    'logo' => 'img/md-logo.png',
+    'desc' =>
+      "<p>Responsive site featuring CSS3 animations and jQuery styling.</p>
+      
+      <p>Graphic design by <a href=\"http://www.linkedin.com/in/yalikeitmike\">Mike Patten</a>.</p>",
+    'copyright' => array(
+      'Content' => '2014 MD Motivational Drink',
+      'Code' => '2014 Go Daddy'
+    ) // copyright
+  )
+); // websites
  
 $books = array(
   'dinner' => array(
@@ -62,5 +79,5 @@ $trademarks = array(
   'iTunes and all related names and logos &reg; and &trade; Apple Inc.',
   
   'Go Daddy, GoDaddy.com, and all related names and logos &reg; and &trade; Go Daddy.'
-);
+); // trademarks
 ?>

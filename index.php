@@ -31,6 +31,13 @@ require('includes/header.php');
   <section id="websites" class="tab-websites">
     <h2>Websites</h2>
     
+    <nav><ul>
+<?php foreach($websites as $key => $value) {
+  indent(3);
+  echo('<li><a href="websites.php#' . $key . '"><img src="' . $value['logo'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
+} ?>
+    </ul></nav>
+    
     <p>I've been building websites for over 20 years.  I've built hundreds: from Wordpress blogs to ecommerce sites to social club calendars, from straightforward just-the-facts info sites to music, videos, slideshows, and animation, I can build a website to meet your needs.</p>
   </section><!-- websites -->
   
