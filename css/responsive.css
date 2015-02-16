@@ -100,6 +100,12 @@ nav ul li:hover ul {
   max-width: 32%;
 }
 
+/* Websites page */
+#page-websites .ui-tabs .ui-tabs-nav li,
+#page-websites .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  width: 23%;
+}
+
 
 /* Audiobooks page --
  * each tab has book cover image.

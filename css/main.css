@@ -182,7 +182,6 @@ footer {
 .ui-tabs-nav a {
   display: block;
   width: 100%;
-  height: 100%;
 }
 
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
@@ -287,26 +286,11 @@ footer {
 }
 
 /* Websites page */
-#page-websites .ui-tabs .ui-tabs-nav {
-  height: 163px;
-}
-
 #page-websites .ui-tabs .ui-tabs-nav li,
 #page-websites .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   width: 24%;
-  height: 99%;
-  vertical-align: middle;
-  overflow: hidden;
 }
 
-/* Vertical centering kludge because vertical-align: middle doesn't work in this context */
-#page-websites .ui-tabs .ui-tabs-nav li.tab-md img {
-  margin-top: 10%;
-}
-
-#page-websites .ui-tabs .ui-tabs-nav li.tab-garciniaplus img {
-  margin-top: 15%;
-}
 
 /* Audiobooks page --
  * each tab has book cover image.
