@@ -61,6 +61,7 @@ require('includes/header.php');
 $(function() {
   $("#tabs").tabs({
     collapsible: true,
+    heightStyle: "auto",
     hide: {
       effect: "blind",
       duration: 200
