@@ -47,7 +47,7 @@ $websites = array(
     'title' => 'Pure Green Coffee',
     'domain' => 'new-you-diet.com',
     'link' => 'https://www.new-you-diet.com/index.php',
-    'logo' => 'img/puregreencoffeeextract-logo.png',
+    'logo' => 'img/puregreencoffee-logo.png',
     'desc' => "<p>PHP-based ecommerce site featuring CSS3 gradients and rotations, jQuery, and Bootstrap.</p>",
     'copyright' => array(
       'Content' => '2012-2014 A1-Diet',
@@ -111,13 +111,17 @@ $trademarks = array(
   
   'iTunes and all related names and logos &reg; and &trade; Apple Inc.',
   
-  'Go Daddy, GoDaddy.com, and all related names and logos &reg; and &trade; Go Daddy.'
+  'Go Daddy, GoDaddy.com, and all related names and logos &reg; and &trade; Go Daddy'
 ); // trademarks
 
 $libraries = array(
-  '<a href="http://jquery.com/">jQuery</a> &copy; 2005, 2014 jQuery Foundation<br/>
-  <a href="http://jqueryui.com/">jQuery UI</a> &copy; 2014 jQuery Foundation and other contributors',
+  'Cutive Mono &copy; 2012 <a href="vern@newtypography.co.uk">Vernon Adams</a>, with Reserved Font Name "Cutive"',
+  
+  'Open Sans &copy; 2010-2011 Google Corporation',
+  
+  '<a href="http://fontawesome.io">Font Awesome</a> &copy; 2012-2015 Dave Gandy',
 
-  '<a href="http://fontawesome.io">Font Awesome</a> &copy; Dave Gandy.'
+  '<a href="http://jquery.com/">jQuery</a> &copy; 2005, 2014 jQuery Foundation<br/>
+  <a href="http://jqueryui.com/">jQuery UI</a> &copy; 2014 jQuery Foundation and other contributors'
 ); // libraries
 ?>
