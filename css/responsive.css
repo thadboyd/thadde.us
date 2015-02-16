@@ -104,6 +104,7 @@ nav ul li:hover ul {
 #page-websites .ui-tabs .ui-tabs-nav li,
 #page-websites .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   width: 23%;
+  margin-right: 2.5%;
 }
 
 

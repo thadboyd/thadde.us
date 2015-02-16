@@ -275,9 +275,10 @@ footer {
   width: 49%;
 }
 
-#page-index .ui-tabs .ui-tabs-nav li:last-child {
+.ui-tabs .ui-tabs-nav li:last-child {
+/* Righthand tab should always appear flush with panel area */
   float: right;
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 
 /* Audiobooks tab on homepage */
@@ -289,6 +290,7 @@ footer {
 #page-websites .ui-tabs .ui-tabs-nav li,
 #page-websites .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   width: 24%;
+  margin-right: 16px;
 }
 
 
@@ -312,10 +314,6 @@ h2 .author {
   position: relative;
   padding: 8px 8px 0;
   margin-right: 12px;
-}
-#page-audiobooks .ui-tabs .ui-tabs-nav li:last-child,
-#page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active:last-child {
-  margin-right: 0;
 }
 #page-audiobooks .ui-tabs .ui-tabs-nav li img,
 #page-audiobooks .ui-tabs .ui-tabs-nav li iframe {
