@@ -182,6 +182,7 @@ footer {
 .ui-tabs-nav a {
   display: block;
   width: 100%;
+  height: 100%;
 }
 
 .ui-state-default a, .ui-state-default a:link, .ui-state-default a:visited {
@@ -229,6 +230,9 @@ footer {
 .ui-tabs .ui-tabs-panel.tab-websites,
 .ui-tabs .ui-tabs-nav li.tab-websites,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-websites,
+.ui-tabs .ui-tabs-panel.tab-md,
+.ui-tabs .ui-tabs-nav li.tab-md,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-md,
 .ui-tabs .ui-tabs-panel.tab-dinosaurs,
 .ui-tabs .ui-tabs-nav li.tab-dinosaurs,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-dinosaurs {
@@ -243,18 +247,30 @@ footer {
 .ui-tabs .ui-tabs-panel.tab-audiobooks,
 .ui-tabs .ui-tabs-nav li.tab-audiobooks,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-audiobooks,
+.ui-tabs .ui-tabs-panel.tab-swimit,
+.ui-tabs .ui-tabs-nav li.tab-swimit,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-swimit,
 .ui-tabs .ui-tabs-panel.tab-dinner,
 .ui-tabs .ui-tabs-nav li.tab-dinner,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-dinner {
   background: #DBEFFC;
 }
 
+.ui-tabs .ui-tabs-panel.tab-garciniaplus,
+.ui-tabs .ui-tabs-nav li.tab-garciniaplus,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-garciniaplus,
 .ui-tabs .ui-tabs-panel.tab-alien,
 .ui-tabs .ui-tabs-nav li.tab-alien,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-alien {
   background: #EEE;
 }
 
+.ui-tabs .ui-tabs-panel.tab-puregreencoffee,
+.ui-tabs .ui-tabs-nav li.tab-puregreencoffee,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-puregreencoffee {
+  background: #CCEAD2;
+}
+  
 #page-index .ui-tabs .ui-tabs-nav li,
 #page-index .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   width: 49%;
@@ -268,6 +284,19 @@ footer {
 /* Audiobooks tab on homepage */
 #audiobooks nav {
   text-align: center;
+}
+
+/* Websites page */
+#page-websites .ui-tabs .ui-tabs-nav {
+  height: 163px;
+}
+
+#page-websites .ui-tabs .ui-tabs-nav li,
+#page-websites .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+  width: 24%;
+  height: 100%;
+  vertical-align: middle;
+  overflow: hidden;
 }
 
 /* Audiobooks page --
@@ -290,7 +319,6 @@ h2 .author {
   position: relative;
   padding: 8px 8px 0;
   margin-right: 12px;
-  overflow: hidden;
 }
 #page-audiobooks .ui-tabs .ui-tabs-nav li:last-child,
 #page-audiobooks .ui-tabs .ui-tabs-nav li.ui-tabs-active:last-child {
