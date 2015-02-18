@@ -95,6 +95,11 @@ nav ul li:hover ul {
   padding: 1em 0.5em;
 }
 
+/* Websites tab on homepage */
+#websites nav li {
+  max-width: 24%;
+}
+
 /* Audiobooks tab on homepage */
 #audiobooks nav li {
   max-width: 32%;
