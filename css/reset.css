@@ -5,13 +5,14 @@
  * Resets for common HTML elements
  */
 
-div, p, h1, h2, h3, h4, h5, h6, ul, ol, header, footer, hgroup, nav, article, section, address {
+div, p, h1, h2, h3, h4, h5, h6, ul, ol, header, footer, hgroup, nav, article, section, address, form, iframe {
   display: block;
   max-width: 100%;
   border: none;
 }
 
-img {
+span, img, label, input, textarea {
+  display: inline;
   max-width: 100%;
 }
 

@@ -122,6 +122,8 @@ $libraries = array(
   '<a href="http://fontawesome.io">Font Awesome</a> &copy; 2012-2015 Dave Gandy',
 
   '<a href="http://jquery.com/">jQuery</a> &copy; 2005, 2014 jQuery Foundation<br/>
-  <a href="http://jqueryui.com/">jQuery UI</a> &copy; 2014 jQuery Foundation and other contributors'
+  <a href="http://jqueryui.com/">jQuery UI</a> &copy; 2014 jQuery Foundation and other contributors',
+  
+  '<a href="http://google.com/recaptcha/">reCAPTCHA</a> &copy; 2007-2014 reCAPTCHA'
 ); // libraries
 ?>
