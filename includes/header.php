@@ -30,7 +30,7 @@ if(isset($pageDesc)) { ?>
 
 <header id="mainHeader">
   <h1>
-    <span id="siteTitle">thadde.us</span>
+    <span id="siteTitle"><a href="//thadde.us/">thadde.us</a></span>
     <span id="pageTitle"><?php echo($pageTitle); ?></span>
   </h1>
 

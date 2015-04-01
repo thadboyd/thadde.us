@@ -12,6 +12,16 @@ $websites = array(
     'domain' => 'mdmotivationaldrink.com',
     'link' => 'http://mdmotivationaldrink.com/',
     'logo' => 'img/md-logo.png',
+    'thumb' => array(
+      'full' => array(
+	'image' => 'img/md-mainpage-full.jpg',
+	'alt' => 'Full-Size Thumbnail'
+      ), // full
+      'mobile' => array(
+	'image' => 'img/md-mainpage-mobile.jpg',
+	'alt' => 'Mobile Thumbnail'
+      ) // mobile
+    ), // thumb
     'desc' =>
       "<p>Responsive site featuring CSS3 animations and jQuery styling.</p>
       
@@ -26,6 +36,17 @@ $websites = array(
     'domain' => "myswimit.com",
     'link' => 'http://myswimit.com/',
     'logo' => 'img/swimit-logo.png',
+    'thumb' => array(
+      'main' => array(
+	'image' => 'img/swimit-mainpage.jpg',
+	'alt' => 'Main Page Thumbnail'
+      ), // main
+      'store' => array(
+	'image' => 'img/swimit-store.jpg',
+	'alt' => 'Storefront Thumbnail',
+	'link' => 'https://shop.myswimit.com/'
+      ) // store
+    ), // thumb
     'desc' => "<p>Responsive site featuring jQuery and a Nivo slideshow.</p>",
     'copyright' => array(
       'Content' => '2014 Lo Drag Inc.',
@@ -115,7 +136,7 @@ $trademarks = array(
 ); // trademarks
 
 $libraries = array(
-  'Cutive Mono &copy; 2012 <a href="vern@newtypography.co.uk">Vernon Adams</a>, with Reserved Font Name "Cutive"',
+  'Cutive Mono &copy; 2012 <a href="mailto:vern@newtypography.co.uk">Vernon Adams</a>, with Reserved Font Name "Cutive"',
   
   'Open Sans &copy; 2010-2011 Google Corporation',
   

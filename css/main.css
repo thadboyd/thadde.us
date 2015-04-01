@@ -8,7 +8,7 @@
 @import url("reset.css");
 @import url("jquery-ui.min.css");
 @import url("font-awesome.min.css");
-@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Cutive+Mono");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic|Cutive+Mono");
 
 .mobileOnly {
   display: none;
@@ -29,6 +29,10 @@ a:link, a:visited {
 
 a:hover, .ui-widget-content a:hover {
   color: #cceeff;
+}
+
+a:hover img {
+  opacity: 0.8;
 }
 
 #mainHeader, body > footer {
@@ -52,6 +56,10 @@ a:hover, .ui-widget-content a:hover {
   display: block;
   font-family: 'Cutive Mono', 'Courier New', 'Courier', monospace;
   font-size: 1.8em;
+}
+#siteTitle a {
+  text-decoration: none;
+  color: inherit;
 }
 #pageTitle {
   display: block;
@@ -210,6 +218,10 @@ footer {
 .ui-state-focus a:visited img {
   opacity: 0.8;
 }
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor img {
+  opacity: 1.0;
+  cursor: default;
+}
 
 .ui-state-active a, .ui-state-active a:link, .ui-state-active a:visited {
   color: #555;
@@ -226,21 +238,21 @@ footer {
   border-radius: 1em 1em 0 0;
 }
 
-.ui-tabs .ui-tabs-panel.tab-websites,
-.ui-tabs .ui-tabs-nav li.tab-websites,
-.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-websites,
-.ui-tabs .ui-tabs-panel.tab-md,
-.ui-tabs .ui-tabs-nav li.tab-md,
-.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-md,
-.ui-tabs .ui-tabs-panel.tab-dinosaurs,
-.ui-tabs .ui-tabs-nav li.tab-dinosaurs,
-.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-dinosaurs {
-  background: #FFF0DB;
-}
-
 .ui-tabs-panel {
   border-radius: 0 0 1em 1em;
   border: none;
+}
+
+.ui-tabs .ui-tabs-panel.tab-websites,
+.ui-tabs .ui-tabs-nav li.tab-websites,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-websites,
+.ui-tabs .ui-tabs-panel.tab-garciniaplus,
+.ui-tabs .ui-tabs-nav li.tab-garciniaplus,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-garciniaplus,
+.ui-tabs .ui-tabs-panel.tab-alien,
+.ui-tabs .ui-tabs-nav li.tab-alien,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-alien {
+  background: #EEE;
 }
 
 .ui-tabs .ui-tabs-panel.tab-audiobooks,
@@ -255,13 +267,13 @@ footer {
   background: #DBEFFC;
 }
 
-.ui-tabs .ui-tabs-panel.tab-garciniaplus,
-.ui-tabs .ui-tabs-nav li.tab-garciniaplus,
-.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-garciniaplus,
-.ui-tabs .ui-tabs-panel.tab-alien,
-.ui-tabs .ui-tabs-nav li.tab-alien,
-.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-alien {
-  background: #EEE;
+.ui-tabs .ui-tabs-panel.tab-md,
+.ui-tabs .ui-tabs-nav li.tab-md,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-md,
+.ui-tabs .ui-tabs-panel.tab-dinosaurs,
+.ui-tabs .ui-tabs-nav li.tab-dinosaurs,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-dinosaurs {
+  background: #FFF0DB;
 }
 
 .ui-tabs .ui-tabs-panel.tab-puregreencoffee,
@@ -291,6 +303,20 @@ footer {
 #page-websites .ui-tabs .ui-tabs-nav li.ui-tabs-active {
   width: 24%;
   margin-right: 16px;
+}
+.siteThumbs, .siteDesc {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 50%;
+}
+.siteThumbs {
+  margin-right: 1.5em;
+}
+.siteThumbs img {
+  display: inline-block;
+  vertical-align: middle;
+  border: solid 1px #ccc;
+  box-shadow: 0 0 2px #ccc;
 }
 
 

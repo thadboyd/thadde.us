@@ -5,7 +5,7 @@
  * Resets for common HTML elements
  */
 
-div, p, h1, h2, h3, h4, h5, h6, ul, ol, header, footer, hgroup, nav, article, section, address, form, iframe {
+div, p, h1, h2, h3, h4, h5, h6, ul, ol, header, footer, hgroup, nav, article, section, aside, address, form, iframe {
   display: block;
   max-width: 100%;
   border: none;

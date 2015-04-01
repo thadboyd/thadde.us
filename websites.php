@@ -30,7 +30,7 @@ require('includes/header.php');
   echo('<a href="#' . $key . '"><img src="' . $value['logo'] . '" alt="' . $value['title'] . '" /></a>' . PHP_EOL);
 
   indent(2);
-  echo('</li>');
+  echo('</li>' . PHP_EOL);
 } ?>
   </ul></nav>
 
@@ -39,18 +39,47 @@ require('includes/header.php');
   echo('<section id="' . $key . '" class="tab-' . $key . '">' . PHP_EOL);
   
   indent(2);
-  echo('<h2>' . $value['title'] . '</h2>' . PHP_EOL);
+  echo('<h2 class="mobileOnly"><a href="' . $value['link'] . '">' . $value['title'] . '</a></h2>' . PHP_EOL);
+  
+  if(isset($value['thumb'])) {
+    indent(2);
+    echo('<div class="siteThumbs">' . PHP_EOL);
+    foreach($value['thumb'] as $k => $v) {
+      indent(3);
+      echo('<a href="');
+      if(isset($v['link'])) {
+	echo($v['link']);
+      } else {
+	echo($value['link']);
+      }
+      echo('"><img src="' . $v['image'] . '" alt="');
+      if(isset($v['alt'])) {
+	echo($v['alt']);
+      } else {
+	echo($k);
+      }
+      echo('" /></a>' . PHP_EOL);
+    }
+    indent(2);
+    echo('</div><!-- siteThumbs -->'  . PHP_EOL);
+  }
   
   indent(2);
+  echo('<div class="siteDesc">' . PHP_EOL);
+  
+  indent(3);
+  echo('<h2 class="fullOnly"><a href="' . $value['link'] . '">' . $value['title'] . '</a></h2>' . PHP_EOL);
+  
+  indent(3);
   echo($value['desc'] . PHP_EOL . PHP_EOL);
   
-  indent(2);
-  echo('<p>View ' . $value['title'] . ' live at <a href="' . $value['link'] . '">' . $value['domain'] . '</a>.</p>' . PHP_EOL . PHP_EOL);
+  indent(3);
+  echo('<footer>' . PHP_EOL);
+  writeCopyright($value['copyright'], 4);
+  echo('</footer>' . PHP_EOL);
   
   indent(2);
-  echo('<footer>');
-  writeCopyright($value['copyright'], 3);
-  echo('</footer>' . PHP_EOL);
+  echo('</div><!-- siteDesc -->' . PHP_EOL);
   
   indent(1);
   echo('</section><!-- ' . $key . ' -->' . PHP_EOL . PHP_EOL);
@@ -60,7 +89,7 @@ require('includes/header.php');
 <script>
 $(function() {
   $("#tabs").tabs({
-    collapsible: true,
+    collapsible: false,
     hide: {
       effect: "blind",
       duration: 200

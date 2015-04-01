@@ -111,7 +111,20 @@ nav ul li:hover ul {
   width: 23%;
   margin-right: 2.5%;
 }
-
+.siteThumbs, .siteDesc {
+  display: block;
+  max-width: 100%;
+}
+.siteThumbs {
+  margin-right: 0;
+  margin-bottom: 1em;
+}
+#page-websites #md .siteThumbs img {
+  height: 183px;
+}
+#page-websites #swimit .siteThumbs img {
+  height: 112px;
+}
 
 /* Audiobooks page --
  * each tab has book cover image.
