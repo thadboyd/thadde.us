@@ -14,6 +14,9 @@ $events = array(
   'breakfast' => array(
     'icon' => 'fa-coffee'
   ), // breakfast
+  'registration' => array(
+    'icon' => 'fa-pencil'
+  ), // registration
   'newman' => array(
     'name' => 'George Newman',
     'image' => 'img/stock-portrait4.jpg'
@@ -41,7 +44,13 @@ $days = array(
 	'time' => '7:00 AM - 8:00 AM',
 	'location' => 'Dining Hall',
 	'desc' => 'Breakfast'
-      ), // breakfast
+      ), // breakfast array
+      array(
+	'event' => 'registration',
+	'time' => '7:00 AM - 6:00 PM',
+	'location' => 'Lobby',
+	'desc' => 'Registration open'
+      ), // registration array
       array(
 	'event' => 'newman',
 	'time' => '8:30 AM - 10:00 AM',
@@ -87,7 +96,9 @@ $credits = array(
     
     '<a href="http://www.freeimages.com/photo/1141475">Spontaneous</a> by <a href="http://www.freeimages.com/profile/bjearwicke">Benjamin Earwicker</a>',
     
-    '<a href="http://www.freeimages.com/photo/442249">Kenny in London 30</a> by <a href="http://www.freeimages.com/profile/matchstick">Martin Walls</a>'
+    '<a href="http://www.freeimages.com/photo/442249">Kenny in London 30</a> by <a href="http://www.freeimages.com/profile/matchstick">Martin Walls</a>',
+    
+    'Striped background created with <a href="http://www.stripegenerator.com/">Stripe Generator</a>'
   ), // stock images
   'fonts' => array(
     '<a href="http://www.google.com/fonts/specimen/Open+Sans">Open Sans</a> designed by <a href="https://profiles.google.com/107777320916704234605/about">Steve Matteson</a>, &copy; 2010-2011 Google Corporation',

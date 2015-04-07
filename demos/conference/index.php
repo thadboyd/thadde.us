@@ -14,7 +14,7 @@ require('../../includes/functions.php');
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Agenda Overview - Icon</title>
+  <title>Conference Site Demo - thadde.us</title>
   <link rel="author" href="humans.txt" />
   <link rel="stylesheet" href="css/foundation.min.css" />
   <link rel="stylesheet" href="css/normalize.css" />
@@ -102,16 +102,20 @@ foreach($days as $key => $value) {
     indent(3);
     echo('<div>' . PHP_EOL);
     
+    echo('<img src="');
     indent(4);
     if(isset($events[$v['event']]['image'])) {
-      echo('<img src="' . $events[$v['event']]['image'] . '" alt="');
+      echo($events[$v['event']]['image'] . '" alt="');
       if(isset($events[$v['event']]['name'])) {
 	echo($events[$v['event']]['name']);
       } else {
 	echo($v);
       }
-      echo('" />' . PHP_EOL);
-    } else if(isset($events[$v['event']]['icon'])) {
+    } else {
+      echo('img/stripes.png" alt="stripes');
+    }
+    echo('" />' . PHP_EOL);
+    if(isset($events[$v['event']]['icon'])) {
       echo('<div class="event-icon fa ' . $events[$v['event']]['icon'] . '"></div>' . PHP_EOL);
     }
     

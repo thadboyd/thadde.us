@@ -213,12 +213,15 @@ li.back h5 {
   position: relative;
 }
 .agenda-item .event-icon {
-  background-color: #303443;
-  width: 100%;
   font-size: 400%;
-  text-align: center;
-  padding: 1em;
   color: #bbddee;
+  position: absolute;
+  left: 0;
+  top: 28%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
 }
 .agenda-item .time {
   background-color: #454b61;
@@ -362,14 +365,6 @@ body > footer {
     width: 25%;
   }
   /* END ICON BAR */
-  
-  
-  /* AGENDA ITEMS */
-  .agenda-item .event-icon {
-    width: 470px;
-    height: 365px;
-  }
-  /* END AGENDA ITEMS */
 }
 /* END SMALL */
 /* END MEDIA QUERIES */
