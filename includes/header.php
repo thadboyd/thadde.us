@@ -28,6 +28,8 @@ if(isset($pageDesc)) { ?>
 
 <body id="page-<?php echo($pageShortName); ?>">
 
+<?php require('includes/google-analytics.php'); ?>
+
 <header id="mainHeader">
   <h1>
     <span id="siteTitle"><a href="//thadde.us/">thadde.us</a></span>

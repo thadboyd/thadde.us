@@ -25,6 +25,8 @@ require('../../includes/functions.php');
 
 <body>
 
+<?php require('../../includes/google-analytics.php'); ?>
+
 <div class="sticky">
   <nav class="top-bar" data-topbar role="navigation" data-options="back_text: &#61536;">
   <!-- &#61536; is left arrow in Font Awesome -->
