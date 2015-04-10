@@ -27,12 +27,12 @@ h1, h2, h3 {
 h1 {
   background-color: #12555B;
   background-image: url('../img/simpleswirls.jpg');
-  background-repeat: repeat-x;
+  background-repeat: repeat;
   background-position: center center;
   color: white;
   min-height: 160px;
-  line-height: 160px;
   margin: 0;
+  padding: 64px 0;
   font-size: 400%;
   font-weight: normal;
   text-align: center;
@@ -54,6 +54,9 @@ p {
 
 a:link, a:visited {
   color: #4da2de;
+}
+a:hover {
+  color: #2d82be;
 }
 /* END GENERAL */
 
@@ -127,7 +130,7 @@ a:link, a:visited {
 }
 
 li.back h5 {
-  font-family: "Font Awesome";
+  font-family: "FontAwesome";
   font-weight: normal;
   font-size: 100%;
 }
@@ -307,10 +310,11 @@ body > footer {
 
 /* MEDIA QUERIES */
 
-/* MEDIUM */
-@media only screen and (min-width: 40em) and (max-width: 793px) {
+/* MEDIUM AND SMALL */
+@media only screen and (max-width: 815px) {
   h1 {
-    line-height: 1.2;
+    padding: 12px;
+    height: auto;
   }
 }
 /* END MEDIUM */
@@ -322,8 +326,6 @@ body > footer {
     font-size: 300%;
     line-height: 1.2;
     padding: 0.5em;
-    min-height: 1rem;
-    height: auto;
   }
   /* END GENERAL */
   

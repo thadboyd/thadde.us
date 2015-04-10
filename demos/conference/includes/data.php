@@ -223,8 +223,7 @@ $credits = array(
   'libraries' => array(
     '<a href="http://foundation.zurb.com/">Foundation</a> &copy; 2014 Zurb',
     
-    '<a href="http://jquery.com/">jQuery</a> &copy; 2005, 2014 jQuery Foundation<br/>
-    <a href="http://jqueryui.com/">jQuery UI</a> &copy; 2014 jQuery Foundation and other contributors',
+    '<a href="http://jquery.com/">jQuery</a> &copy; 2005, 2014 jQuery Foundation',
     
     '<a href="https://ftlabs.github.io/fastclick/">FastClick</a> &copy; 2014 The Financial Times Limited'
   ), // libraries

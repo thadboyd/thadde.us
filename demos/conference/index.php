@@ -14,6 +14,7 @@ require('../../includes/functions.php');
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Demo site created by Thaddeus R R Boyd, web developer.">
   <title>Conference Site Demo - thadde.us</title>
   <link rel="author" href="humans.txt" />
   <link rel="stylesheet" href="css/foundation.min.css" />
@@ -25,8 +26,8 @@ require('../../includes/functions.php');
 <body>
 
 <div class="sticky">
-  <nav class="top-bar" data-topbar role="navigation" data-options="back_text: &#61706;">
-  <!-- &#61706; is left arrow in Foundation Icons font -->
+  <nav class="top-bar" data-topbar role="navigation" data-options="back_text: &#61536;">
+  <!-- &#61536; is left arrow in Font Awesome -->
     <ul class="title-area">
       <li class="name">
 	<a href="javascript:void(0)"><img src="img/con-logo.png" alt="New Media Con" /></a>
@@ -37,7 +38,8 @@ require('../../includes/functions.php');
     
     <section class="top-bar-section">
       <ul class="right">
-	<li><a href="javascript:void(0)">Home</a></li>
+	<li><a href="/websites.php">Home</a></li>
+	<li><a href="javascript:void(0)" data-reveal-id="about">About</a></li>
 	<li class="active has-dropdown">
 	  <a href="javascript:void(0)">Schedule</a>
 	  <ul class="dropdown">
@@ -46,20 +48,66 @@ require('../../includes/functions.php');
 	    <li><a href="index.php#04-02">April 2</a></li>
 	  </ul>
 	</li>
-	<li class="has-dropdown">
-	  <a href="javascript:void(0)">About</a>
-	  <ul class="dropdown">
-	    <li><a href="javascript:void(0)">Who</a></li>
-	    <li><a href="javascript:void(0)">What</a></li>
-	    <li><a href="javascript:void(0)">Why</a></li>
-	  </ul>
-	</li>
-	<li><a href="javascript:void(0)">Sponsors</a></li>
-	<li><a class="highlight" href="javascript:void(0)">Register</a></li>
+	<li><a href="javascript:void(0)" data-reveal-id="sponsors">Sponsors</a></li>
+	<li><a class="highlight" href="javascript:void(0)" data-reveal-id="register">Register</a></li>
       </ul>
     </section>
   </nav>
 </div><!-- sticky -->
+
+<section id="about" class="reveal-modal" data-reveal>
+  <h2>About</h2>
+  
+  <p>This is a demo site.  New Media Con is a fictitious event, and the graphics are <a href="javascript:void(0)" data-reveal-id="stock_images">stock images</a> from <a href="http://www.freeimages.com/">freeimages.com</a>.</p>
+  
+  <p>The site is built using:</p>
+  
+  <ul>
+    <li>PHP</li>
+    <li>HTML5 semantic markup</li>
+    <li>CSS3 responsive design</li>
+    <li>JavaScript</li>
+    <li><a href="http://foundation.zurb.com/">Foundation</a></li>
+    <li><a href="http://jquery.com/">jQuery</a></li>
+    <li><a href="http://fontawesome.io">Font Awesome</a></li>
+    <li><a href="https://ftlabs.github.io/fastclick/">FastClick</a></li>
+  </ul>
+  
+  <p>Try viewing this site at multiple different sizes, on your desktop and on your phone, and note the category filtering.</p>
+  
+  <p>The layout of this site is based on the <a href="http://attendicon.com/agenda/overview">ICON15 Agenda page</a>, built by <a href="http://www.infusionsoft.com/">Infusionsoft</a>; however, the implementation is entirely my own work.  No ICON or Infusionsoft code, graphics, or other resources are used anywhere in this demo.</p>
+  
+  <a class="close-reveal-modal">&#215;</a><!-- &#215; is "x" icon -->
+</section>
+
+<section id="sponsors" class="reveal-modal" data-reveal>
+  <h2>Sponsors</h2>
+  
+  <ul>
+    <li>Prescott Pharmaceuticals</li>
+    <li>Hawthorne Wipes</li>
+    <li>Megadodo Publications</li>
+    <li>Dunder Mifflin Paper Company, Inc.</li>
+    <li>Femident Toothpaste</li>
+    <li>Duff Beer</li>    
+    <li>Acme, Inc.</li>
+    <li>Spishak</li>
+    <li>Brawndo</li>    
+    <li>Kreb of the Loom</li>
+  </ul>
+  
+  <a class="close-reveal-modal">&#215;</a><!-- &#215; is "x" icon -->
+</section>
+
+<section id="register" class="reveal-modal" data-reveal>
+  <h2>Registration is Closed</h2>
+  
+  <p>Actually, registration was never open.  There is no New Media Con.  This is a demo site.  All those people down there are just <a href="javascript:void(0)" data-reveal-id="stock_images">stock photos</a>.  Those aren't even their real names!</p>
+  
+  <p>But thanks for clicking.  And for reading this!  I didn't think anyone ever actually would.</p>
+  
+  <a class="close-reveal-modal">&#215;</a><!-- &#215; is "x" icon -->
+</section>
 
 <header>
   <h1>Conference Schedule</h1>
