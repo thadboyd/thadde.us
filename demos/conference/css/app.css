@@ -296,14 +296,13 @@ body > footer {
 }
 #creditnav {
   display: inline;
+  margin-left: 0;
+  padding-left: 0;
 }
 #creditnav > li {
   display: inline-block;
   vertical-align: center;
-  padding-right: 1em;
-}
-#creditnav > li:last-child {
-  padding-right: 0;
+  padding-left: 1em;
 }
 /* END FOOTER */
 
