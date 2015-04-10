@@ -196,6 +196,10 @@ footer {
   color: #999;
 }
 
+.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor, .ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+  cursor: inherit;
+}
+
 .ui-state-hover a,
 .ui-state-hover a:hover,
 .ui-state-hover a:link,
@@ -246,9 +250,9 @@ footer {
 .ui-tabs .ui-tabs-panel.tab-websites,
 .ui-tabs .ui-tabs-nav li.tab-websites,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-websites,
-.ui-tabs .ui-tabs-panel.tab-garciniaplus,
-.ui-tabs .ui-tabs-nav li.tab-garciniaplus,
-.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-garciniaplus,
+.ui-tabs .ui-tabs-panel.tab-conference,
+.ui-tabs .ui-tabs-nav li.tab-conference,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-conference,
 .ui-tabs .ui-tabs-panel.tab-alien,
 .ui-tabs .ui-tabs-nav li.tab-alien,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-alien {
@@ -307,7 +311,12 @@ footer {
 .siteThumbs, .siteDesc {
   display: inline-block;
   vertical-align: top;
-  max-width: 50%;
+}
+.siteThumbs {
+  max-width: 49%;
+}
+.siteDesc {
+  max-width: 48%;
 }
 .siteThumbs {
   margin-right: 1.5em;

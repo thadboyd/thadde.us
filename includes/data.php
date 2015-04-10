@@ -7,6 +7,41 @@
  */
 
 $websites = array(
+  'conference' => array(
+    'title' => 'New Media Con',
+    'link' => '/demos/conference/',
+    'logo' => 'img/conference-logo.png',
+    'thumb' => array(
+      'full' => array(
+	'image' => 'img/conference-mainpage-full.jpg',
+	'alt' => 'Full-Size Thumbnail'
+      ), // full
+      'mobile' => array(
+	'image' => 'img/conference-mainpage-mobile.jpg',
+	'alt' => 'Mobile Thumbnail'
+      ) // mobile
+    ), // thumb
+    'desc' => "
+      <p>Demo site featuring responsive multi-column layout</p>
+      
+      <ul>
+	<li><a href=\"http://foundation.zurb.com/\">Foundation</a> framework
+	  <ul>
+	    <li>Multi-column layout</li>
+	    <li>Responsive Design</li>
+	  </ul>
+	</li>
+	<li>JavaScript/jQuery
+	  <ul>
+	    <li>Category visibility toggle</li>
+	    <li>Modals</li>
+	  </ul>
+	</li>
+	<li>HTML5/Semantic Markup</li>
+	<li>CSS3/Responsive Design</li>
+      </ul>",
+    'copyright' => '2015 Thaddeus Boyd'
+  ), // conference
   'md' => array(
     'title' => 'MD Motivational Drink',
     'domain' => 'mdmotivationaldrink.com',
@@ -23,7 +58,17 @@ $websites = array(
       ) // mobile
     ), // thumb
     'desc' =>
-      "<p>Responsive site featuring CSS3 animations and jQuery styling.</p>
+      "<p>Responsive small-business site featuring CSS3 animations and jQuery styling.</p>
+      
+      <ul>
+	<li>JavaScript/jQuery</li>
+	<li>CSS3
+	  <ul>
+	    <li>Responsive Design</li>
+	    <li>Animations</li>
+	  </ul>
+	</li>
+      </ul>
       
       <p>Graphic design by <a href=\"http://www.linkedin.com/in/yalikeitmike\">Mike Patten</a>.</p>",
     'copyright' => array(
@@ -47,28 +92,34 @@ $websites = array(
 	'link' => 'https://shop.myswimit.com/'
       ) // store
     ), // thumb
-    'desc' => "<p>Responsive site featuring jQuery and a Nivo slideshow.</p>",
+    'desc' => "
+      <p>Responsive small-business ecommerce site featuring jQuery and a Nivo slideshow</p>
+      
+      <ul>
+	<li>CSS3/Responsive Design</li>
+	<li>JavaScript/jQuery</li>
+	<li><a href=\"http://docs.dev7studios.com/jquery-plugins/nivo-slider\">Nivo Slider</a></li>
+      </ul>",
     'copyright' => array(
       'Content' => '2014 Lo Drag Inc.',
       'Code' => '2014 Go Daddy'
     ) // copyright
   ), // swimit
-  'garciniaplus' => array(
-    'title' => 'Garcinia Plus',
-    'domain' => 'garcinplus.com',
-    'link' => 'https://garcinplus.com/index.php',
-    'logo' => 'img/garciniaplus-logo.png',
-    'desc' => "<p>PHP-based ecommerce site featuring CSS3 rotations, jQuery, and Bootstrap.</p>",
-    'copyright' => array(
-      'Content' => '2012-2014 Bridge Road Marketing SLM21 LTD',
-      'Code' => '2012-2014 Snowball Media Group'
-    ) // copyright
-  ), // garciniaplus
   'puregreencoffee' => array(
     'title' => 'Pure Green Coffee',
     'domain' => 'new-you-diet.com',
     'link' => 'https://www.new-you-diet.com/index.php',
     'logo' => 'img/puregreencoffee-logo.png',
+    'thumb' => array(
+      'main' => array(
+	'image' => 'img/puregreencoffee-mainpage.jpg',
+	'alt' => 'Main Page Thumbnail'
+      ), // main
+      'thankyou' => array(
+	'image' => 'img/puregreencoffee-thankyou.jpg',
+	'alt' => 'Thank You Page Thumbnail'
+      ) // order
+    ), // thumb
     'desc' => "<p>PHP-based ecommerce site featuring CSS3 gradients and rotations, jQuery, and Bootstrap.</p>",
     'copyright' => array(
       'Content' => '2012-2014 A1-Diet',

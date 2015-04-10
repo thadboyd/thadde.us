@@ -119,11 +119,17 @@ nav ul li:hover ul {
   margin-right: 0;
   margin-bottom: 1em;
 }
+#page-websites #conference .siteThumbs img {
+  height: 214px;
+}
 #page-websites #md .siteThumbs img {
   height: 183px;
 }
 #page-websites #swimit .siteThumbs img {
   height: 112px;
+}
+#page-websites #puregreencoffee .siteThumbs img {
+  height: 107px;
 }
 
 /* Audiobooks page --
