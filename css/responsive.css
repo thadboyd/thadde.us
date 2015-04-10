@@ -119,18 +119,6 @@ nav ul li:hover ul {
   margin-right: 0;
   margin-bottom: 1em;
 }
-#page-websites #conference .siteThumbs img {
-  height: 214px;
-}
-#page-websites #md .siteThumbs img {
-  height: 183px;
-}
-#page-websites #swimit .siteThumbs img {
-  height: 112px;
-}
-#page-websites #puregreencoffee .siteThumbs img {
-  height: 107px;
-}
 
 /* Audiobooks page --
  * each tab has book cover image.
@@ -155,6 +143,20 @@ nav ul li:hover ul {
 
 } /* max-width: 1316px */
 
+@media screen and (max-width: 598px) {
+  #page-websites #conference .siteThumbs img {
+  height: 214px;
+}
+#page-websites #md .siteThumbs img {
+  height: 183px;
+}
+#page-websites #swimit .siteThumbs img {
+  height: 112px;
+}
+#page-websites #puregreencoffee .siteThumbs img {
+  height: 107px;
+}
+} /* max-width: 598px; */
 
 @media screen and (min-width: 1317px) {
 
