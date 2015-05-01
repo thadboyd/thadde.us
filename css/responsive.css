@@ -144,7 +144,8 @@ nav ul li:hover ul {
 } /* max-width: 1316px */
 
 @media screen and (max-width: 598px) {
-  #page-websites #conference .siteThumbs img {
+#page-websites #globaljet .siteThumbs img,
+#page-websites #conference .siteThumbs img {
   height: 214px;
 }
 #page-websites #md .siteThumbs img {

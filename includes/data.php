@@ -7,6 +7,40 @@
  */
 
 $websites = array(
+  'globaljet' => array(
+    'title' => 'Global Jet Partners',
+    'link' => 'http://globaljetpartners.com/',
+    'logo' => 'img/globaljet-logo.png',
+    'thumb' => array(
+      'full' => array(
+	'image' => 'img/globaljet-mainpage-full.jpg',
+	'alt' => 'Full-Size Thumbnail'
+      ), // full
+      'mobile' => array(
+	'image' => 'img/globaljet-mainpage-mobile.jpg',
+	'alt' => 'Mobile Thumbnail'
+      ) // mobile
+    ), // thumb
+    'desc' => "
+      <p>Responsive small-business site built on Wordpress and Boostrap</p>
+      
+      <ul>
+	<li>Wordpress</li>
+	<li>Bootstrap
+	  <ul>
+	    <li>Responsive</li>
+	    <li>Mobile-First</li>
+	  </ul>
+	</li>
+	<li>PHP</li>
+	<li>HTML5/Semantic Markup</li>
+	<li>CSS3</li>
+      </ul>",
+    'copyright' => array(
+      'Content' => '2013-2015 Global Jet Partners, LLC',
+      'Code' => '2015 Thaddeus Boyd'
+    ) // copyright
+  ), // globaljet
   'conference' => array(
     'title' => 'New Media Con',
     'link' => '/demos/conference/',
@@ -104,28 +138,7 @@ $websites = array(
       'Content' => '2014 Lo Drag Inc.',
       'Code' => '2014 Go Daddy'
     ) // copyright
-  ), // swimit
-  'puregreencoffee' => array(
-    'title' => 'Pure Green Coffee',
-    'domain' => 'new-you-diet.com',
-    'link' => 'https://www.new-you-diet.com/index.php',
-    'logo' => 'img/puregreencoffee-logo.png',
-    'thumb' => array(
-      'main' => array(
-	'image' => 'img/puregreencoffee-mainpage.jpg',
-	'alt' => 'Main Page Thumbnail'
-      ), // main
-      'thankyou' => array(
-	'image' => 'img/puregreencoffee-thankyou.jpg',
-	'alt' => 'Thank You Page Thumbnail'
-      ) // order
-    ), // thumb
-    'desc' => "<p>PHP-based ecommerce site featuring CSS3 gradients and rotations, jQuery, and Bootstrap.</p>",
-    'copyright' => array(
-      'Content' => '2012-2014 A1-Diet',
-      'Code' => '2012-2014 Snowball Media Group'
-    ) // copyright
-  ) // puregreencoffee
+  ) // swimit
 ); // websites
  
 $books = array(

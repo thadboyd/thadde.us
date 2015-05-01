@@ -262,9 +262,9 @@ footer {
 .ui-tabs .ui-tabs-panel.tab-audiobooks,
 .ui-tabs .ui-tabs-nav li.tab-audiobooks,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-audiobooks,
-.ui-tabs .ui-tabs-panel.tab-swimit,
-.ui-tabs .ui-tabs-nav li.tab-swimit,
-.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-swimit,
+.ui-tabs .ui-tabs-panel.tab-globaljet,
+.ui-tabs .ui-tabs-nav li.tab-globaljet,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-globaljet,
 .ui-tabs .ui-tabs-panel.tab-dinner,
 .ui-tabs .ui-tabs-nav li.tab-dinner,
 .ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-dinner {
@@ -280,9 +280,9 @@ footer {
   background: #FFF0DB;
 }
 
-.ui-tabs .ui-tabs-panel.tab-puregreencoffee,
-.ui-tabs .ui-tabs-nav li.tab-puregreencoffee,
-.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-puregreencoffee {
+.ui-tabs .ui-tabs-panel.tab-swimit,
+.ui-tabs .ui-tabs-nav li.tab-swimit,
+.ui-tabs .ui-tabs-nav li.ui-tabs-active.tab-swimit {
   background: #CCEAD2;
 }
   
