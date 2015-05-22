@@ -56,7 +56,7 @@ $websites = array(
       ) // mobile
     ), // thumb
     'desc' => "
-      <p>Demo site featuring responsive multi-column layout</p>
+      <p>AngularJS demo site featuring responsive multi-column layout and form validation</p>
       
       <ul>
 	<li><a href=\"http://foundation.zurb.com/\">Foundation</a> framework
@@ -65,14 +65,16 @@ $websites = array(
 	    <li>Responsive Design</li>
 	  </ul>
 	</li>
-	<li>JavaScript/jQuery
+	<li>JavaScript/AngularJS
 	  <ul>
 	    <li>Category visibility toggle</li>
 	    <li>Modals</li>
+	    <li>Form validation</li>
 	  </ul>
 	</li>
 	<li>HTML5/Semantic Markup</li>
 	<li>CSS3/Responsive Design</li>
+	<li>Sass/SCSS</li>
       </ul>",
     'copyright' => '2015 Thaddeus Boyd'
   ), // conference

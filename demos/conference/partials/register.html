@@ -1,0 +1,116 @@
+<header>
+  <h1>Register</h1>
+
+  <section class="intro row">
+    <h2>Sample Registration Form</h2>
+    
+    <p>This form demonstrates AngularJS's form validation functionality.</p>
+  </section><!-- intro -->
+</header>
+
+<form novalidate id="registration-form" name="form" ng-submit="submit(form)" ng-if="!submitted">
+  <div class="row">
+    <div class="large-4 small-12 columns">
+      <label>Name</label>
+      <input id="name" name="name" type="text" placeholder="Your Name" ng-model="user.name" ng-model-options="{updateOn: 'blur'}" required="required" />
+      <div ng-show="form.$submitted || form.name.$touched">
+	<span ng-show="form.name.$error.required" class="error" id="errorName">Please enter a name.</span>
+      </div>
+    </div>
+    <div class="large-4 small-12 columns">
+      <label>Phone Number</label>
+      <input id="phone" name="phone" type="tel" placeholder="(xxx)&nbsp;xxx-xxxx" ng-model="user.phone" ng-model-options="{updateOn: 'blur'}" required="required" ui-mask="{{'(999) 999-9999'}}" />
+      <div ng-show="form.$submitted || form.phone.$touched">
+	<span ng-show="form.phone.$error.mask || form.phone.$error.required" class="error" id="errorPhone">Please enter a valid phone number.</span>
+      </div>
+    </div>
+    <div class="large-4 small-12 columns">
+      <label>Email</label>
+      <input id="email" name="email" type="email" placeholder="email@example.com" ng-model="user.email" required="required" />
+      <div ng-show="form.$submitted || form.email.$touched">
+	<span ng-show="form.email.$error.email || form.email.$error.required" class="error" id="errorEmail">Please enter a valid email.</span>
+      </div>
+    </div>
+  </div><!-- row -->
+  <div class="row">
+    <div class="small-6 columns">
+      <h3>Register for Days:</h3>
+      <fieldset>
+	<input type="checkbox" name="reg_day" value="03-31" ng-model="user.reg0331" /><label>March 31</label><br/>
+	<input type="checkbox" name="reg_day" value="04-01" ng-model="user.reg0401" /><label>April 1</label><br/>
+	<input type="checkbox" name="reg_day" value="04-02" ng-model="user.reg0402" /><label>April 2</label>
+      </fieldset>
+      <div ng-show="form.$submitted">
+	<span ng-show="numDays == 0" class="error" id="errorDays">Please select at least one date.</span>
+      </div>
+    </div>
+    <div class="small-6 columns">
+      <div id="price-legend" ng-show="totalPrice == 0">
+	<h3>Pricing:</h3>
+	<table class="price">
+	  <tr>
+	    <td>1 day:</td>
+	    <td class="currency">$100</td>
+	  </tr><tr>
+	    <td>2 days:</td>
+	    <td class="currency">$175</td>
+	  </tr><tr>
+	    <td>3 days:</td>
+	    <td class="currency">$225</td>
+	  </tr>
+	</table>
+      </div><!-- price-legend -->
+      
+      <div id="price-calculated" ng-show="totalPrice > 0">
+	<h3>Your Cost:</h3>
+	<table class="price">
+	  <tr id="ticketPrice">
+	    <td>{{numDays}}-day registration:</td>
+	    <td class="currency">{{ticketPrice | currency}}</td>
+	  </tr><tr id="tax">
+	    <td>Sales tax:</td>
+	    <td class="currency">{{tax | currency}}</td>
+	  </tr><tr id="totalPrice">
+	    <td>Total:</td>
+	    <td class="currency">{{calcPrice() | currency}}</td>
+	  </tr>
+	</table>
+      </div><!-- price-calculated -->
+    </div>
+  </div><!-- row -->
+  <div class="row">
+    <div class="small-12 columns">
+      <input type="button" class="button" ng-click="reset()" value="Reset" />
+      <input type="submit" class="button" value="Submit" />
+    </div>
+  </div><!-- row -->
+</form>
+<div id="thankyou" class="row" ng-if="submitted">
+  <h3>Thank you</h3>
+  
+  <p>Thank you, your registration has been submitted.</p>
+  
+  <p>You will not receive an E-Mail confirmation.  Because the Submit button doesn't do anything except check whether your inputs are valid and then, if they are, show you this message.</p>
+  
+  <p>However, you can review your <a href="javascript:void(0)" ng-click="open(user)">submitted data</a>.</p>
+</div>
+
+<script type="text/ng-template" id="modal_form">
+  <h2>Submitted Form Data</h2>
+  
+  <p>
+    <strong>Name:</strong> <span id="name">{{data.name}}</span><br/>
+    <strong>Phone:</strong> <span id="phone">{{data.phone}}</span><br/>
+    <strong>Email:</strong> <span id="email">{{data.email}}</span>
+  </p>
+  
+  <strong>Days Registered:</strong>
+  
+  <ul>
+    <li ng-if="data.reg0331">March 31</li>
+    <li ng-if="data.reg0401">April 1</li>
+    <li ng-if="data.reg0402">April 2</li>
+  </ul>
+  
+  <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
+</script>
