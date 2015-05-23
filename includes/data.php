@@ -72,6 +72,7 @@ $websites = array(
 	    <li>Form validation</li>
 	  </ul>
 	</li>
+	<li>JSON</li>
 	<li>HTML5/Semantic Markup</li>
 	<li>CSS3/Responsive Design</li>
 	<li>Sass/SCSS</li>
