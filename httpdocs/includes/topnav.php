@@ -73,10 +73,4 @@ $pages = array(
   populateUL($pages, 2, 'right');
 ?>
   </section>
-
-
-<script>
-$("#mainHeader .toggleNav").click(function() {
-  $("#mainHeader nav > ul").toggle("blind", 500);
-});
-</script>
+  

@@ -48,11 +48,25 @@ $topbar-title-font-family: $font-family-monospace;
 }
 
 #main-content > section {
-//  border-bottom: solid 1px $gainsboro;
+  border-bottom: solid 1px $gainsboro;
   &:nth-child(odd) {
     background-color: $white;
   }
   &:nth-child(even) {
     background-color: $smoke;
+  }
+}
+
+#site-footer {
+  background-color: $jet;
+  color: $white;
+  font-size: rem-calc(12);
+  border: solid $white;
+  border-width: 1px 0;
+  a {
+    color: #aaeeff;
+    &:hover {
+      color: #cceeff;
+    }
   }
 }

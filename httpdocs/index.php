@@ -45,7 +45,7 @@ require('includes/header.php');
     <div class="row">
       <h2>Websites</h2>
       
-      <nav><ul>
+      <nav><ul class="small-block-grid-2 large-block-grid-4">
   <?php foreach($websites as $key => $value) {
     indent(3);
     echo('<li><a href="websites.php#' . $key . '"><img src="' . $value['logo'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
@@ -60,7 +60,7 @@ require('includes/header.php');
     <div class="row">
       <h2>Audiobooks</h2>
     
-      <nav><ul>
+      <nav><ul class="small-block-grid-2 large-block-grid-3">
   <?php foreach($books as $key => $value) {
     indent(3);
     echo('<li><a href="audiobooks.php#' . $key . '"><img src="' . $value['image'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
@@ -71,22 +71,5 @@ require('includes/header.php');
     </div><!-- row -->
   </section><!-- audiobooks -->
 </div><!-- tabs -->
-
-<script>
-$(function() {
-  $("#tabs").tabs({
-    // collapsible: true,
-    // active: false,
-    hide: {
-      effect: "blind",
-      duration: 200
-    },
-    show: {
-      effect: "blind",
-      duration: 200
-    }
-  });
-});
-</script>
 
 <?php require('includes/footer.php'); ?>

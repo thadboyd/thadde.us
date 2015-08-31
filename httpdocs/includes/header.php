@@ -25,8 +25,9 @@ if(isset($pageDesc)) { ?>
   <!-- link rel="stylesheet" type="text/css" href="/css/main.css" />
   <link rel="stylesheet" type="text/css" href="/css/responsive.css" / -->
   <link rel="stylesheet" type="text/css" href="/css/app.css" />
-  <!--script src="/js/jquery.min.js"></script>
-  <script src="/js/jquery-ui.min.js"></script-->
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/app.js"></script>
+  <!--script src="/js/jquery-ui.min.js"></script-->
 </head>
 
 <body id="page-<?php echo($pageShortName); ?>" class="antialiased">
@@ -58,6 +59,9 @@ if(isset($pageDesc)) { ?>
 
 <section id="main-content">
 
-<?php if(!$hasHero) {
-  echo("<h1>$pageTitle</h1>");
-}
+<?php if(!$hasHero) { ?>
+  <div class="row">
+    <h1><?php echo($pageTitle); ?></h1>
+  </div>
+<?php
+} ?>
