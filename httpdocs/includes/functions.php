@@ -12,23 +12,41 @@ function indent($level) {
   }
 } // indent
 
-function populateUL($navArr, $indentLevel = 0) {
+function populateUL($navArr, $indentLevel = 0, $class = '') {
   indent($indentLevel);
-  echo('<ul>' . PHP_EOL);
+  echo('<ul');
+  if($class != '') {
+    echo(' class="' . $class . '"');
+  }
+  echo('>' . PHP_EOL);
   foreach($navArr as $key => $value) {
+    $hasClass = isset($value['class']);
+    $hasSubnav = isset($value['subnav']);
+    
     indent($indentLevel+1);
     echo('<li');
-    if(isset($value['class'])) {
-      echo(' class="' . $value['class'] . '"');
-    }
+    if($hasClass || $hasSubnav) {
+      echo(' class="');
+      if($hasClass) {
+	echo($value['class']);
+	if($hasSubnav) {
+	  echo(' ');
+	}
+      }
+      if($hasSubnav) {
+	echo('has-dropdown not-click');
+      }
+      echo('"');
+    } // $hasClass || $hasSubnav
     echo('><a ');
     if($key === $GLOBALS['pageShortName']) {
       echo('class="current" ');
     }
+    
     echo('href="' . $value['link'] . '">' . $value['title'] . '</a>');
     if(isset($value['subnav'])) {
       echo(PHP_EOL);
-      populateUL($value['subnav'], $indentLevel+2);
+      populateUL($value['subnav'], $indentLevel+2, 'dropdown');
       indent($indentLevel+1);
     }
     echo('</li>' . PHP_EOL);

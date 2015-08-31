@@ -15,6 +15,14 @@ $pages = array(
     'title' => 'Websites',
     'link' => 'websites.php',
     'subnav' => array(
+      'globaljet' => array(
+	'title' => 'Global Jet Partners',
+	'link' => 'websites.php#globaljet'
+      ), // globaljet
+      'conference' => array(
+	'title' => 'New Media Con',
+	'link' => 'websites.php#conference'
+      ), // conference
       'md' => array(
 	'title' => 'MD Motivational Drink',
 	'link' => 'websites.php#md'
@@ -22,15 +30,7 @@ $pages = array(
       'swimit' => array(
 	'title' => "Swim'It",
 	'link' => 'websites.php#swimit'
-      ), // swimit
-      'garciniaplus' => array(
-	'title' => 'Garcinia Plus',
-	'link' => 'websites.php#garciniaplus'
-      ), // garciniaplus
-      'puregreencoffee' => array(
-	'title' => 'Pure Green Coffee',
-	'link' => 'websites.php#puregreencoffee'
-      ) // puregreencoffee
+      ) // swimit
     ) // subnav
   ), // websites
   'audiobooks' => array(
@@ -55,7 +55,12 @@ $pages = array(
     'title' => 'Contact',
     'link' => 'contact.php'
   ), // contact
-  'social' => array(
+  'github' => array(
+    'class' => 'social',
+    'title' => '<span class="fa fa-github"><!-- Github --></span>',
+    'link' => 'https://github.com/thadboyd/'
+  ),
+  'linkedin' => array(
     'class' => 'social',
     'title' => '<span class="fa fa-linkedin"><!-- LinkedIn --></span>',
     'link' => 'https://www.linkedin.com/in/thadboyd/'
@@ -63,11 +68,15 @@ $pages = array(
 );
 ?>
 
-<nav>
-<div class="toggleNav mobileOnly fa fa-bars"></div>
+<nav class="tab-bar show-for-small">
+  <a class="left-off-canvas-toggle menu-icon"></a>
+</nav>
+<nav class="top-bar hide-for-small">
+  <section class="top-bar-section">
 <?php
-  populateUL($pages, 1);
+  populateUL($pages, 2);
 ?>
+  </section>
 </nav>
 
 <script>
