@@ -68,16 +68,12 @@ $pages = array(
 );
 ?>
 
-<nav class="tab-bar show-for-small">
-  <a class="left-off-canvas-toggle menu-icon"></a>
-</nav>
-<nav class="top-bar hide-for-small">
   <section class="top-bar-section">
 <?php
-  populateUL($pages, 2);
+  populateUL($pages, 2, 'right');
 ?>
   </section>
-</nav>
+
 
 <script>
 $("#mainHeader .toggleNav").click(function() {

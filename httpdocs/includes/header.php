@@ -8,6 +8,8 @@
  
 require('includes/data.php');
 require('includes/functions.php');
+
+$hasHero = function_exists(hero);
 ?>
 
 <!DOCTYPE html>
@@ -23,8 +25,8 @@ if(isset($pageDesc)) { ?>
   <!-- link rel="stylesheet" type="text/css" href="/css/main.css" />
   <link rel="stylesheet" type="text/css" href="/css/responsive.css" / -->
   <link rel="stylesheet" type="text/css" href="/css/app.css" />
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/jquery-ui.min.js"></script>
+  <!--script src="/js/jquery.min.js"></script>
+  <script src="/js/jquery-ui.min.js"></script-->
 </head>
 
 <body id="page-<?php echo($pageShortName); ?>" class="antialiased">
@@ -32,12 +34,30 @@ if(isset($pageDesc)) { ?>
 <?php require('includes/google-analytics.php'); ?>
 
 <header id="mainHeader">
-  <h1>
-    <span id="siteTitle"><a href="//thadde.us/">thadde.us</a></span>
-    <span id="pageTitle"><?php echo($pageTitle); ?></span>
-  </h1>
+  <nav class="tab-bar show-for-small">
+    <a class="left-off-canvas-toggle menu-icon"></a>
+  </nav>
+  
+  <nav class="top-bar hide-for-small" data-topbar="">
+    <ul class="title-area">
+      <li class="name">
+	<h1 id="siteTitle"><a href="//thadde.us/">thadde.us</a></h1>
+      </li>
+    </ul>
 
-  <?php require('includes/topnav.php'); ?>
+    <?php require('includes/topnav.php'); ?>
+  </nav>
 </header>
 
-<div class="mainContent">
+<?php if($hasHero) { ?>
+<section class="panel hero">
+  <?php hero(); ?>
+</section><!-- hero -->
+<?php
+} ?>
+
+<section id="main-content">
+
+<?php if(!$hasHero) {
+  echo("<h1>$pageTitle</h1>");
+}

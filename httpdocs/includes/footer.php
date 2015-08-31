@@ -7,9 +7,9 @@
  */
 ?>
 
-</div><!-- mainContent -->
+</section><!-- main-content -->
 
-<footer>
+<footer class="zurb-footer-bottom">
 <p>Original content and site code &copy; 2008-2015 Thaddeus Boyd</p>
 
 <p><a class="modal-link" href="#copyrights-trademarks">Additional copyright and trademark information</a></p>

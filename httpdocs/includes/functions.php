@@ -22,16 +22,17 @@ function populateUL($navArr, $indentLevel = 0, $class = '') {
   foreach($navArr as $key => $value) {
     $hasClass = isset($value['class']);
     $hasSubnav = isset($value['subnav']);
+    $isActive = ($key === $GLOBALS['pageShortName']);
     
     indent($indentLevel+1);
     echo('<li');
-    if($hasClass || $hasSubnav) {
+    if($hasClass || $hasSubnav || $isActive) {
       echo(' class="');
+      if($isActive) {
+	echo('active ');
+      }
       if($hasClass) {
-	echo($value['class']);
-	if($hasSubnav) {
-	  echo(' ');
-	}
+	echo($value['class'] . ' ');
       }
       if($hasSubnav) {
 	echo('has-dropdown not-click');
@@ -39,9 +40,6 @@ function populateUL($navArr, $indentLevel = 0, $class = '') {
       echo('"');
     } // $hasClass || $hasSubnav
     echo('><a ');
-    if($key === $GLOBALS['pageShortName']) {
-      echo('class="current" ');
-    }
     
     echo('href="' . $value['link'] . '">' . $value['title'] . '</a>');
     if(isset($value['subnav'])) {
