@@ -22,12 +22,7 @@ $hasHero = function_exists(hero);
 if(isset($pageDesc)) { ?>
   <meta name="description" content="<?php echo($pageDesc); ?>" />
 <?php } ?>
-  <!-- link rel="stylesheet" type="text/css" href="/css/main.css" />
-  <link rel="stylesheet" type="text/css" href="/css/responsive.css" / -->
   <link rel="stylesheet" type="text/css" href="/css/app.css" />
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/app.js"></script>
-  <!--script src="/js/jquery-ui.min.js"></script-->
 </head>
 
 <body id="page-<?php echo($pageShortName); ?>" class="antialiased">

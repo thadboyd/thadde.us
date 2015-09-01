@@ -16,9 +16,11 @@
     <p><a class="modal-link" href="#" data-reveal-id="copyrights-trademarks">Additional copyright and trademark information</a></p>
 
     <p><a class="modal-link" href="#" data-reveal-id="amazon-associates-notification">Amazon Associates notification</a></p>
+
   </div><!-- row -->
 
 <div class="reveal-modal" id="copyrights-trademarks" data-reveal aria-labelledby="Copyrights and Trademarks" aria-hidden="true" role="dialog">
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 <?php
 foreach($websites as $key => $value) {
   writeCopyright($value['copyright'], 1, $value['title']);
@@ -43,10 +45,15 @@ foreach($libraries as $value) {
 </div><!-- copyrights-trademarks -->
 
 <div class="reveal-modal" id="amazon-associates-notification" data-reveal aria-labelledby="Amazon Associates notification" aria-hidden="true" role="dialog">
-<p>Thaddeus Boyd is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a href="http://www.amazon.com/?_encoding=UTF8&amp;camp=1789&amp;creative=390957&amp;linkCode=ur2&amp;tag=corporatesell-20&amp;linkId=OZ6E4E3ZPQ56ZYJD">amazon.com</a>.</p>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  <p>Thaddeus Boyd is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a href="http://www.amazon.com/?_encoding=UTF8&amp;camp=1789&amp;creative=390957&amp;linkCode=ur2&amp;tag=corporatesell-20&amp;linkId=OZ6E4E3ZPQ56ZYJD">amazon.com</a>.</p>
 </div><!-- amazon-associates-notification -->
 
 </footer>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/foundation.min.js"></script>
+<script src="/js/app.js"></script>
 
 </body>
 </html>
