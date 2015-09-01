@@ -31,7 +31,7 @@ require('includes/header.php');
     $hasThumbs = isset($value['thumb']);
     if($hasThumbs) { ?>
       <div class="columns small-12 large-6">
-	<h2 class="show-for-small">
+	<h2 class="hide-for-large-up">
 	  <a href="<?php echo($value['link']); ?>"><?php echo($value['title']); ?></a>
 	</h2>
 	
@@ -60,7 +60,7 @@ require('includes/header.php');
       </div><!-- column -->
   
       <div class="columns small-12 large-6 siteDesc">
-	<h2 class="hide-for-small">
+	<h2 class="show-for-large-up">
 	  <a href="<?php echo($value['link']); ?>"><?php echo($value['title']); ?></a>
 	</h2>
   <?php
