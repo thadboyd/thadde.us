@@ -27,13 +27,15 @@ require('includes/header.php');
 <?php foreach($websites as $key => $value) { ?>
   <section id="<?php echo($key); ?>" class="tab-<?php echo($key); ?>">
     <div class="row">
+  <?php
+    $hasThumbs = isset($value['thumb']);
+    if($hasThumbs) { ?>
       <div class="columns small-12 large-6">
 	<h2 class="show-for-small">
 	  <a href="<?php echo($value['link']); ?>"><?php echo($value['title']); ?></a>
 	</h2>
 	
 	<?php
-	if(isset($value['thumb'])) {
 	  indent(2);
 	  echo('<div class="siteThumbs">' . PHP_EOL);
 	  foreach($value['thumb'] as $k => $v) {
@@ -54,16 +56,24 @@ require('includes/header.php');
 	  }
 	  indent(2);
 	  echo('</div><!-- siteThumbs -->'  . PHP_EOL);
-	} ?>
+	?>
       </div><!-- column -->
   
       <div class="columns small-12 large-6 siteDesc">
 	<h2 class="hide-for-small">
 	  <a href="<?php echo($value['link']); ?>"><?php echo($value['title']); ?></a>
 	</h2>
-  
-	<?php echo($value['desc']); ?>
-	
+  <?php
+    } else { // if no thumbs
+  ?>
+      <div class="columns small-12 siteDesc">
+	<h2>
+	  <a href="<?php echo($value['link']); ?>"><?php echo($value['title']); ?></a>
+	</h2>
+  <?php
+    }
+    echo($value['desc']);
+  ?>	
 	<footer>
 	  <?php writeCopyright($value['copyright'], 4) ?>
 	</footer>

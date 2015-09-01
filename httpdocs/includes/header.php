@@ -30,14 +30,13 @@ if(isset($pageDesc)) { ?>
 <?php require('includes/google-analytics.php'); ?>
 
 <header id="mainHeader">
-  <nav class="tab-bar show-for-small">
-    <a class="left-off-canvas-toggle menu-icon"></a>
-  </nav>
-  
-  <nav class="top-bar hide-for-small" data-topbar="">
+  <nav class="top-bar collapsed" role="navigation" data-topbar="">
     <ul class="title-area">
       <li class="name">
 	<h1 id="siteTitle"><a href="//thadde.us/">thadde.us</a></h1>
+      </li>
+      <li class="toggle-topbar menu-icon">
+	<a href=""><span>Menu</span></a>
       </li>
     </ul>
 
