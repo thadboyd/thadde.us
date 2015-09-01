@@ -47,12 +47,25 @@ $topbar-title-font-family: $font-family-monospace;
   }
 }
 
+.hero nav {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: rem-calc(44);
+  line-height: 150%;
+  
+  .fa {
+    font-size: 200%;
+  }
+}
+
 #main-content > section {
   border-bottom: solid 1px $gainsboro;
-  &:nth-child(odd) {
+  padding-bottom: 1rem;
+  
+  &:nth-of-type(odd) {
     background-color: $white;
   }
-  &:nth-child(even) {
+  &:nth-of-type(even) {
     background-color: $smoke;
   }
 }
@@ -60,9 +73,11 @@ $topbar-title-font-family: $font-family-monospace;
 #site-footer {
   background-color: $jet;
   color: $white;
-  font-size: rem-calc(12);
+  font-size: rem-calc(14);
   border: solid $white;
   border-width: 1px 0;
+  padding-top: 1rem;
+  
   a {
     color: #aaeeff;
     &:hover {

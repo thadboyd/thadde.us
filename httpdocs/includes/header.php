@@ -46,17 +46,17 @@ if(isset($pageDesc)) { ?>
 </header>
 
 <?php if($hasHero) { ?>
-<section class="panel hero">
+<header class="panel hero">
   <?php hero(); ?>
-</section><!-- hero -->
+</header><!-- hero -->
 <?php
 } ?>
 
 <section id="main-content">
 
 <?php if(!$hasHero) { ?>
-  <div class="row">
+  <header class="row">
     <h1><?php echo($pageTitle); ?></h1>
-  </div>
+  </header>
 <?php
 } ?>

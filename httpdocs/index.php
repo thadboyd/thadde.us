@@ -7,13 +7,15 @@
  */
  
 $pageShortName = 'index';
-$pageTitle = "Thad Boyd's project page";
+$pageTitle = "Thad Boyd's Portfolio";
 $pageDesc = "Projects by Thad Boyd, web developer, computer scientist, IT specialist, and audiobook producer";
 
 function hero() {
 ?>
   <div class="row">
     <div class="columns small-12">
+      <h1><?php echo($GLOBALS['pageTitle']); ?></h1>
+    
       <p>Hi, I'm Thad.</p>
 
       <p>I make things.  Here are some of them.</p>
