@@ -29,13 +29,13 @@ function populateUL($navArr, $indentLevel = 0, $class = '') {
     if($hasClass || $hasSubnav || $isActive) {
       echo(' class="');
       if($isActive) {
-	echo('active ');
+        echo('active ');
       }
       if($hasClass) {
-	echo($value['class'] . ' ');
+        echo($value['class'] . ' ');
       }
       if($hasSubnav) {
-	echo('has-dropdown not-click');
+        echo('has-dropdown not-click');
       }
       echo('"');
     } // $hasClass || $hasSubnav
@@ -65,9 +65,9 @@ function writeCopyright($copyright, $indentLevel = 0, $name = '') {
   if(is_array($copyright)) {
     foreach($copyright as $key => $value) {
       if($openBR == 0) {
-	$openBR = 1;
+        $openBR = 1;
       } else {
-	echo('<br/>');
+        echo('<br/>');
       }
       indent($indentLevel);
       echo($key . ' &copy; ' . $value);

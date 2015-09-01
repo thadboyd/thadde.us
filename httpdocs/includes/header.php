@@ -33,10 +33,10 @@ if(isset($pageDesc)) { ?>
   <nav class="top-bar collapsed" role="navigation" data-topbar="">
     <ul class="title-area">
       <li class="name">
-	<h1 id="siteTitle"><a href="//thadde.us/">thadde.us</a></h1>
+        <h1 id="siteTitle"><a href="//thadde.us/">thadde.us</a></h1>
       </li>
       <li class="toggle-topbar menu-icon">
-	<a href=""><span>Menu</span></a>
+        <a href=""><span>Menu</span></a>
       </li>
     </ul>
 

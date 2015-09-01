@@ -19,10 +19,12 @@
 
   </div><!-- row -->
 
-<div class="reveal-modal" id="copyrights-trademarks" data-reveal aria-labelledby="Copyrights and Trademarks" aria-hidden="true" role="dialog">
-  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+  <div class="reveal-modal" id="copyrights-trademarks" data-reveal aria-labelledby="Copyrights and Trademarks" aria-hidden="true" role="dialog">
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <h2 class="modalTitle">Copyrights and Trademarks</h2>
 <?php
 foreach($websites as $key => $value) {
+  indent(1);
   writeCopyright($value['copyright'], 1, $value['title']);
 } // websites
 
@@ -32,22 +34,23 @@ foreach($books as $key => $value) {
 } // books
 
 foreach($trademarks as $value) {
-  indent(1);
+  indent(2);
   echo('<p>' . $value . '</p>' . PHP_EOL . PHP_EOL);
 } // trademarks
 
 foreach($libraries as $value) {
-  indent(1);
+  indent(2);
   echo('<p>' . $value . '</p>' . PHP_EOL . PHP_EOL);
 } // libraries
 
 ?>
-</div><!-- copyrights-trademarks -->
+  </div><!-- #copyrights-trademarks -->
 
-<div class="reveal-modal" id="amazon-associates-notification" data-reveal aria-labelledby="Amazon Associates notification" aria-hidden="true" role="dialog">
-  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
-  <p>Thaddeus Boyd is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a href="http://www.amazon.com/?_encoding=UTF8&amp;camp=1789&amp;creative=390957&amp;linkCode=ur2&amp;tag=corporatesell-20&amp;linkId=OZ6E4E3ZPQ56ZYJD">amazon.com</a>.</p>
-</div><!-- amazon-associates-notification -->
+  <div class="reveal-modal" id="amazon-associates-notification" data-reveal aria-labelledby="Amazon Associates notification" aria-hidden="true" role="dialog">
+    <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    <h2 class="modalTitle">Amazon Associates notification</h2>
+    <p>Thaddeus Boyd is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to <a href="http://www.amazon.com/?_encoding=UTF8&amp;camp=1789&amp;creative=390957&amp;linkCode=ur2&amp;tag=corporatesell-20&amp;linkId=OZ6E4E3ZPQ56ZYJD">amazon.com</a>.</p>
+  </div><!-- #amazon-associates-notification -->
 
 </footer>
 

@@ -16,20 +16,20 @@ $pages = array(
     'link' => 'websites.php',
     'subnav' => array(
       'globaljet' => array(
-	'title' => 'Global Jet Partners',
-	'link' => 'websites.php#globaljet'
+        'title' => 'Global Jet Partners',
+        'link' => 'websites.php#globaljet'
       ), // globaljet
       'conference' => array(
-	'title' => 'New Media Con',
-	'link' => 'websites.php#conference'
+        'title' => 'New Media Con',
+        'link' => 'websites.php#conference'
       ), // conference
       'md' => array(
-	'title' => 'MD Motivational Drink',
-	'link' => 'websites.php#md'
+        'title' => 'MD Motivational Drink',
+        'link' => 'websites.php#md'
       ), // md
       'swimit' => array(
-	'title' => "Swim'It",
-	'link' => 'websites.php#swimit'
+        'title' => "Swim'It",
+        'link' => 'websites.php#swimit'
       ) // swimit
     ) // subnav
   ), // websites
@@ -38,16 +38,16 @@ $pages = array(
     'link' => 'audiobooks.php',
     'subnav' => array(
       'dinner' => array(
-	'title' => 'Dinner on a Flying Saucer',
-	'link' => 'audiobooks.php#dinner'
+        'title' => 'Dinner on a Flying Saucer',
+        'link' => 'audiobooks.php#dinner'
       ), // dinner
       'dinosaurs' => array(
-	'title' => 'Dinosaurs in the Home Depot',
-	'link' => 'audiobooks.php#dinosaurs'
+        'title' => 'Dinosaurs in the Home Depot',
+        'link' => 'audiobooks.php#dinosaurs'
       ), // dinosaurs
       'alien' => array(
-	'title' => 'Your Average Ordinary Alien',
-	'link' => 'audiobooks.php#alien'
+        'title' => 'Your Average Ordinary Alien',
+        'link' => 'audiobooks.php#alien'
       ) // alien
     ) // subnav
   ), // audiobooks
@@ -68,9 +68,8 @@ $pages = array(
 );
 ?>
 
-  <section class="top-bar-section">
+    <section class="top-bar-section">
 <?php
-  populateUL($pages, 2, 'right');
+  populateUL($pages, 3, 'right');
 ?>
-  </section>
-  
+    </section>
