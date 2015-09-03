@@ -1,6 +1,6 @@
+.*
 /bower_components/*
-/.sass-cache/*
-*.DS_Store
 /httpdocs/css/*
 */vendor/*
 maildata.php
+php.ini
