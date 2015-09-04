@@ -1,6 +1,9 @@
 .*
 /bower_components/*
 /httpdocs/css/*
-*/vendor/*
+fonts/*
+font-awesome.min.css
+vendor/*
 maildata.php
 php.ini
+
