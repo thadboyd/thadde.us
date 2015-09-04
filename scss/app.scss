@@ -40,6 +40,36 @@
    "foundation/components/visibility";
 
 
+// MIXINS
+@mixin optional-at-root($sel) {
+  @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+    @content;
+  }
+}
+
+// Oh goody, vendor prefixes.
+// Sadly, need to use these for placeholder-shown to work correctly.
+// I think this is likely a Foundation issue rather than a browser support one.
+@mixin placeholder {
+  @include optional-at-root('::-webkit-input-placeholder') {
+    @content;
+  }
+  @include optional-at-root(':-moz-placeholder') {
+    @content;
+  }
+  @include optional-at-root('::-moz-placeholder') {
+    @content;
+  }
+  @include optional-at-root(':-ms-input-placeholder') {
+    @content;
+  }
+  @include optional-at-root(':placeholder-shown') {
+    @content;
+  }
+}
+// END MIXINS
+
+
 // TOP BAR
 $topbar-title-font-family: $font-family-monospace;
 .top-bar .name {
@@ -174,8 +204,31 @@ a:hover img {
 
 
 // CONTACT
+@include placeholder {
+  color: $steel;
+}
 textarea {
   height: 12rem;
+}
+.g-recaptcha {
+  // Show a placeholder until the Captcha loads
+  position: relative;
+  width: 302px;
+  height: 76px;
+  background: $snow;
+  
+  :after {
+    content: 'Loading...';
+    position: absolute;
+    right: 40%;
+    top: 35%;
+    z-index: 1;
+  }
+  
+  iframe {
+    position: relative;
+    z-index: 2;
+  }
 }
 .recaptcha_error {
   width: 302px; // same width as recaptcha frame itself
