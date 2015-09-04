@@ -9,7 +9,7 @@
 $pageShortName = 'websites';
 $pageTitle = 'Websites by Thad Boyd';
 $pageDesc = "Thad Boyd has been designing and building websites since 1994. Clients include Intel, Go Daddy, and Snowball Media Group.";
-require('includes/header.php');
+require_once('includes/header.php');
 ?>
 
   <section>
@@ -84,4 +84,4 @@ require('includes/header.php');
 } // foreach
 ?>
 
-<?php require('includes/footer.php'); ?>
+<?php require_once('includes/footer.php'); ?>

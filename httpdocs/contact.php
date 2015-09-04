@@ -8,7 +8,7 @@
  
 $pageShortName = 'contact';
 $pageTitle = 'Contact Thad Boyd';
-require('includes/header.php');
+require_once('includes/header.php');
 require_once('includes/maildata.php');
 ?>
 
@@ -77,4 +77,4 @@ mail($recipient, $subject, $body, "From: $name_field <$email_field>");
   
   <script src='https://www.google.com/recaptcha/api.js'></script>
 
-<?php require('includes/footer.php'); ?>
+<?php require_once('includes/footer.php'); ?>

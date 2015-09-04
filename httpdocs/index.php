@@ -40,7 +40,7 @@ function hero() {
 <?php
 } // hero
 
-require('includes/header.php');
+require_once('includes/header.php');
 ?>
 
   <section id="websites" class="tab-websites">
@@ -74,4 +74,4 @@ require('includes/header.php');
   </section><!-- audiobooks -->
 </div><!-- tabs -->
 
-<?php require('includes/footer.php'); ?>
+<?php require_once('includes/footer.php'); ?>

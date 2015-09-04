@@ -9,7 +9,7 @@
 $pageShortName = 'audiobooks';
 $pageTitle = 'Audiobooks by Thaddeus R R Boyd';
 $pageDesc = "Audiobooks narrated by Thaddeus R R Boyd. Available on Amazon, Audible, and iTunes.";
-require('includes/header.php');
+require_once('includes/header.php');
 
 ?>
   
@@ -54,4 +54,4 @@ require('includes/header.php');
   </section><!-- <?php echo($key); ?> -->
 <?php } // foreach book ?>
 
-<?php require('includes/footer.php'); ?>
+<?php require_once('includes/footer.php'); ?>
