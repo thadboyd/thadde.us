@@ -199,7 +199,9 @@ $trademarks = array(
   
   'iTunes and all related names and logos &reg; and &trade; Apple Inc.',
   
-  'Go Daddy, GoDaddy.com, and all related names and logos &reg; and &trade; Go Daddy'
+  'Go Daddy, GoDaddy.com, and all related names and logos &reg; and &trade; Go Daddy',
+  
+  'Intel and all related names and logos &reg; and &trade; of Intel Corporation'
 ); // trademarks
 
 $libraries = array(
@@ -208,10 +210,11 @@ $libraries = array(
   'Open Sans &copy; 2010-2011 Google Corporation',
   
   '<a href="http://fontawesome.io">Font Awesome</a> &copy; 2012-2015 Dave Gandy',
-
-  '<a href="http://jquery.com/">jQuery</a> &copy; 2005, 2014 jQuery Foundation<br/>
-  <a href="http://jqueryui.com/">jQuery UI</a> &copy; 2014 jQuery Foundation and other contributors',
   
-  '<a href="http://google.com/recaptcha/">reCAPTCHA</a> &copy; 2007-2014 reCAPTCHA'
+  '<a href="http://foundation.zurb.com/">Foundation</a> &copy; 2014 ZURB',
+
+  '<a href="http://jquery.com/">jQuery</a> &copy; 2005, 2014 jQuery Foundation',
+  
+  '<a href="http://google.com/recaptcha/">reCAPTCHA</a> &copy; 2007-2014 Google Corporation'
 ); // libraries
 ?>

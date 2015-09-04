@@ -275,8 +275,8 @@ $paragraph-line-height: 1.6;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($anchor-font-color, $lightness: -14%);
+$anchor-font-color: $primary-color;
+$anchor-font-color-hover: #55aaff;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;

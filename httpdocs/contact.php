@@ -37,19 +37,22 @@ $message = stripslashes($_POST['message']);
 if(!$_POST || $recaptcha_error) {
 ?>
       <div class="columns small-12 medium-8 push-2">
-        <form action="contact.php" method="POST">
+        <form action="contact.php" method="POST" data-abide>
           <div class="row">
             <div class="columns small-12 medium-6">
-              <label for="name">Name:</label> <input type="text" name="name" required />
+              <label for="name">Name:</label> <input type="text" name="name" placeholder="Your Name" required />
+              <small class="error">Please enter your name.</small>
             </div>
             
             <div class="columns small-12 medium-6">
-              <label for="email">E-Mail:</label> <input type="email" name="email" required />
+              <label for="email">E-Mail:</label> <input type="email" name="email" placeholder="someone@someplace.com" required />
+              <small class="error">Please enter a valid email address.</small>
             </div>
           </div><!-- row -->
           
           <label for="message">Message:</label>
-          <textarea name="message" required></textarea>
+          <textarea name="message" placeholder="Message..." required></textarea>
+          <small class="error">Please enter a message.</small>
           <div class="g-recaptcha" data-sitekey="<?php echo($siteKey); ?>"></div>
 <?php if($recaptcha_error) { ?>
           <small class="error recaptcha_error">Please check the box.</small>
