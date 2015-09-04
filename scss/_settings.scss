@@ -120,11 +120,16 @@ $jet         : #222222;
 $black       : #000000;
 
 // custom colors
-
+$mariner     : #2574B7;
+$malibudark  : #55AAFF;
+$malibulight : #75C4F7;
+$anakiwadark : #AAEEFF;
+$anakiwalight: #CCEEFF;
+$oldbrick    : #9B1A1A;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
-$primary-color: #2574B7;
+$primary-color: $mariner;
 // $secondary-color: #e7e7e7;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
@@ -279,7 +284,7 @@ $paragraph-line-height: 1.6;
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
 $anchor-font-color: $primary-color;
-$anchor-font-color-hover: #55aaff;
+$anchor-font-color-hover: $malibudark;
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -1427,10 +1432,10 @@ $topbar-link-color-active-hover: $white;
 $topbar-link-weight: $font-weight-bold;
 $topbar-link-font-size: rem-calc(20);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-$topbar-link-bg: #9B1A1A;
+$topbar-link-bg: $oldbrick;
 $topbar-link-bg-hover: $black;
 $topbar-link-bg-color-hover: $black;
-$topbar-link-bg-active: #75c4f7;
+$topbar-link-bg-active: $malibulight;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 $topbar-link-font-family: $body-font-family;
 $topbar-link-text-transform: none;

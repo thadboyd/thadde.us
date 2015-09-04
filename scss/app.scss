@@ -145,9 +145,9 @@ $topbar-title-font-family: $font-family-monospace;
   padding-top: 1rem;
   
   a {
-    color: #aaeeff;
+    color: $anakiwadark;
     &:hover {
-      color: #cceeff;
+      color: $anakiwalight;
     }
   }
 } // #site-footer
@@ -161,8 +161,15 @@ a:hover img {
 
 
 // WEBSITES
+h2 {
+  text-align: center;
+  @media #{$large-up} {
+    text-align: left;
+  }
+} // h2
 .siteThumbs {
   text-align: center;
+  margin-bottom: 1rem;
   
   img {
     box-shadow: 0 0 2px $iron;
@@ -170,7 +177,7 @@ a:hover img {
       margin-right: 8px;
     }
   }
-}
+}// . siteThumbs
 #globaljet .siteThumbs img {
   height: 312px;
 }
@@ -219,6 +226,7 @@ textarea {
   
   :after {
     content: 'Loading...';
+    color: $steel;
     position: absolute;
     right: 40%;
     top: 35%;

@@ -10,7 +10,20 @@ $pageShortName = 'websites';
 $pageTitle = 'Websites by Thad Boyd';
 $pageDesc = "Thad Boyd has been designing and building websites since 1994. Clients include Intel, Go Daddy, and Snowball Media Group.";
 require_once('includes/header.php');
-?>
+
+function siteHeader($site) {
+  echo('<a href="' . $site['link'] . '"');
+  if(isset($site['hover'])) {
+    echo(' title="' . $site['hover'] . '"');
+  }
+  echo('>');
+  if(isset($site['logo'])) {
+    echo('<img src="' . $site['logo'] . '" alt="' . $site['title'] . '" />');
+  } else {
+    echo($site['title']);
+  }
+  echo('</a>');
+} ?>
 
   <section>
     <div class="row">
@@ -32,7 +45,7 @@ require_once('includes/header.php');
   if($hasThumbs) { ?>
       <div class="columns small-12 large-6">
         <h2 class="hide-for-large-up">
-          <a href="<?php echo($value['link']); ?>"><?php echo($value['title']); ?></a>
+          <?php siteHeader($value); ?>
         </h2>
         
 <?php
@@ -52,7 +65,11 @@ require_once('includes/header.php');
     } else {
       echo($k);
     }
-    echo('" /></a>' . PHP_EOL);
+    echo('" ');
+    if(isset($value['hover'])) {
+      echo('title="' . $value['hover'] . '" ');
+    }
+    echo('/></a>' . PHP_EOL);
   }
   indent(4);
   echo('</div><!-- siteThumbs -->'  . PHP_EOL);
@@ -61,14 +78,14 @@ require_once('includes/header.php');
   
       <div class="columns small-12 large-6 siteDesc">
         <h2 class="show-for-large-up">
-          <a href="<?php echo($value['link']); ?>"><?php echo($value['title']); ?></a>
+          <?php siteHeader($value); ?>
         </h2>
 <?php
   } else { // if no thumbs
 ?>
       <div class="columns small-12 siteDesc">
         <h2>
-          <a href="<?php echo($value['link']); ?>"><?php echo($value['title']); ?></a>
+          <?php siteHeader($value); ?>
         </h2>
 <?php
   }
