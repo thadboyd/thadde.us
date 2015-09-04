@@ -6,8 +6,8 @@
  * Common header for all pages
  */
  
-require('includes/data.php');
-require('includes/functions.php');
+require_once('includes/data.php');
+require_once('includes/functions.php');
 
 $hasHero = function_exists(hero);
 ?>
@@ -22,12 +22,10 @@ $hasHero = function_exists(hero);
 if(isset($pageDesc)) { ?>
   <meta name="description" content="<?php echo($pageDesc); ?>" />
 <?php } ?>
-  <link rel="stylesheet" type="text/css" href="/css/app.css" />
+  <link rel="stylesheet" type="text/css" href="css/app.css" />
 </head>
 
 <body id="page-<?php echo($pageShortName); ?>" class="antialiased">
-
-<?php require('includes/google-analytics.php'); ?>
 
 <header id="mainHeader">
   <nav class="top-bar collapsed" role="navigation" data-topbar="">
@@ -40,7 +38,7 @@ if(isset($pageDesc)) { ?>
       </li>
     </ul>
 
-    <?php require('includes/topnav.php'); ?>
+    <?php require_once('includes/topnav.php'); ?>
   </nav>
 </header>
 
