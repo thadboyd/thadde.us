@@ -57,7 +57,7 @@ if(!$_POST || $recaptcha_error) {
 <?php if($recaptcha_error) { ?>
           <small class="error recaptcha_error">Please check the box.</small>
 <?php } ?>
-          <input type="submit" value="Submit">
+          <input class="button" type="submit" value="Submit">
         </form>
       </div><!-- column -->
 
