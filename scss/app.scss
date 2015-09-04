@@ -138,13 +138,13 @@ $topbar-title-font-family: $font-family-monospace;
   position: relative;
   
   .fa-volume-up {
-    font-size: 65%;
+    font-size: 105%;
     color: $white;
     text-shadow: 0 0 rem-calc(2) $black;
     position: absolute;
-    top: -10%;
-    right: -55%;
-    transform: rotate(-15deg);
+    top: -39%;
+    right: -26%;
+    transform: rotate(-30deg);
   } // .fa-volume-up
 } // .fa-audiobook
 // END HERO
