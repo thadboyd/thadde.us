@@ -1,11 +1,11 @@
 @import "settings";
-@import "foundation";
+// @import "foundation";
 
 // Or selectively include components
 @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
-//   "foundation/components/block-grid",
+   "foundation/components/block-grid",
 //   "foundation/components/breadcrumbs",
 //   "foundation/components/button-groups",
 //   "foundation/components/buttons",
@@ -13,7 +13,7 @@
 //   "foundation/components/dropdown",
 //   "foundation/components/dropdown-buttons",
 //   "foundation/components/flex-video",
-//   "foundation/components/forms",
+   "foundation/components/forms",
 //   "foundation/components/grid",
 //   "foundation/components/inline-lists",
 //   "foundation/components/joyride",
@@ -22,7 +22,7 @@
 //   "foundation/components/magellan",
 //   "foundation/components/orbit",
 //   "foundation/components/pagination",
-//   "foundation/components/panels",
+   "foundation/components/panels",
 //   "foundation/components/pricing-tables",
 //   "foundation/components/progress-bars",
    "foundation/components/reveal",
@@ -34,10 +34,10 @@
 //   "foundation/components/tabs",
 //   "foundation/components/thumbs",
 //   "foundation/components/tooltips",
-   "foundation/components/top-bar";
-//   "foundation/components/type",
+   "foundation/components/top-bar",
+   "foundation/components/type",
 //   "foundation/components/offcanvas",
-//   "foundation/components/visibility";
+   "foundation/components/visibility";
 
 
 // TOP BAR
@@ -63,16 +63,22 @@ $topbar-title-font-family: $font-family-monospace;
 // END TOP BAR
 
 
-.hero nav {
-  margin-top: 1rem;
-  text-align: center;
-  font-size: rem-calc(44);
-  line-height: 150%;
-  
-  .fa {
-    font-size: 200%;
+.hero {
+  h1 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
   }
-} // .hero nav
+  nav {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: rem-calc(44);
+    line-height: 150%;
+    
+    .fa {
+      font-size: 200%;
+    }
+  }
+} // .hero
 
 
 #main-content {
@@ -138,5 +144,8 @@ $topbar-title-font-family: $font-family-monospace;
 // CONTACT
 textarea {
   height: 12rem;
+}
+.recaptcha_error {
+  width: 302px; // same width as recaptcha frame itself
 }
 // END CONTACT

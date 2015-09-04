@@ -14,7 +14,7 @@ require_once('includes/maildata.php');
 
   <section>
     <div class="row">
-      <div class="columns small-12 medium-8 push-2">
+
 <?php
 $recaptcha_error = false;
 
@@ -36,7 +36,7 @@ $message = stripslashes($_POST['message']);
 
 if(!$_POST || $recaptcha_error) {
 ?>
-
+      <div class="columns small-12 medium-8 push-2">
         <form action="contact.php" method="POST">
           <div class="row">
             <div class="columns small-12 medium-6">
@@ -51,24 +51,24 @@ if(!$_POST || $recaptcha_error) {
           <label for="message">Message:</label>
           <textarea name="message" required></textarea>
           <div class="g-recaptcha" data-sitekey="<?php echo($siteKey); ?>"></div>
-          <?php if($recaptcha_error) { ?>
-          recaptcha error
-          <?php } ?>
+<?php if($recaptcha_error) { ?>
+          <small class="error recaptcha_error">Please check the box.</small>
+<?php } ?>
           <input type="submit" value="Submit">
         </form>
+      </div><!-- column -->
 
 <?php } else {
+$subject = "thadde.us contact form";
 $body = "From: $name_field\n"
         . "E-Mail: $email_field\n"
         . "\n$message";
 
-echo("to = $to<br/>subject = $subject<br/>body = $body<br/>name_field = $name_field<br/>email_field = $email_field");
-mail($to, $subject, $body, "From: $name_field <$email_field>");
+mail($recipient, $subject, $body, "From: $name_field <$email_field>");
 ?>
         <p>Thank you.  Your message has been sent.</p>
 
 <?php } ?>
-      </div><!-- column -->
     </div><!-- row -->
   </section>
   
