@@ -24,14 +24,14 @@ function hero() {
   
   <nav class="row">
     <div class="columns medium-6 tab-websites">
-      <a href="#websites">
+      <a href="#" onclick="$('html, body').animate({scrollTop: $('#websites').offset().top}, 300);">
 	<span class="fa fa-globe"></span><br/>
 	Websites
       </a>
     </div><!-- column -->
     
     <div class="columns medium-6 tab-audiobooks">
-      <a href="#audiobooks">
+      <a href="#" onclick="$('html, body').animate({scrollTop: $('#audiobooks').offset().top}, 300);">
 	<span class="fa fa-book"></span><br/>
 	Audiobooks
       </a>

@@ -3,7 +3,7 @@
 /httpdocs/css/*
 fonts/*
 font-awesome.min.css
-vendor/*
+/httpdocs/js/vendor/*
 maildata.php
 php.ini
 
