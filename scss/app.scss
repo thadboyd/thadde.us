@@ -123,6 +123,31 @@ $topbar-title-font-family: $font-family-monospace;
 } // #site-footer
 
 
+// WEBSITES
+.siteThumbs {
+  text-align: center;
+  
+  img {
+    box-shadow: 0 0 2px $iron;
+    &:first-child {
+      margin-right: 8px;
+    }
+  }
+}
+#globaljet .siteThumbs img {
+  height: 313px;
+}
+#conference .siteThumbs img {
+  height: 305px;
+}
+#md .siteThumbs img {
+  height: 260px;
+}
+#swimit .siteThumbs img {
+  height: 159px;
+}
+// END WEBSITES
+
 // AUDIOBOOKS
 .author {
   font-size: 75%;
