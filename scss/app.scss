@@ -123,6 +123,13 @@ $topbar-title-font-family: $font-family-monospace;
 } // #site-footer
 
 
+// GENERAL
+a:hover img {
+  opacity: 0.8;
+}
+// END GENERAL
+
+
 // WEBSITES
 .siteThumbs {
   text-align: center;
@@ -135,10 +142,10 @@ $topbar-title-font-family: $font-family-monospace;
   }
 }
 #globaljet .siteThumbs img {
-  height: 313px;
+  height: 312px;
 }
 #conference .siteThumbs img {
-  height: 305px;
+  height: 304px;
 }
 #md .siteThumbs img {
   height: 260px;
