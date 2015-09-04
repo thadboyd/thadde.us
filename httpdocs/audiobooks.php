@@ -13,7 +13,7 @@ require_once('includes/header.php');
 
 ?>
   
-<?php foreach($books as $key => $value) { ?>
+<?php foreach($audiobooks as $key => $value) { ?>
   <section id="<?php echo($key); ?>">
     <div class="row">
       <div class="columns small-12 large-6">

@@ -28,10 +28,10 @@ foreach($websites as $key => $value) {
   writeCopyright($value['copyright'], 1, $value['title']);
 } // websites
 
-foreach($books as $key => $value) {
+foreach($audiobooks as $key => $value) {
   indent(1);
   writeCopyright($value['copyright'], 1, $value['title']);
-} // books
+} // audiobooks
 
 foreach($trademarks as $value) {
   indent(2);

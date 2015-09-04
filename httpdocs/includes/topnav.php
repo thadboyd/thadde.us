@@ -14,42 +14,12 @@ $pages = array(
   'websites' => array(
     'title' => 'Websites',
     'link' => 'websites.php',
-    'subnav' => array(
-      'globaljet' => array(
-        'title' => 'Global Jet Partners',
-        'link' => 'websites.php#globaljet'
-      ), // globaljet
-      'conference' => array(
-        'title' => 'New Media Con',
-        'link' => 'websites.php#conference'
-      ), // conference
-      'md' => array(
-        'title' => 'MD Motivational Drink',
-        'link' => 'websites.php#md'
-      ), // md
-      'swimit' => array(
-        'title' => "Swim'It",
-        'link' => 'websites.php#swimit'
-      ) // swimit
-    ) // subnav
+    'subnav' => array()
   ), // websites
   'audiobooks' => array(
     'title' => 'Audiobooks',
     'link' => 'audiobooks.php',
-    'subnav' => array(
-      'dinner' => array(
-        'title' => 'Dinner on a Flying Saucer',
-        'link' => 'audiobooks.php#dinner'
-      ), // dinner
-      'dinosaurs' => array(
-        'title' => 'Dinosaurs in the Home Depot',
-        'link' => 'audiobooks.php#dinosaurs'
-      ), // dinosaurs
-      'alien' => array(
-        'title' => 'Your Average Ordinary Alien',
-        'link' => 'audiobooks.php#alien'
-      ) // alien
-    ) // subnav
+    'subnav' => array()
   ), // audiobooks
   'contact' => array(
     'title' => 'Contact',
@@ -66,6 +36,22 @@ $pages = array(
     'link' => 'https://www.linkedin.com/in/thadboyd/'
   ) // social
 );
+
+foreach($websites as $key => $value) {
+  $site = array(
+    'title' => $value['title'],
+    'link' => 'websites.php#' . $key
+  );
+  $pages['websites']['subnav'][$key] = $site;
+} // foreach website
+
+foreach($audiobooks as $key => $value) {
+  $book = array(
+    'title' => $value['title'],
+    'link' => 'audiobooks.php#' . $key
+  );
+  $pages['audiobooks']['subnav'][$key] = $book;
+} // foreach audiobook
 ?>
 
     <section class="top-bar-section">

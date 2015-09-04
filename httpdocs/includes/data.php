@@ -146,7 +146,7 @@ $websites = array(
   ) // swimit
 ); // websites
  
-$books = array(
+$audiobooks = array(
   'dinner' => array(
     'title' => 'Dinner on a Flying Saucer',
     'author' => 'Dean Wesley Smith',
@@ -194,7 +194,7 @@ $books = array(
     ),
     'copyright' => '2007, 2009, 2013 Adam Graham'
   ) // alien
-); // books
+); // audiobooks
 
 $trademarks = array(
   'Amazon, Amazon.com, Audible, and all related names and logos &reg; and &trade; Amazon.com, Inc.',

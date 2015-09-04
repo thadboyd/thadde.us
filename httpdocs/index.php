@@ -63,7 +63,7 @@ require_once('includes/header.php');
       <h2>Audiobooks</h2>
     
       <nav><ul class="small-block-grid-2 large-block-grid-3">
-  <?php foreach($books as $key => $value) {
+  <?php foreach($audiobooks as $key => $value) {
     indent(3);
     echo('<li><a href="audiobooks.php#' . $key . '"><img src="' . $value['image'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
   } ?>
