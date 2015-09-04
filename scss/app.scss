@@ -93,6 +93,7 @@ $topbar-title-font-family: $font-family-monospace;
 // END TOP BAR
 
 
+// HERO
 .hero {
   h1 {
     margin-top: 1rem;
@@ -107,8 +108,46 @@ $topbar-title-font-family: $font-family-monospace;
     .fa {
       font-size: 200%;
     }
-  }
+    
+    > .columns {
+      margin-bottom: 3rem;
+      
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+      
+      @media #{$medium-up} {
+        margin-bottom: 0;
+      }
+    }
+    
+    #nav-audiobooks a {
+      color: $oldbrick;
+      
+      &:hover {
+        color: scale-color($oldbrick, $lightness: 25%);
+        .fa-volume-up {
+          text-shadow: 0 0 rem-calc(2) $oil;
+        }
+      }
+    } // #nav-audiobooks a
+  } // nav
 } // .hero
+
+.fa-audiobook {
+  position: relative;
+  
+  .fa-volume-up {
+    font-size: 65%;
+    color: $white;
+    text-shadow: 0 0 rem-calc(2) $black;
+    position: absolute;
+    top: -10%;
+    right: -55%;
+    transform: rotate(-15deg);
+  } // .fa-volume-up
+} // .fa-audiobook
+// END HERO
 
 
 #main-content {
@@ -217,14 +256,14 @@ h2 {
 textarea {
   height: 12rem;
 }
-.g-recaptcha {
+.recaptcha-container {
   // Show a placeholder until the Captcha loads
   position: relative;
   width: 302px;
   height: 76px;
   background: $snow;
   
-  :after {
+  .loading {
     content: 'Loading...';
     color: $steel;
     position: absolute;

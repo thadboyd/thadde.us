@@ -53,7 +53,10 @@ if(!$_POST || $recaptcha_error) {
           <label for="message">Message:</label>
           <textarea name="message" placeholder="Message..." required></textarea>
           <small class="error">Please enter a message.</small>
-          <div class="g-recaptcha" data-sitekey="<?php echo($siteKey); ?>"></div>
+          <div class="recaptcha-container">
+            <div class="g-recaptcha" data-sitekey="<?php echo($siteKey); ?>"></div>
+            <span class="loading">Loading... <span class="fa fa-spinner fa-spin"></span></span>
+          </div>
 <?php if($recaptcha_error) { ?>
           <small class="error recaptcha_error">Please check the box.</small>
 <?php } ?>

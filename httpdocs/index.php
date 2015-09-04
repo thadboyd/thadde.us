@@ -23,16 +23,19 @@ function hero() {
   </div><!-- row -->
   
   <nav class="row">
-    <div class="columns medium-6 tab-websites">
+    <div class="columns medium-6" id="nav-websites">
       <a href="#" onclick="$('html, body').animate({scrollTop: $('#websites').offset().top}, 300);">
 	<span class="fa fa-globe"></span><br/>
 	Websites
       </a>
     </div><!-- column -->
     
-    <div class="columns medium-6 tab-audiobooks">
+    <div class="columns medium-6" id="nav-audiobooks">
       <a href="#" onclick="$('html, body').animate({scrollTop: $('#audiobooks').offset().top}, 300);">
-	<span class="fa fa-book"></span><br/>
+	<div class="fa fa-audiobook">
+          <span class="fa-book"></span>
+          <span class="fa-volume-up"></span>
+        </div><br/>
 	Audiobooks
       </a>
     </div><!-- column -->
@@ -43,7 +46,7 @@ function hero() {
 require_once('includes/header.php');
 ?>
 
-  <section id="websites" class="tab-websites">
+  <section id="websites">
     <div class="row">
       <h2>Websites</h2>
       
@@ -58,7 +61,7 @@ require_once('includes/header.php');
     </div><!-- row -->
   </section><!-- websites -->
   
-  <section id="audiobooks" class="tab-audiobooks">
+  <section id="audiobooks">
     <div class="row">
       <h2>Audiobooks</h2>
     
