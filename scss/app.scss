@@ -192,12 +192,31 @@ $topbar-title-font-family: $font-family-monospace;
 } // #site-footer
 
 
+// HOME
+#sitelogos {
+  font-size: rem-calc(44);
+  
+  .company-name {
+    line-height: 1.1;
+  }
+  
+  #banner-integratedaviation {
+    font-family: 'Raleway';
+    padding-top: rem-calc(18);
+  }
+} // #sitelogos
+// END HOME
+
+
 // GENERAL
 a:hover img {
   opacity: 0.8;
 }
 [class*="block-grid-"] {
   text-align: center;
+}
+[src*="intel-logo.svg"] {
+  height: 140px;
 }
 // END GENERAL
 
@@ -229,10 +248,19 @@ h2 {
 #md .siteThumbs img {
   height: 260px;
 }
+#integratedaviation {
+  .siteThumbs img {
+    height: 158px;
+  }
+  h2 {
+    font-family: Raleway;
+  }
+}
 #swimit .siteThumbs img {
   height: 159px;
 }
 // END WEBSITES
+
 
 // AUDIOBOOKS
 .author {

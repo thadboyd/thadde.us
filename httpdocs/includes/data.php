@@ -33,9 +33,11 @@ $websites = array(
 	    <li>Mobile-First</li>
 	  </ul>
 	</li>
+	<li>JavaScript/jQuery</li>
 	<li>PHP</li>
 	<li>HTML5/Semantic Markup</li>
 	<li>CSS3</li>
+	<li>Multilingual</li>
       </ul>",
     'copyright' => array(
       'Content' => '2013-2015 Global Jet Partners, LLC',
@@ -81,6 +83,32 @@ $websites = array(
       </ul>",
     'copyright' => '2015 Thaddeus Boyd'
   ), // conference
+  'intel' => array(
+    'title' => 'Intel Legal Portal',
+    'logo' => 'img/intel-logo.svg',
+    'hover' => 'Intel Legal Portal',
+    'thumb' => array(
+      'full' => array(
+        'image' => 'img/intel-demosite.jpg',
+        'alt' => 'Thumbnail'
+      ) // full
+    ), // thumb
+    'desc' => "
+      <p>Internal portal site for Intel's legal department, built to comply with Intel's Master Look and Feel Guidelines and codebase</p>
+      
+      <ul>
+        <li>Sharepoint 2013
+          <ul>
+            <li>Migrated site from Sharepoint 2010</li>
+            <li>Redesigned from the ground up</li>
+          </ul>
+        </li>
+        <li>XML/XSL</li>
+        <li>Bootstrap</li>
+        <li>JavaScript/jQuery</li>
+      </ul>",
+     'copyright' => '2015 Intel Corporation'
+  ), // intel
   'md' => array(
     'title' => 'MD Motivational Drink',
     'link' => 'http://mdmotivationaldrink.com/',
@@ -115,6 +143,35 @@ $websites = array(
       'Code' => '2014 Go Daddy'
     ) // copyright
   ), // md
+  'integratedaviation' => array(
+    'title' => 'Integrated Aviation Group',
+    'link' => 'http://integratedaviationgroup.com/',
+    'hover' => 'integratedaviationgroup.com',
+    'thumb' => array(
+      'main' => array(
+        'image' => 'img/integratedaviation-homepage-slide1.jpg',
+        'alt' => 'Main Page Thumbnail'
+      ), // main
+      'form' => array(
+        'image' => 'img/integratedaviation-quote.jpg',
+        'alt' => 'Quote Form Thumbnail'
+      ) // form
+    ), // thumb
+    'desc' => "
+      <p>Responsive small-business site built on Wordpress and Boostrap</p>
+      
+      <ul>
+        <li>Wordpress</li>
+        <li>Bootstrap</li>
+        <li>PHP</li>
+        <li>HTML5/Semantic Markup</li>
+        <li>CSS3</li>
+      </ul>",
+    'copyright' => array(
+      'Content' => '2015 Integrated Aviation Group',
+      'Code' => '2015 Thaddeus Boyd'
+    ) // copyright
+  ), // integratedaviation
   'swimit' => array(
     'title' => "Swim'It",
     'link' => 'http://myswimit.com/',

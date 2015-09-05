@@ -55,13 +55,16 @@ function siteHeader($site) {
   echo('<div class="siteThumbs">' . PHP_EOL);
   foreach($value['thumb'] as $k => $v) {
     indent(5);
-    echo('<a href="');
-    if(isset($v['link'])) {
-      echo($v['link']);
-    } else {
-      echo($value['link']);
+    if(isset($value['link'])) {
+      echo('<a href="');
+      if(isset($v['link'])) {
+        echo($v['link']);
+      } else {
+        echo($value['link']);
+      }
+      echo('">');
     }
-    echo('"><img src="' . $v['image'] . '" alt="');
+    echo('<img src="' . $v['image'] . '" alt="');
     if(isset($v['alt'])) {
       echo($v['alt']);
     } else {
@@ -71,7 +74,11 @@ function siteHeader($site) {
     if(isset($value['hover'])) {
       echo('title="' . $value['hover'] . '" ');
     }
-    echo('/></a>' . PHP_EOL);
+    echo('/>');
+    if(isset($value['link'])) {
+      echo('</a>');
+    }
+    echo(PHP_EOL);
   }
   indent(4);
   echo('</div><!-- siteThumbs -->'  . PHP_EOL);

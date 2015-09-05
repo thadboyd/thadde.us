@@ -51,10 +51,20 @@ require_once('includes/header.php');
       <div class="columns small-12">
         <h2><a href="websites.php">Websites</a></h2>
         
-        <nav><ul class="small-block-grid-2 large-block-grid-4">
-<?php foreach($websites as $key => $value) {
-  indent(3);
-  echo('<li><a href="websites.php#' . $key . '"><img src="' . $value['logo'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
+        <nav id="sitelogos"><ul class="small-block-grid-2 large-block-grid-3">
+<?php
+foreach($websites as $key => $value) {
+?>
+          <li><a href="websites.php#<?php echo($key); ?>">
+<?php
+  if(isset($value['logo'])) {
+    echo('<img src="' . $value['logo'] . '" alt="' . $value['title'] . '" />');
+  } else {
+    echo('<div class="company-name" id="banner-' . $key . '">' . $value['title'] . '</div>');
+  }
+?>
+          </a></li>
+<?php
 } ?>
         </ul></nav>
       
@@ -68,7 +78,7 @@ require_once('includes/header.php');
       <div class="columns small-12">
         <h2><a href="audiobooks.php">Audiobooks</a></h2>
       
-        <nav><ul class="small-block-grid-2 large-block-grid-3">
+        <nav><ul class="small-block-grid-3">
 <?php foreach($audiobooks as $key => $value) {
   indent(3);
   echo('<li><a href="audiobooks.php#' . $key . '"><img src="' . $value['image'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
