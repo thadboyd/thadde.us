@@ -11,12 +11,13 @@
 
 <footer id="site-footer">
   <div class="row">
-    <p>Original content and site code &copy; 2008-2015 Thaddeus Boyd</p>
+    <div class="columns small-12">
+      <p>Original content and site code &copy; 2008-2015 Thaddeus Boyd</p>
 
-    <p><a class="modal-link" href="#" data-reveal-id="copyrights-trademarks">Additional copyright and trademark information</a></p>
+      <p><a class="modal-link" href="#" data-reveal-id="copyrights-trademarks">Additional copyright and trademark information</a></p>
 
-    <p><a class="modal-link" href="#" data-reveal-id="amazon-associates-notification">Amazon Associates notification</a></p>
-
+      <p><a class="modal-link" href="#" data-reveal-id="amazon-associates-notification">Amazon Associates notification</a></p>
+    </div><!-- columns -->
   </div><!-- row -->
 
   <div class="reveal-modal" id="copyrights-trademarks" data-reveal aria-labelledby="Copyrights and Trademarks" aria-hidden="true" role="dialog">

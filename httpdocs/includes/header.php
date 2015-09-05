@@ -27,7 +27,7 @@ if(isset($pageDesc)) { ?>
 
 <body id="page-<?php echo($pageShortName); ?>" class="antialiased">
 
-<header id="mainHeader">
+<header id="mainHeader" class="fixed">
   <nav class="top-bar collapsed" role="navigation" data-topbar="">
     <ul class="title-area">
       <li class="name">
@@ -53,7 +53,9 @@ if(isset($pageDesc)) { ?>
 
 <?php if(!$hasHero) { ?>
   <header class="row">
-    <h1><?php echo($pageTitle); ?></h1>
+    <div class="columns small-12">
+      <h1><?php echo($pageTitle); ?></h1>
+    </div>
   </header>
 <?php
 } ?>

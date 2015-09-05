@@ -27,14 +27,16 @@ function siteHeader($site) {
 
   <section>
     <div class="row">
-      <p>I built my first website in 1994, and I haven't stopped.</p>
-          
-      <p>Sometimes I build sites for fun.  Sometimes I build them as a freelancer.  Sometimes I build them for companies like Intel or Go Daddy.</p>
+      <div class="columns small-12">
+        <p>I built my first website in 1994, and I haven't stopped.</p>
+            
+        <p>Sometimes I build sites for fun.  Sometimes I build them as a freelancer.  Sometimes I build them for companies like Intel or Go Daddy.</p>
 
-      <p>I built the site you're looking at right now, in PHP, HTML5, CSS3, and JavaScript, with the ZURB Foundation and jQuery libraries.</p>
+        <p>I built the site you're looking at right now, in PHP, HTML5, CSS3, and JavaScript, with the ZURB Foundation and jQuery libraries.</p>
 
-      <p>Below you'll a few more of the sites I've built over the years.  Like what you see?  <a href="contact.php">Contact me</a> for a quote.</p>
-    </div>
+        <p>Below you'll a few more of the sites I've built over the years.  Like what you see?  <a href="contact.php">Contact me</a> for a quote.</p>
+      </div><!-- columns -->
+    </div><!-- row -->
   </section>
 
 <?php foreach($websites as $key => $value) { ?>

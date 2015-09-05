@@ -7,7 +7,7 @@
  */
  
 $pageShortName = 'index';
-$pageTitle = "Thad Boyd's Portfolio";
+$pageTitle = "Portfolio &mdash; Thad Boyd";
 $pageDesc = "Projects by Thad Boyd, web developer, computer scientist, IT specialist, and audiobook producer";
 
 function hero() {
@@ -48,31 +48,35 @@ require_once('includes/header.php');
 
   <section id="websites">
     <div class="row">
-      <h2>Websites</h2>
+      <div class="columns small-12">
+        <h2><a href="websites.php">Websites</a></h2>
+        
+        <nav><ul class="small-block-grid-2 large-block-grid-4">
+<?php foreach($websites as $key => $value) {
+  indent(3);
+  echo('<li><a href="websites.php#' . $key . '"><img src="' . $value['logo'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
+} ?>
+        </ul></nav>
       
-      <nav><ul class="small-block-grid-2 large-block-grid-4">
-  <?php foreach($websites as $key => $value) {
-    indent(3);
-    echo('<li><a href="websites.php#' . $key . '"><img src="' . $value['logo'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
-  } ?>
-      </ul></nav>
-      
-      <p>I've been building websites for over 20 years.  I've built hundreds: from Wordpress blogs to ecommerce sites to social club calendars, from straightforward just-the-facts info sites to music, videos, slideshows, and animation, I can build a website to meet your needs.</p>
+        <p>I've been building websites for over 20 years.  I've built hundreds: from Wordpress blogs to ecommerce sites to social club calendars, from straightforward just-the-facts info sites to music, videos, slideshows, and animation, I can build a website to meet your needs.</p>
+      </div><!-- column -->
     </div><!-- row -->
   </section><!-- websites -->
   
   <section id="audiobooks">
     <div class="row">
-      <h2>Audiobooks</h2>
+      <div class="columns small-12">
+        <h2><a href="audiobooks.php">Audiobooks</a></h2>
+      
+        <nav><ul class="small-block-grid-2 large-block-grid-3">
+<?php foreach($audiobooks as $key => $value) {
+  indent(3);
+  echo('<li><a href="audiobooks.php#' . $key . '"><img src="' . $value['image'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
+} ?>
+        </ul></nav>
     
-      <nav><ul class="small-block-grid-2 large-block-grid-3">
-  <?php foreach($audiobooks as $key => $value) {
-    indent(3);
-    echo('<li><a href="audiobooks.php#' . $key . '"><img src="' . $value['image'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
-  } ?>
-      </ul></nav>
-    
-      <p>I've recorded several audiobooks.  You can find them for sale at <a href="http://www.amazon.com/s/?_encoding=UTF8&amp;camp=1789&amp;creative=390957&amp;field-author=Thaddeus%20R.%20R.%20Boyd&amp;linkCode=ur2&amp;search-alias=books&amp;tag=corporatesell-20&amp;linkId=UDYCPMDZVQK4RBIX">Amazon</a>, <a href="http://www.audible.com/search/ref=pd_narr_1?searchNarrator=Thaddeus+R.+R.+Boyd">Audible</a>, and <a href="https://itunes.apple.com/us/artist/thaddeus-r.-r.-boyd/id597740901">iTunes</a>.</p>
+        <p>I've recorded several audiobooks.  You can find them for sale at <a href="http://www.amazon.com/s/?_encoding=UTF8&amp;camp=1789&amp;creative=390957&amp;field-author=Thaddeus%20R.%20R.%20Boyd&amp;linkCode=ur2&amp;search-alias=books&amp;tag=corporatesell-20&amp;linkId=UDYCPMDZVQK4RBIX">Amazon</a>, <a href="http://www.audible.com/search/ref=pd_narr_1?searchNarrator=Thaddeus+R.+R.+Boyd">Audible</a>, and <a href="https://itunes.apple.com/us/artist/thaddeus-r.-r.-boyd/id597740901">iTunes</a>.</p>
+      </div><!-- column -->
     </div><!-- row -->
   </section><!-- audiobooks -->
 </div><!-- tabs -->
