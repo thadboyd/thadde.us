@@ -196,6 +196,9 @@ $topbar-title-font-family: $font-family-monospace;
 a:hover img {
   opacity: 0.8;
 }
+[class*="block-grid-"] {
+  text-align: center;
+}
 // END GENERAL
 
 
