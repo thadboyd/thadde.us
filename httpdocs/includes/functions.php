@@ -12,6 +12,14 @@ function indent($level) {
   }
 } // indent
 
+function generateLink($linkAttrs, $linkText) {
+  echo('<a');
+  foreach($linkAttrs as $key => $value) {
+    echo(" $key='$value'");
+  }
+  echo(">$linkText</a>");
+}
+
 function populateUL($navArr, $indentLevel = 0, $class = '') {
   indent($indentLevel);
   echo('<ul');

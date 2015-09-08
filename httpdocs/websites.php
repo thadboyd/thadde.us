@@ -12,18 +12,15 @@ $pageDesc = "Thad Boyd has been designing and building websites since 1994. Clie
 require_once('includes/header.php');
 
 function siteHeader($site) {
-  echo('<a href="' . $site['link'] . '"');
-  if(isset($site['hover'])) {
-    echo(' title="' . $site['hover'] . '"');
-  }
-  echo('>');
   if(isset($site['logo'])) {
-    echo('<img src="' . $site['logo'] . '" alt="' . $site['title'] . '" />');
+    $linkText = '<img src="' . $site['logo'] . '" alt="' . $site['title'] . '" />';
   } else {
-    echo($site['title']);
+    $linkText = $site['title'];
   }
-  echo('</a>');
-} ?>
+
+  generateLink($site['link'], $linkText) ;
+}
+?>
 
   <section>
     <div class="row">
@@ -54,30 +51,24 @@ function siteHeader($site) {
   indent(4);
   echo('<div class="siteThumbs">' . PHP_EOL);
   foreach($value['thumb'] as $k => $v) {
-    indent(5);
-    if(isset($value['link'])) {
-      echo('<a href="');
-      if(isset($v['link'])) {
-        echo($v['link']);
-      } else {
-        echo($value['link']);
-      }
-      echo('">');
-    }
-    echo('<img src="' . $v['image'] . '" alt="');
+    $imgTag = '<img src="' . $v['image'] . '" alt="';
     if(isset($v['alt'])) {
-      echo($v['alt']);
+      $imgTag .= $v['alt'];
     } else {
-      echo($k);
+      $imgTag .= $k;
     }
-    echo('" ');
-    if(isset($value['hover'])) {
-      echo('title="' . $value['hover'] . '" ');
+    $imgTag .= '"/>';
+    
+    indent(5);
+    
+    if(isset($v['link'])) {
+      generateLink($v['link'], $imgTag);
+    } else if(isset($value['link'])) {
+      generateLink($value['link'], $imgTag);
+    } else {
+      echo($imgTag);
     }
-    echo('/>');
-    if(isset($value['link'])) {
-      echo('</a>');
-    }
+    
     echo(PHP_EOL);
   }
   indent(4);

@@ -9,9 +9,11 @@
 $websites = array(
   'globaljet' => array(
     'title' => 'Global Jet Partners',
-    'link' => 'http://globaljetpartners.com/',
+    'link' => array(
+      'href' => 'http://globaljetpartners.com/',
+      'title' => 'globaljetpartners.com'
+    ), // link
     'logo' => 'img/globaljet-logo.png',
-    'hover' => 'globaljetpartners.com',
     'thumb' => array(
       'full' => array(
 	'image' => 'img/globaljet-mainpage-full.jpg',
@@ -46,9 +48,11 @@ $websites = array(
   ), // globaljet
   'conference' => array(
     'title' => 'New Media Con',
-    'link' => '/demos/conference/',
+    'link' => array(
+      'href' => '/demos/conference/',
+      'title' => 'New Media Con demo site'
+    ), // link
     'logo' => 'img/conference-logo.png',
-    'hover' => 'New Media Con demo site',
     'thumb' => array(
       'full' => array(
 	'image' => 'img/conference-mainpage-full.jpg',
@@ -86,7 +90,10 @@ $websites = array(
   'intel' => array(
     'title' => 'Intel Legal Portal',
     'logo' => 'img/intel-logo.svg',
-    'hover' => 'Intel Legal Portal',
+    'link' => array(
+      'href' => '#',
+      'title' => 'Intel Legal Portal'
+    ), // link
     'thumb' => array(
       'full' => array(
         'image' => 'img/intel-demosite.jpg',
@@ -111,9 +118,11 @@ $websites = array(
   ), // intel
   'md' => array(
     'title' => 'MD Motivational Drink',
-    'link' => 'http://mdmotivationaldrink.com/',
+    'link' => array(
+      'href' => 'http://mdmotivationaldrink.com/',
+      'title' => 'mdmotivationaldrink.com'
+    ), // link
     'logo' => 'img/md-logo.png',
-    'hover' => 'mdmotivationaldrink.com',
     'thumb' => array(
       'full' => array(
 	'image' => 'img/md-mainpage-full.jpg',
@@ -145,8 +154,10 @@ $websites = array(
   ), // md
   'integratedaviation' => array(
     'title' => 'Integrated Aviation Group',
-    'link' => 'http://integratedaviationgroup.com/',
-    'hover' => 'integratedaviationgroup.com',
+    'link' => array(
+      'href' => 'http://integratedaviationgroup.com/',
+      'title' => 'integratedaviationgroup.com'
+    ), // link
     'thumb' => array(
       'main' => array(
         'image' => 'img/integratedaviation-homepage-slide1.jpg',
@@ -174,9 +185,11 @@ $websites = array(
   ), // integratedaviation
   'swimit' => array(
     'title' => "Swim'It",
-    'link' => 'http://myswimit.com/',
+    'link' => array(
+      'href' => 'http://myswimit.com/',
+      'title' => 'myswimit.com'
+    ), // link
     'logo' => 'img/swimit-logo.png',
-    'hover' => 'myswimit.com',
     'thumb' => array(
       'main' => array(
 	'image' => 'img/swimit-mainpage.jpg',
@@ -185,7 +198,10 @@ $websites = array(
       'store' => array(
 	'image' => 'img/swimit-store.jpg',
 	'alt' => 'Storefront Thumbnail',
-	'link' => 'https://shop.myswimit.com/'
+	'link' => array (
+          'href' => 'https://shop.myswimit.com/',
+          'title' => 'shop.myswimit.com'
+        ) // link
       ) // store
     ), // thumb
     'desc' => "
