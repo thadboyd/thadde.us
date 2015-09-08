@@ -242,7 +242,7 @@ $h4-font-size: rem-calc(20);
 // $h6-font-size: 1rem;
 
 // We use these to control header size reduction on small screens
-// $h1-font-reduction: rem-calc(10);
+$h1-font-reduction: rem-calc(20);
 // $h2-font-reduction: rem-calc(10);
 // $h3-font-reduction: rem-calc(5);
 // $h4-font-reduction: rem-calc(5);
@@ -1423,7 +1423,7 @@ $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 $topbar-title-weight: $font-weight-bold;
-$topbar-title-font-size: rem-calc(48);
+$topbar-title-font-size: rem-calc(32);
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: $white;

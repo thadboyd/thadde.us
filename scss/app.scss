@@ -74,9 +74,13 @@
 $topbar-title-font-family: $font-family-monospace;
 .top-bar .name {
   font-family: $topbar-title-font-family;
-  h1, h2, h3, h4, p, span {
-      font-family: inherit;
-  }
+  
+  h1 {
+    font-family: inherit;
+    @media #{$medium-up} {
+      font-size: rem-calc(48);
+    }
+  } // h1
 } // .top-bar .name
 // NAVIGATION
 .top-bar-section {
@@ -194,7 +198,11 @@ $topbar-title-font-family: $font-family-monospace;
 
 // HOME
 #sitelogos {
-  font-size: rem-calc(44);
+  font-size: rem-calc(24);
+
+  @media #{$medium-up} {
+    font-size: rem-calc(44);
+  }
   
   .company-name {
     line-height: 1.1;
@@ -202,7 +210,16 @@ $topbar-title-font-family: $font-family-monospace;
   
   #banner-integratedaviation {
     font-family: 'Raleway';
-    padding-top: rem-calc(18);
+    
+    @media #{$medium-up} {
+      padding-top: rem-calc(18);
+    }
+  }
+  
+  @media #{$small-only} {
+    [src*="intel-logo.svg"] {
+      height: 80px;
+    }
   }
 } // #sitelogos
 // END HOME
@@ -234,10 +251,10 @@ h2 {
 } // h2
 .siteThumbs {
   text-align: center;
-  margin-bottom: 1rem;
   
   img {
     box-shadow: 0 0 2px $iron;
+    margin-bottom: 1rem;
     &:first-child {
       margin-right: 8px;
     }
@@ -272,13 +289,16 @@ h2 {
   padding-left: 1em;
 }
 .video {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   
-  @media #{$medium-only} {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+  @media #{$medium-up} {
+    width: 400px;
+    height: 400px;
   }
 }
 // END AUDIOBOOKS

@@ -7,7 +7,7 @@
  */
 
 $pageShortName = 'audiobooks';
-$pageTitle = 'Audiobooks by Thaddeus R R Boyd';
+$pageTitle = 'Audiobooks Narrated by Thaddeus R R Boyd';
 $pageDesc = "Audiobooks narrated by Thaddeus R R Boyd. Available on Amazon, Audible, and iTunes.";
 require_once('includes/header.php');
 
