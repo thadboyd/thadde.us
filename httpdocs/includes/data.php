@@ -16,30 +16,30 @@ $websites = array(
     'logo' => 'img/globaljet-logo.png',
     'thumb' => array(
       'full' => array(
-	'image' => 'img/globaljet-mainpage-full.jpg',
-	'alt' => 'Full-Size Thumbnail'
+        'image' => 'img/globaljet-mainpage-full.jpg',
+        'alt' => 'Full-Size Thumbnail'
       ), // full
       'mobile' => array(
-	'image' => 'img/globaljet-mainpage-mobile.jpg',
-	'alt' => 'Mobile Thumbnail'
+        'image' => 'img/globaljet-mainpage-mobile.jpg',
+        'alt' => 'Mobile Thumbnail'
       ) // mobile
     ), // thumb
     'desc' => "
       <p>Responsive small-business site built on Wordpress and Boostrap</p>
       
       <ul>
-	<li>Wordpress</li>
-	<li>Bootstrap
-	  <ul>
-	    <li>Responsive</li>
-	    <li>Mobile-First</li>
-	  </ul>
-	</li>
-	<li>JavaScript/jQuery</li>
-	<li>PHP</li>
-	<li>HTML5/Semantic Markup</li>
-	<li>CSS3</li>
-	<li>Multilingual</li>
+        <li>Wordpress</li>
+        <li>Bootstrap
+          <ul>
+            <li>Responsive</li>
+            <li>Mobile-First</li>
+          </ul>
+        </li>
+        <li>JavaScript/jQuery</li>
+        <li>PHP</li>
+        <li>HTML5/Semantic Markup</li>
+        <li>CSS3</li>
+        <li>Multilingual</li>
       </ul>",
     'copyright' => array(
       'Content' => '2013-2015 Global Jet Partners, LLC',
@@ -55,35 +55,35 @@ $websites = array(
     'logo' => 'img/conference-logo.png',
     'thumb' => array(
       'full' => array(
-	'image' => 'img/conference-mainpage-full.jpg',
-	'alt' => 'Full-Size Thumbnail'
+        'image' => 'img/conference-mainpage-full.jpg',
+        'alt' => 'Full-Size Thumbnail'
       ), // full
       'mobile' => array(
-	'image' => 'img/conference-mainpage-mobile.jpg',
-	'alt' => 'Mobile Thumbnail'
+        'image' => 'img/conference-mainpage-mobile.jpg',
+        'alt' => 'Mobile Thumbnail'
       ) // mobile
     ), // thumb
     'desc' => "
       <p>AngularJS demo site featuring responsive multi-column layout and form validation</p>
       
       <ul>
-	<li><a href=\"http://foundation.zurb.com/\">Foundation</a> framework
-	  <ul>
-	    <li>Multi-column layout</li>
-	    <li>Responsive Design</li>
-	  </ul>
-	</li>
-	<li>JavaScript/AngularJS
-	  <ul>
-	    <li>Category visibility toggle</li>
-	    <li>Modals</li>
-	    <li>Form validation</li>
-	  </ul>
-	</li>
-	<li>JSON</li>
-	<li>HTML5/Semantic Markup</li>
-	<li>CSS3/Responsive Design</li>
-	<li>Sass/SCSS</li>
+        <li><a href=\"http://foundation.zurb.com/\">Foundation</a> framework
+          <ul>
+            <li>Multi-column layout</li>
+            <li>Responsive Design</li>
+          </ul>
+        </li>
+        <li>JavaScript/AngularJS
+          <ul>
+            <li>Category visibility toggle</li>
+            <li>Modals</li>
+            <li>Form validation</li>
+          </ul>
+        </li>
+        <li>JSON</li>
+        <li>HTML5/Semantic Markup</li>
+        <li>CSS3/Responsive Design</li>
+        <li>Sass/SCSS</li>
       </ul>",
     'copyright' => '2015 Thaddeus Boyd'
   ), // conference
@@ -92,11 +92,12 @@ $websites = array(
     'logo' => 'img/intel-logo.svg',
     'link' => array(
       'href' => '#',
-      'title' => 'Intel Legal Portal'
+      'title' => 'Intel Legal Portal',
+      'data-reveal-id' => 'intel-modal'
     ), // link
     'thumb' => array(
       'full' => array(
-        'image' => 'img/intel-demosite.jpg',
+        'image' => 'img/intel-demosite-thumb.jpg',
         'alt' => 'Thumbnail'
       ) // full
     ), // thumb
@@ -113,7 +114,14 @@ $websites = array(
         <li>XML/XSL</li>
         <li>Bootstrap</li>
         <li>JavaScript/jQuery</li>
-      </ul>",
+      </ul>
+      
+      <div class='reveal-modal' id='intel-modal' data-reveal aria-labelledby='Intel Legal Portal' aria-hidden='true' role='dialog'>
+        <a class='close-reveal-modal' aria-label='Close'>&#215;</a>
+        <h2 class='modalTitle'>Intel Legal Portal</h2>
+        <img class='shadow' src='img/intel-demosite-full.png' alt='Intel Legal Portal layout' />
+        <p>Screenshot of the layout for the Intel Legal Portal site (proprietary information has been removed)</p>
+      </div><!-- #intel-modal -->",
      'copyright' => '2015 Intel Corporation'
   ), // intel
   'md' => array(
@@ -125,25 +133,25 @@ $websites = array(
     'logo' => 'img/md-logo.png',
     'thumb' => array(
       'full' => array(
-	'image' => 'img/md-mainpage-full.jpg',
-	'alt' => 'Full-Size Thumbnail'
+        'image' => 'img/md-mainpage-full.jpg',
+        'alt' => 'Full-Size Thumbnail'
       ), // full
       'mobile' => array(
-	'image' => 'img/md-mainpage-mobile.jpg',
-	'alt' => 'Mobile Thumbnail'
+        'image' => 'img/md-mainpage-mobile.jpg',
+        'alt' => 'Mobile Thumbnail'
       ) // mobile
     ), // thumb
     'desc' =>
       "<p>Responsive small-business site featuring CSS3 animations and jQuery styling.</p>
       
       <ul>
-	<li>JavaScript/jQuery</li>
-	<li>CSS3
-	  <ul>
-	    <li>Responsive Design</li>
-	    <li>Animations</li>
-	  </ul>
-	</li>
+        <li>JavaScript/jQuery</li>
+        <li>CSS3
+          <ul>
+            <li>Responsive Design</li>
+            <li>Animations</li>
+          </ul>
+        </li>
       </ul>
       
       <p>Graphic design by <a href=\"http://www.linkedin.com/in/yalikeitmike\">Mike Patten</a>.</p>",
@@ -192,13 +200,13 @@ $websites = array(
     'logo' => 'img/swimit-logo.png',
     'thumb' => array(
       'main' => array(
-	'image' => 'img/swimit-mainpage.jpg',
-	'alt' => 'Main Page Thumbnail'
+        'image' => 'img/swimit-mainpage.jpg',
+        'alt' => 'Main Page Thumbnail'
       ), // main
       'store' => array(
-	'image' => 'img/swimit-store.jpg',
-	'alt' => 'Storefront Thumbnail',
-	'link' => array (
+        'image' => 'img/swimit-store.jpg',
+        'alt' => 'Storefront Thumbnail',
+        'link' => array (
           'href' => 'https://shop.myswimit.com/',
           'title' => 'shop.myswimit.com'
         ) // link
@@ -208,9 +216,9 @@ $websites = array(
       <p>Responsive small-business ecommerce site featuring jQuery and a Nivo slideshow</p>
       
       <ul>
-	<li>CSS3/Responsive Design</li>
-	<li>JavaScript/jQuery</li>
-	<li><a href=\"http://docs.dev7studios.com/jquery-plugins/nivo-slider\">Nivo Slider</a></li>
+        <li>CSS3/Responsive Design</li>
+        <li>JavaScript/jQuery</li>
+        <li><a href=\"http://docs.dev7studios.com/jquery-plugins/nivo-slider\">Nivo Slider</a></li>
       </ul>",
     'copyright' => array(
       'Content' => '2014 Lo Drag Inc.',
@@ -230,9 +238,9 @@ $audiobooks = array(
     'links' => array(
       'Audible' => 'http://www.audible.com/pd/ref=sr_1_3?asin=B00B9HH01A',
       'Amazon' =>
-	'http://www.amazon.com/gp/product/B00BB1RUYQ/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00BB1RUYQ&amp;linkCode=as2&amp;tag=corporatesell-20&amp;linkId=2CSUQLQFD3Y3S445',
+        'http://www.amazon.com/gp/product/B00BB1RUYQ/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00BB1RUYQ&amp;linkCode=as2&amp;tag=corporatesell-20&amp;linkId=2CSUQLQFD3Y3S445',
       'iTunes' =>
-	'https://itunes.apple.com/us/audiobook/dinner-on-flying-saucer-unabridged/id599832717'
+        'https://itunes.apple.com/us/audiobook/dinner-on-flying-saucer-unabridged/id599832717'
     ),
     'copyright' => '2012, 2013 Dean Wesley Smith'
   ), // dinner
@@ -246,9 +254,9 @@ $audiobooks = array(
     'links' => array(
       'Audible' => 'http://www.audible.com/pd/ref=sr_1_1?asin=B00B5W6R3G',
       'Amazon' =>
-	'http://www.amazon.com/gp/product/B00B77HDR8/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00B77HDR8&amp;linkCode=as2&amp;tag=corporatesell-20&amp;linkId=I63RZ6FP77JIBNAS',
+        'http://www.amazon.com/gp/product/B00B77HDR8/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00B77HDR8&amp;linkCode=as2&amp;tag=corporatesell-20&amp;linkId=I63RZ6FP77JIBNAS',
       'iTunes' =>
-	'https://itunes.apple.com/us/audiobook/dinosaurs-in-home-depot-unabridged/id597740897'
+        'https://itunes.apple.com/us/audiobook/dinosaurs-in-home-depot-unabridged/id597740897'
     ),
     'copyright' => '2012, 2013 Bret Wellman'
   ), // dinosaurs
@@ -262,7 +270,7 @@ $audiobooks = array(
     'links' => array(
       'Audible' => 'http://www.audible.com/pd/ref=sr_1_1?asin=B00B8VULPE',
       'Amazon' =>
-	'http://www.amazon.com/gp/product/B00B9DC08W/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00B9DC08W&amp;linkCode=as2&amp;tag=corporatesell-20&amp;linkId=VSANRRELI2NGTTQE',
+        'http://www.amazon.com/gp/product/B00B9DC08W/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=B00B9DC08W&amp;linkCode=as2&amp;tag=corporatesell-20&amp;linkId=VSANRRELI2NGTTQE',
       'iTunes' => 'https://itunes.apple.com/us/audiobook/your-average-ordinary-alien/id599192781'
     ),
     'copyright' => '2007, 2009, 2013 Adam Graham'

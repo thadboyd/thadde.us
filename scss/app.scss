@@ -212,6 +212,10 @@ $topbar-title-font-family: $font-family-monospace;
 a:hover img {
   opacity: 0.8;
 }
+.shadow {
+  box-shadow: 0 0 0 1px $iron;
+  margin-bottom: 1rem;
+}
 [class*="block-grid-"] {
   text-align: center;
 }
