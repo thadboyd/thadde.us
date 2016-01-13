@@ -1,6 +1,6 @@
 <?php
 /* topnav.php
- * (c) 2015 Thad Boyd
+ * (c) 2015, 2016 Thad Boyd
  * for thadde.us
  *
  * Navigation for top of all pages
@@ -21,6 +21,11 @@ $pages = array(
     'link' => 'audiobooks.php',
     'subnav' => array()
   ), // audiobooks
+  'ebooks' => array(
+    'title' => 'E-Books',
+    'link' => 'ebooks.php',
+    'subnav' => array()
+  ), // ebooks
   'contact' => array(
     'title' => 'Contact',
     'link' => 'contact.php'
@@ -52,6 +57,14 @@ foreach($audiobooks as $key => $value) {
   );
   $pages['audiobooks']['subnav'][$key] = $book;
 } // foreach audiobook
+
+foreach($ebooks as $key => $value) {
+  $book = array(
+    'title' => $value['title'],
+    'link' => 'ebooks.php#' . $key
+  );
+  $pages['ebooks']['subnav'][$key] = $book;
+} // foreach ebook
 ?>
 
     <section class="top-bar-section">

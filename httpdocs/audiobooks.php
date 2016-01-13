@@ -3,7 +3,7 @@
  * (c) 2015 Thad Boyd
  * for thadde.us
  *
- * Listing of audiobooks using jQuery UI accordion structure
+ * Listing of audiobooks
  */
 
 $pageShortName = 'audiobooks';

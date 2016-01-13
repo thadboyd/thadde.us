@@ -3,7 +3,7 @@
  * (c) 2015 Thad Boyd
  * for thadde.us
  *
- * Listing of websites using jQuery UI accordion structure
+ * Listing of websites
  */
  
 $pageShortName = 'websites';

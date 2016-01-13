@@ -1,6 +1,6 @@
 <?php
 /* index.php
- * (c) 2015 Thad Boyd
+ * (c) 2015, 2016 Thad Boyd
  * for thadde.us
  *
  * Index page directing to websites and audiobooks
@@ -23,14 +23,14 @@ function hero() {
   </div><!-- row -->
   
   <nav class="row">
-    <div class="columns medium-6" id="nav-websites">
+    <div class="columns medium-4" id="nav-websites">
       <a href="#" onclick="$('html, body').animate({scrollTop: $('#websites').offset().top}, 300);">
 	<span class="fa fa-globe"></span><br/>
 	Websites
       </a>
     </div><!-- column -->
     
-    <div class="columns medium-6" id="nav-audiobooks">
+    <div class="columns medium-4" id="nav-audiobooks">
       <a href="#" onclick="$('html, body').animate({scrollTop: $('#audiobooks').offset().top}, 300);">
 	<div class="fa fa-audiobook">
           <span class="fa-book"></span>
@@ -39,6 +39,17 @@ function hero() {
 	Audiobooks
       </a>
     </div><!-- column -->
+    
+    <div class="columns medium-4" id="nav-ebooks">
+      <a href="#" onclick="$('html, body').animate({scrollTop: $('#audiobooks').offset().top}, 300);">
+        <div class="fa fa-ebook">
+          <span class="fa-tablet"></span>
+          <span class="fa-book"></span>
+        </div><br/>
+        E-Books
+      </a>
+    </div><!-- column -->
+
   </nav><!-- row -->
 <?php
 } // hero
@@ -89,6 +100,24 @@ foreach($websites as $key => $value) {
       </div><!-- column -->
     </div><!-- row -->
   </section><!-- audiobooks -->
+  
+    <section id="ebooks">
+    <div class="row">
+      <div class="columns small-12">
+        <h2><a href="ebooks.php">E-Books</a></h2>
+        
+        <nav><ul class="small-block-grid-3">
+<?php foreach($ebooks as $key => $value) {
+  indent(3);
+  echo('<li><a href="ebooks.php#' . $key . '"><img src="' . $value['cover'] . '" alt="' . $value['title'] . '" /></a></li>' . PHP_EOL . PHP_EOL);
+} ?>
+        </ul></nav>
+        
+        <p>I've just released my first e-book, a fantasy short story called <cite>Old Tom and the Old Tome</cite>.</p>
+      </div><!-- column -->
+    </div><!-- row -->
+  </section><!-- ebooks -->
+
 </div><!-- tabs -->
 
 <?php require_once('includes/footer.php'); ?>

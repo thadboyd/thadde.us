@@ -1,6 +1,6 @@
 <?php
 /* footer.php
- * (c) 2015 Thad Boyd
+ * (c) 2015, 2016 Thad Boyd
  * for thadde.us
  *
  * Common footer for all pages
@@ -33,6 +33,11 @@ foreach($audiobooks as $key => $value) {
   indent(1);
   writeCopyright($value['copyright'], 1, $value['title']);
 } // audiobooks
+
+foreach($ebooks as $key => $value) {
+  indent(1);
+  writeCopyright($value['copyright'], 1, $value['title']);
+} // ebooks
 
 foreach($trademarks as $value) {
   indent(2);
