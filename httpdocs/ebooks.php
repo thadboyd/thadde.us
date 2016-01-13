@@ -46,7 +46,8 @@ require_once('includes/header.php');
         </ul>
         
 <?php
-  if(isset($value['paypal'])) { ?>
+  if(isset($value['paypal'])) {
+?>
         <p>This book is published under a Creative Commons license and is free to download and redistribute.  If you enjoy it, please feel free to make a donation in an amount of your choosing.</p>
         <form class="paypal-donate" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
           <input type="hidden" name="cmd" value="_s-xclick">
@@ -56,7 +57,27 @@ require_once('includes/header.php');
         </form><!-- paypal-donate -->
 <?php
   } // if Paypal
+  
+  if(isset($value['purchase'])) {
 ?>
+
+        <h3>Other Sellers</h3>
+        
+        <ul>
+  <?php
+    foreach($value['purchase'] as $k => $v) {
+  ?>
+            <li><a href="<?php echo($v); ?>"><?php echo($k); ?></a></li>
+  <?php
+    } // foreach purchase
+  ?>
+        </ul>
+        
+<?php
+  } // if purchase
+?>
+
+
         <footer>
           <?php writeCopyright($value['copyright'], 0); ?>
         </footer>

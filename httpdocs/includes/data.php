@@ -280,7 +280,7 @@ $audiobooks = array(
 $ebooks = array(
   'oldtom-oldtome' => array(
     'title' => 'Old Tom and the Old Tome',
-    'cover' => '/img/oldtom/oldtom-oldtome-cover.jpg',
+    'cover' => 'img/oldtom/oldtom-oldtome-cover-thumb.jpg',
     'blurb' => '
       <p>Old Tom is a mercenary.  In his youth, he fought for Mordred in the war against King Arthur.</p>
       
@@ -291,14 +291,17 @@ $ebooks = array(
       <p>He is wrong.</p>
     ',
     'formats' => array(
-      'EPUB' => '/ebooks/oldtom-oldtome.epub',
-      'HTML (read on-site)' => '/ebooks/oldtom-oldtome.php',
-      'HTML (download)' => '/ebooks/oldtom-oldtome.html',
-      'Plain text (Markdown)' => '/ebooks/oldtom-oldtome.md'
+      'EPUB' => 'ebooks/oldtom-oldtome.epub',
+      'HTML (read on-site)' => 'ebooks_oldtom-oldtome.php',
+      'HTML (download)' => 'ebooks/oldtom-oldtome.html',
+      'Plain text (Markdown)' => 'ebooks/oldtom-oldtome.md'
     ), // formats
     'paypal' =>
       '-----BEGIN PKCS7-----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-----END PKCS7-----
     ',
+    'purchase' => array(
+      'Smashwords' => 'https://www.smashwords.com/books/view/607543'
+    ), // purchase
     'copyright' => '2015, 2016 Thaddeus R R Boyd'
   ) // oldtom-oldtome
 ); // ebooks
