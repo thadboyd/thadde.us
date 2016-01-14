@@ -135,6 +135,18 @@ $topbar-title-font-family: $font-family-monospace;
         }
       }
     } // #nav-audiobooks a
+    
+    #nav-ebooks a {
+      color: $fruitsalad;
+      
+      &:hover {
+        color: scale-color($fruitsalad, $lightness: 25%);
+        
+        .fa-tablet {
+          color: scale-color($black, $lightness: 25%);
+        }
+      }
+    }
   } // nav
 } // .hero
 
@@ -151,6 +163,19 @@ $topbar-title-font-family: $font-family-monospace;
     transform: rotate(-30deg);
   } // .fa-volume-up
 } // .fa-audiobook
+
+.fa-ebook {
+  position: relative;
+    .fa-tablet {
+      color: $black;
+    }
+    .fa-book {
+      font-size: 50%;
+      position: absolute;
+      top: 16%;
+      right: 14%;
+    }
+} // .fa-ebook
 // END HERO
 
 
@@ -302,6 +327,27 @@ h2 {
   }
 }
 // END AUDIOBOOKS
+
+
+// EBOOKS
+.ebook {
+  header, section {
+    $gap: rem-calc(64);
+    padding-bottom: $gap;
+    border-bottom: solid rem-calc(1) $gainsboro;
+    margin-bottom: $gap;
+    
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  
+  section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+}
+// END EBOOKS
 
 
 // CONTACT

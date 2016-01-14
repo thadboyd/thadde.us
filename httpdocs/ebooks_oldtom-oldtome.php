@@ -19,7 +19,7 @@ require_once('includes/header.php');
 
 ?>
 
-<div class="row"><div class="columns">
+<div class="ebook"><div class="row"><div class="columns">
   <header>
     <p><img src="img/oldtom/oldtom-oldtome-cover.jpg" alt="Old Tom and the Old Tome" id="cover" /></p>
   </header>
@@ -243,6 +243,6 @@ require_once('includes/header.php');
     <p><em>Old Tom and the Old Tome</em> is Thad’s first self-published short story. It will not be the last.</p>
   </section><!-- about-author -->
 
-</div></div><!-- column --><!-- row -->
+</div></div></div><!-- column --><!-- row --><!-- ebook -->
 
 <?php require_once('includes/footer.php'); ?>
