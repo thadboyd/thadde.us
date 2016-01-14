@@ -7,8 +7,8 @@
  */
 
 $pageShortName = 'ebooks';
-$pageTitle = 'Ebooks by Thaddeus R R Boyd';
-$pageDesc = "Ebooks by Thaddeus R R Boyd.";
+$pageTitle = 'E-Books by Thaddeus R R Boyd';
+$pageDesc = "E-Books by Thaddeus R R Boyd.";
 require_once('includes/header.php');
 
 ?>
@@ -34,7 +34,7 @@ require_once('includes/header.php');
           <?php echo($value['blurb'] . PHP_EOL); ?>
         </blockquote>
         
-        <h3>Available Formats:</h3>
+        <h3>Available Formats</h3>
         <ul>
 <?php
   foreach($value['formats'] as $k => $v) {
